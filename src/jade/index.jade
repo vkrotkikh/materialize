@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru")
+	include ./partials/_head.jade
+	include ./components/_navbar.jade
+
+	head
+		block head
+			+head(title.index)
+	body
+		include ./partials/_header.jade
+
+		block main
+			main.main
+				ul
+					each val in filterList
+						li= val["name"]
+				.container
+					.row
+						.col-md-offset-3.col-md-6
+							.row
+								button.btn.waves-effect.waves-teal Lorem ipsum.
+							br
+							.row
+								button.btn.waves-effect.waves-light Lorem ipsum.
+							br
+							.row
+								button.btn.waves-effect.waves-red Lorem ipsum.
+							br
+							.row
+								button.btn.waves-effect.waves-purple
+									span Lorem ipsum.
+							br
+							.row
+								button.asdasd.btn-4
+									span Hover
+
+		include ./partials/_footer.jade
+
+
+
+
+
+
+		script(src="js/jquery/jquery-2.2.2.min.js")
+		script(src="js/bootstrap/bootstrap.min.js")
+		script(src="js/waves.js")
+		script(src="js/main.js")

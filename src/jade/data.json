@@ -1,0 +1,68 @@
+{
+	"title": {
+		"index": "index",
+		"second": "second",
+		"third": "third"
+	},
+	"myVar2": "BUT NOT _THE_ STRING!",
+	"MyArray": [
+		{
+			"firstName":"John", 
+			"lastName":"Doe"
+		},
+		{
+			"firstName":"Anna",
+			"lastName":"Smith"
+		},
+		{
+			"firstName":"Peter",
+			"lastName":"Jones"
+		},
+		{
+			"firstName":"testst",
+			"lastName":"testst"
+		},
+		{
+			"firstName":"123123123",
+			"lastName":"123123123"
+		}
+	],
+	"filterList": [
+		{
+			"name": "Athlertic"
+		},
+		{
+			"name": "Boots"
+		},
+		{
+			"name": "Fashion Sneakers"
+		},
+		{
+			"name": "Sandals"
+		},
+		{
+			"name": "Slip-Ons"
+		},
+		{
+			"name": "Oxford"
+		},
+		{
+			"name": "Athlertic"
+		},
+		{
+			"name": "Boots"
+		},
+		{
+			"name": "Fashion Sneakers"
+		},
+		{
+			"name": "Sandals"
+		},
+		{
+			"name": "Slip-Ons"
+		},
+		{
+			"name": "1111"
+		}
+	]
+}

@@ -1,0 +1,112 @@
+/* Кастомные шрифты */
+@import 'fonts';
+
+/* Font Awesome */
+@import 'fontawesome/font-awesome';
+
+/* Глобальные переменные */
+@import 'variables';
+
+/* Стили бутстрап bootstrap */
+@import 'bootstrap';
+
+/* Стили materialize ui */
+@import 'materialize/materialize';
+
+/* Генератор спрайтов */
+// @import 'sprite';
+
+/* Стили частей страницы */
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+
+/* Специфические стили страницы */
+// @import 'pages/';
+
+@import 'helpers';
+
+/* Модули */
+// @import 'modules/buttons';
+// @import 'modules/carousel';
+// @import 'modules/forms';
+// @import 'modules/icons';
+// @import 'modules/list';
+// @import 'modules/modal';
+// @import 'modules/nav';
+@import 'modules/navbar';
+// @import 'modules/types';
+// @import 'modules/panel';
+
+
+/* 992px до 1199px */
+@media (max-width: $screen-lg - 1) {
+	@import 'partials/lg/header';
+	@import 'partials/lg/main';
+	@import 'partials/lg/footer';
+
+	@import 'modules/lg/buttons';
+	@import 'modules/lg/carousel';
+	@import 'modules/lg/forms';
+	@import 'modules/lg/icons';
+	@import 'modules/lg/list';
+	@import 'modules/lg/modal';
+	@import 'modules/lg/nav';
+	@import 'modules/lg/navbar';
+	@import 'modules/lg/types';
+	@import 'modules/lg/panel';
+}
+
+/* 768px до 991px */
+@media (max-width: $screen-md - 1) {
+	@import 'partials/md/header';
+	@import 'partials/md/main';
+	@import 'partials/md/footer';
+
+	@import 'modules/md/buttons';
+	@import 'modules/md/carousel';
+	@import 'modules/md/forms';
+	@import 'modules/md/icons';
+	@import 'modules/md/list';
+	@import 'modules/md/modal';
+	@import 'modules/md/nav';
+	@import 'modules/md/navbar';
+	@import 'modules/md/types';
+	@import 'modules/md/panel';
+}
+
+/* 480px до 767px */
+@media (max-width: $screen-sm - 1) {
+	@import 'partials/sm/header';
+	@import 'partials/sm/main';
+	@import 'partials/sm/footer';
+
+	@import 'modules/sm/buttons';
+	@import 'modules/sm/carousel';
+	@import 'modules/sm/forms';
+	@import 'modules/sm/icons';
+	@import 'modules/sm/list';
+	@import 'modules/sm/modal';
+	@import 'modules/sm/nav';
+	@import 'modules/sm/navbar';
+	@import 'modules/sm/types';
+	@import 'modules/sm/panel';
+}
+
+/* до 480px */
+@media (max-width: $screen-xs - 1) {
+	@import 'partials/xs/header';
+	@import 'partials/xs/main';
+	@import 'partials/xs/footer';
+
+	@import 'modules/xs/buttons';
+	@import 'modules/xs/carousel';
+	@import 'modules/xs/forms';
+	@import 'modules/xs/icons';
+	@import 'modules/xs/list';
+	@import 'modules/xs/modal';
+	@import 'modules/xs/nav';
+	@import 'modules/xs/navbar';
+	@import 'modules/xs/types';
+	@import 'modules/xs/panel';
+}

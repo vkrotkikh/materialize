@@ -1,0 +1,305 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$i-boy-smiling-name: 'i-boy-smiling';
+$i-boy-smiling-x: 80px;
+$i-boy-smiling-y: 0px;
+$i-boy-smiling-offset-x: -80px;
+$i-boy-smiling-offset-y: 0px;
+$i-boy-smiling-width: 67px;
+$i-boy-smiling-height: 74px;
+$i-boy-smiling-total-width: 320px;
+$i-boy-smiling-total-height: 271px;
+$i-boy-smiling-image: '../img/sprite.png';
+$i-boy-smiling: (80px, 0px, -80px, 0px, 67px, 74px, 320px, 271px, '../img/sprite.png', 'i-boy-smiling', );
+$i-brain-name: 'i-brain';
+$i-brain-x: 65px;
+$i-brain-y: 91px;
+$i-brain-offset-x: -65px;
+$i-brain-offset-y: -91px;
+$i-brain-width: 58px;
+$i-brain-height: 64px;
+$i-brain-total-width: 320px;
+$i-brain-total-height: 271px;
+$i-brain-image: '../img/sprite.png';
+$i-brain: (65px, 91px, -65px, -91px, 58px, 64px, 320px, 271px, '../img/sprite.png', 'i-brain', );
+$i-case-name: 'i-case';
+$i-case-x: 100px;
+$i-case-y: 161px;
+$i-case-offset-x: -100px;
+$i-case-offset-y: -161px;
+$i-case-width: 51px;
+$i-case-height: 47px;
+$i-case-total-width: 320px;
+$i-case-total-height: 271px;
+$i-case-image: '../img/sprite.png';
+$i-case: (100px, 161px, -100px, -161px, 51px, 47px, 320px, 271px, '../img/sprite.png', 'i-case', );
+$i-cup-name: 'i-cup';
+$i-cup-x: 210px;
+$i-cup-y: 71px;
+$i-cup-offset-x: -210px;
+$i-cup-offset-y: -71px;
+$i-cup-width: 56px;
+$i-cup-height: 72px;
+$i-cup-total-width: 320px;
+$i-cup-total-height: 271px;
+$i-cup-image: '../img/sprite.png';
+$i-cup: (210px, 71px, -210px, -71px, 56px, 72px, 320px, 271px, '../img/sprite.png', 'i-cup', );
+$i-fat-boy-smiling-name: 'i-fat-boy-smiling';
+$i-fat-boy-smiling-x: 210px;
+$i-fat-boy-smiling-y: 0px;
+$i-fat-boy-smiling-offset-x: -210px;
+$i-fat-boy-smiling-offset-y: 0px;
+$i-fat-boy-smiling-width: 64px;
+$i-fat-boy-smiling-height: 71px;
+$i-fat-boy-smiling-total-width: 320px;
+$i-fat-boy-smiling-total-height: 271px;
+$i-fat-boy-smiling-image: '../img/sprite.png';
+$i-fat-boy-smiling: (210px, 0px, -210px, 0px, 64px, 71px, 320px, 271px, '../img/sprite.png', 'i-fat-boy-smiling', );
+$i-flag-name: 'i-flag';
+$i-flag-x: 274px;
+$i-flag-y: 105px;
+$i-flag-offset-x: -274px;
+$i-flag-offset-y: -105px;
+$i-flag-width: 37px;
+$i-flag-height: 51px;
+$i-flag-total-width: 320px;
+$i-flag-total-height: 271px;
+$i-flag-image: '../img/sprite.png';
+$i-flag: (274px, 105px, -274px, -105px, 37px, 51px, 320px, 271px, '../img/sprite.png', 'i-flag', );
+$i-girl-smiling-name: 'i-girl-smiling';
+$i-girl-smiling-x: 0px;
+$i-girl-smiling-y: 0px;
+$i-girl-smiling-offset-x: 0px;
+$i-girl-smiling-offset-y: 0px;
+$i-girl-smiling-width: 80px;
+$i-girl-smiling-height: 91px;
+$i-girl-smiling-total-width: 320px;
+$i-girl-smiling-total-height: 271px;
+$i-girl-smiling-image: '../img/sprite.png';
+$i-girl-smiling: (0px, 0px, 0px, 0px, 80px, 91px, 320px, 271px, '../img/sprite.png', 'i-girl-smiling', );
+$i-man-moustache-name: 'i-man-moustache';
+$i-man-moustache-x: 0px;
+$i-man-moustache-y: 91px;
+$i-man-moustache-offset-x: 0px;
+$i-man-moustache-offset-y: -91px;
+$i-man-moustache-width: 65px;
+$i-man-moustache-height: 70px;
+$i-man-moustache-total-width: 320px;
+$i-man-moustache-total-height: 271px;
+$i-man-moustache-image: '../img/sprite.png';
+$i-man-moustache: (0px, 91px, 0px, -91px, 65px, 70px, 320px, 271px, '../img/sprite.png', 'i-man-moustache', );
+$i-microphone-name: 'i-microphone';
+$i-microphone-x: 274px;
+$i-microphone-y: 57px;
+$i-microphone-offset-x: -274px;
+$i-microphone-offset-y: -57px;
+$i-microphone-width: 41px;
+$i-microphone-height: 48px;
+$i-microphone-total-width: 320px;
+$i-microphone-total-height: 271px;
+$i-microphone-image: '../img/sprite.png';
+$i-microphone: (274px, 57px, -274px, -57px, 41px, 48px, 320px, 271px, '../img/sprite.png', 'i-microphone', );
+$i-openbook-name: 'i-openbook';
+$i-openbook-x: 123px;
+$i-openbook-y: 91px;
+$i-openbook-offset-x: -123px;
+$i-openbook-offset-y: -91px;
+$i-openbook-width: 70px;
+$i-openbook-height: 52px;
+$i-openbook-total-width: 320px;
+$i-openbook-total-height: 271px;
+$i-openbook-image: '../img/sprite.png';
+$i-openbook: (123px, 91px, -123px, -91px, 70px, 52px, 320px, 271px, '../img/sprite.png', 'i-openbook', );
+$i-people-name: 'i-people';
+$i-people-x: 198px;
+$i-people-y: 161px;
+$i-people-offset-x: -198px;
+$i-people-offset-y: -161px;
+$i-people-width: 51px;
+$i-people-height: 42px;
+$i-people-total-width: 320px;
+$i-people-total-height: 271px;
+$i-people-image: '../img/sprite.png';
+$i-people: (198px, 161px, -198px, -161px, 51px, 42px, 320px, 271px, '../img/sprite.png', 'i-people', );
+$i-philosophy-boy-name: 'i-philosophy-boy';
+$i-philosophy-boy-x: 147px;
+$i-philosophy-boy-y: 0px;
+$i-philosophy-boy-offset-x: -147px;
+$i-philosophy-boy-offset-y: 0px;
+$i-philosophy-boy-width: 63px;
+$i-philosophy-boy-height: 73px;
+$i-philosophy-boy-total-width: 320px;
+$i-philosophy-boy-total-height: 271px;
+$i-philosophy-boy-image: '../img/sprite.png';
+$i-philosophy-boy: (147px, 0px, -147px, 0px, 63px, 73px, 320px, 271px, '../img/sprite.png', 'i-philosophy-boy', );
+$i-plus-name: 'i-plus';
+$i-plus-x: 274px;
+$i-plus-y: 156px;
+$i-plus-offset-x: -274px;
+$i-plus-offset-y: -156px;
+$i-plus-width: 39px;
+$i-plus-height: 39px;
+$i-plus-total-width: 320px;
+$i-plus-total-height: 271px;
+$i-plus-image: '../img/sprite.png';
+$i-plus: (274px, 156px, -274px, -156px, 39px, 39px, 320px, 271px, '../img/sprite.png', 'i-plus', );
+$i-puzzle-name: 'i-puzzle';
+$i-puzzle-x: 151px;
+$i-puzzle-y: 161px;
+$i-puzzle-offset-x: -151px;
+$i-puzzle-offset-y: -161px;
+$i-puzzle-width: 47px;
+$i-puzzle-height: 47px;
+$i-puzzle-total-width: 320px;
+$i-puzzle-total-height: 271px;
+$i-puzzle-image: '../img/sprite.png';
+$i-puzzle: (151px, 161px, -151px, -161px, 47px, 47px, 320px, 271px, '../img/sprite.png', 'i-puzzle', );
+$i-question-name: 'i-question';
+$i-question-x: 49px;
+$i-question-y: 161px;
+$i-question-offset-x: -49px;
+$i-question-offset-y: -161px;
+$i-question-width: 51px;
+$i-question-height: 52px;
+$i-question-total-width: 320px;
+$i-question-total-height: 271px;
+$i-question-image: '../img/sprite.png';
+$i-question: (49px, 161px, -49px, -161px, 51px, 52px, 320px, 271px, '../img/sprite.png', 'i-question', );
+$i-sertificate-name: 'i-sertificate';
+$i-sertificate-x: 274px;
+$i-sertificate-y: 0px;
+$i-sertificate-offset-x: -274px;
+$i-sertificate-offset-y: 0px;
+$i-sertificate-width: 46px;
+$i-sertificate-height: 57px;
+$i-sertificate-total-width: 320px;
+$i-sertificate-total-height: 271px;
+$i-sertificate-image: '../img/sprite.png';
+$i-sertificate: (274px, 0px, -274px, 0px, 46px, 57px, 320px, 271px, '../img/sprite.png', 'i-sertificate', );
+$i-star-half-name: 'i-star-half';
+$i-star-half-x: 0px;
+$i-star-half-y: 236px;
+$i-star-half-offset-x: 0px;
+$i-star-half-offset-y: -236px;
+$i-star-half-width: 35px;
+$i-star-half-height: 35px;
+$i-star-half-total-width: 320px;
+$i-star-half-total-height: 271px;
+$i-star-half-image: '../img/sprite.png';
+$i-star-half: (0px, 236px, 0px, -236px, 35px, 35px, 320px, 271px, '../img/sprite.png', 'i-star-half', );
+$i-star-o-name: 'i-star-o';
+$i-star-o-x: 274px;
+$i-star-o-y: 195px;
+$i-star-o-offset-x: -274px;
+$i-star-o-offset-y: -195px;
+$i-star-o-width: 37px;
+$i-star-o-height: 37px;
+$i-star-o-total-width: 320px;
+$i-star-o-total-height: 271px;
+$i-star-o-image: '../img/sprite.png';
+$i-star-o: (274px, 195px, -274px, -195px, 37px, 37px, 320px, 271px, '../img/sprite.png', 'i-star-o', );
+$i-star-name: 'i-star';
+$i-star-x: 35px;
+$i-star-y: 236px;
+$i-star-offset-x: -35px;
+$i-star-offset-y: -236px;
+$i-star-width: 33px;
+$i-star-height: 33px;
+$i-star-total-width: 320px;
+$i-star-total-height: 271px;
+$i-star-image: '../img/sprite.png';
+$i-star: (35px, 236px, -35px, -236px, 33px, 33px, 320px, 271px, '../img/sprite.png', 'i-star', );
+$tt-tribune-name: 'tt-tribune';
+$tt-tribune-x: 0px;
+$tt-tribune-y: 161px;
+$tt-tribune-offset-x: 0px;
+$tt-tribune-offset-y: -161px;
+$tt-tribune-width: 49px;
+$tt-tribune-height: 75px;
+$tt-tribune-total-width: 320px;
+$tt-tribune-total-height: 271px;
+$tt-tribune-image: '../img/sprite.png';
+$tt-tribune: (0px, 161px, 0px, -161px, 49px, 75px, 320px, 271px, '../img/sprite.png', 'tt-tribune', );
+$spritesheet-width: 320px;
+$spritesheet-height: 271px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($i-boy-smiling, $i-brain, $i-case, $i-cup, $i-fat-boy-smiling, $i-flag, $i-girl-smiling, $i-man-moustache, $i-microphone, $i-openbook, $i-people, $i-philosophy-boy, $i-plus, $i-puzzle, $i-question, $i-sertificate, $i-star-half, $i-star-o, $i-star, $tt-tribune, );
+$spritesheet: (320px, 271px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

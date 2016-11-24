@@ -1,0 +1,53 @@
+/* Подключение шрифтов */
+$font-regular:						;
+$font-bold:							;
+$font-light:						;
+
+// Color
+$brand-color: (
+	primary: #000,
+	secondary: #666,
+	additional: #ccc
+);
+
+$text-color:						#000;
+$link-color:						map-get($brand-color, primary);
+
+
+
+
+// Typography
+// $font-size-base:					sans-serif;
+// $font-family-base:					;
+
+// $headings-font-family:				;
+// $headings-color:					;
+
+
+
+$font-size-h1:						;
+$font-size-h2:						;
+$font-size-h3:						;
+$font-size-h4:						;
+$font-size-h5:						;
+$font-size-h6:						;
+
+/* Media queries breakpoints */
+$screen-lg:							1200px;
+$screen-md:							992px;
+$screen-sm:							768px;
+$screen-xs:							480px;
+
+$grid-float-breakpoint:				$screen-md;
+
+
+/* Buttons */
+$btn-primary-color:					#fff;
+$btn-primary-bg: 					map-get($brand-color, primary);
+$btn-primary-border:				map-get($brand-color, primary);
+
+$grid-columns:						15;
+$grid-gutter-width:					20px;
+$container-tablet:					(730px + $grid-gutter-width);
+$container-desktop:					(950px + $grid-gutter-width);
+$container-large-desktop:			(1180px + $grid-gutter-width);
