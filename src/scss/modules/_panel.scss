@@ -1,0 +1,51 @@
+.panel {
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    margin: 0 0 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow .3s;
+
+    &:hover {
+        box-shadow: 0 0 30px -5px rgba(#000, .2);
+    }
+
+    h4 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        color: #05b3ef;
+    }
+
+    .-date,
+    .-range {
+        font-size: 14px;
+        color: #9a9a9a;
+    }
+    .-info {
+        color: #818181;
+        font-size: 14px;
+    }
+
+    p {
+        margin: 0 0 15px;
+    }
+}
+
+.panel-window {
+    background-color: rgba(#05b3ef, .1);
+    padding: 10px 15px;
+    border-radius: 4px;
+
+    &.-transparent {
+        background-color: transparent;
+    }
+
+    & > .-heading {
+        color: #05b3ef;
+        padding: 0 0 10px;
+    }
+
+    & > .-body {
+
+    }
+}

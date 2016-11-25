@@ -1,0 +1,14 @@
+span.badge {
+    float: none;
+    padding: 2px 5px;
+}
+span.badge.new {
+    background-color: #00ad64;
+}
+.badge.new.-primary {
+    background-color: #00b1ef;
+}
+
+.badge.new.-default {
+    background-color: #969696;
+}

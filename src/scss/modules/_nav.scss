@@ -1,0 +1,32 @@
+.nav-pills {
+    background-color: transparent;
+    .tab {
+        height: auto;
+        line-height: 1;
+
+        a {
+            padding: 15px 15px;
+            margin: 0 5px;
+            background-color: transparent;
+            color: #fff;
+            border-radius: 4px;
+            transition: background-color .2s, color .2s;
+
+            &.active {
+                background-color: #fff;
+                color: #0091cf;
+
+                &:hover {
+                    color: #0091cf;
+                }
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .indicator {
+        display: none;
+    }
+}

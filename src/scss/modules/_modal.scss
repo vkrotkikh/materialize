@@ -1,0 +1,46 @@
+.modal-overlay {
+    background-color: #fff;
+}
+
+.modal {
+    &.-custom {
+        width: 600px;
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: visible;
+
+        .modal-content {
+            padding: 25px 40px;
+        }
+
+        .modal-footer {
+            background-color: #fff;
+
+            .btn {
+                float: none;
+            }
+        }
+        .close {
+          position: absolute;
+          top: -22px;
+          right: -22px;
+          width: 45px;
+          height: 45px;
+          line-height: 48px;
+          background-color: #fff;
+          text-align: center;
+          border-radius: 50%;
+          box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+          cursor: pointer;
+
+          i {
+              font-size: 20px;
+              color: #838383;
+          }
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+    }
+}

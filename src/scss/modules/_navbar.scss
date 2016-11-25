@@ -1,3 +1,81 @@
+$nav-height:			80px;
+
 nav {
 	background-color: transparent;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	height: $nav-height;
+	line-height: 1.4;
+
+	.brand-logo {
+		position: static;
+		height: 50px;
+		margin: 15px 0;
+		&:hover,
+		&:focus {
+			background-color: transparent;
+		}
+
+		img {
+			display: block;
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	.nav-wrapper {
+		i {
+			display: inline-block;
+			line-height: 1;
+			font-size: 16px;
+			height: auto;
+			color: #838383;
+			transition: color .3s;
+		}
+	}
+}
+.logo-wrapper {
+	font-size: 0;
+}
+
+.navbar-nav {
+	a:not(.dropdown-button) {
+		font: 400 16px/1 'Roboto', sans-serif;
+		color: #838383;
+		text-transform: uppercase;
+		transition: box-shadow .3s, color .3s;
+		padding: 32px 15px;
+		font-weight: bold;
+
+		&.active,
+		&:hover,
+		&:focus {
+			color: #000;
+			background-color: transparent;
+			box-shadow: 0 6px 0 #000 inset;
+		}
+	}
+	.dropdown-button {
+		display: flex;
+		align-items: center;
+		padding: 15px;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+
+			i {
+				color: #000;
+			}
+		}
+	}
+
+	.btn {
+		padding: 0 15px;
+		font-size: 14px;
+
+		i {
+			font-size: 16px;
+			line-height: 1;
+		}
+	}
 }
