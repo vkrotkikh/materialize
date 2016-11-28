@@ -3,6 +3,18 @@
         right: 15px;
     }
 
+    &.-wider {
+        width: 300px;
+    }
+    &.-mlr {
+        margin-right: 10px;
+        margin-left: 10px;
+        & + .btn-search {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
     input {
         &.select-dropdown {
             border: 1px solid #95a5a6;
@@ -71,4 +83,121 @@
         pointer-events: none;
         color: #fff;
     }
+}
+
+.form-drop {
+    border-radius: 15px;
+    @extend %triangle;
+    @extend %trgl-bot;
+
+    li {
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    form {
+        padding: 10px;
+    }
+}
+
+.input-inline {
+    border: 1px solid #838383;
+    border-radius: 50px;
+    padding: 5px 15px;
+
+    .form-control {
+        height: 32px;
+        width: auto;
+        border: none;
+        margin: 0;
+    }
+
+    input[type=text].form-control:focus:not([readonly]) {
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            border: none;
+        }
+    }
+    button {
+        background-color: transparent;
+        box-shadow: none;
+        width: 32px;
+        height: 32px;
+
+        i {
+            color: #4099ff;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+}
+.form-custom {
+    .form-control {
+        border: 1px solid #838383;
+        padding: 8px 15px;
+        border-radius: 25px;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0;
+
+        &:focus,
+        &.active {
+            outline: none;
+        }
+    }
+    input[type=text].form-control:focus {
+        box-shadow: none;
+        border-color: #838383;
+    }
+
+    label {
+        display: block;
+        text-align: right;
+        padding: 9px 0;
+    }
+}
+textarea.form-control {
+    resize: none;
+    height: 230px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.form-feedback {
+    text-align: left;
+
+    label {
+        display: block;
+        font-size: 14px;
+        color: #838383;
+        margin: 0 0 15px;
+    }
+
+    .form-control {
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        width: 50%;
+    }
+}
+
+.datepicker-wrapper {
+    position: relative;
+    
+    .fa {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        pointer-events: none;
+    }
+}
+.datepicker {
+    cursor: pointer;
 }

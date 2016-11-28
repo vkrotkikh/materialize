@@ -1,3 +1,6 @@
+.container {
+    width: 100%;
+}
 .max-w1024 {
     max-width: 1024px;
     margin: 0 auto;
@@ -9,17 +12,24 @@
         clear: both;
     }
 }
+.flex {
+    display: flex;
+
+    &.sb {justify-content: space-between;}
+    &.sa {justify-content: space-around;}
+    &.fe {justify-content: flex-end;}
+    &.c {justify-content: center;}
+
+    &.aic {align-items: center;}
+}
+
+.main-nav {
+    padding: 30px 0;
+}
 
 .main-top {
     background-color: #0091cf;
     padding: 30px 0;
-
-    .-header,
-    .-body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
     .-header {
         padding: 0 0 30px;
@@ -89,14 +99,85 @@
     }
 }
 
-.flex {
-    display: flex;
+.single-block {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 0 100px;
+}
 
-    &.sb {
-        justify-content: space-between;
+.content-single {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 35px 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(#000, .3);
+
+    h1 {
+        font-size: 24px;
+        line-height: 1.1;
+        font-weight: bold;
+        margin: 0 0 10px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 1.1;
+        margin: 0 0 15px;
+        font-weight: bold;
+    }
+    .subheading {
+        margin: 0 0 25px;
     }
 
-    &.aic {
-        align-items: center;
+    .-text {
+        padding: 15px 0;
+    }
+
+    .-location {
+        margin: 0 -50px;
+        padding: 35px 0;
+    }
+
+    .-additional {
+        .-label {
+            text-transform: uppercase;
+            color: #7f8c8d;
+            margin: 0 0 15px;
+            font-size: 14px;
+        }
+    }
+}
+
+.information {
+    padding: 0 0 20px;
+
+    &.-pt {
+        padding-top: 25px;
+    }
+
+    .-label {
+        font-size: 12px;
+        color: #7f8c8d;
+    }
+}
+.info-item {
+    padding: 10px 0;
+    p {
+        margin: 0;
+    }
+}
+
+.notification {
+    padding: 15px 30px;
+
+    .btn {
+        padding: 18px 49px 15px;
+    }
+
+    .-text {
+        padding: 14px 45px 14px 0;
+        background: url(img/arrow-to.png) no-repeat 100% 100% / 40px 17px;
+        margin-right: 20px;
     }
 }

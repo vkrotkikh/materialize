@@ -3,11 +3,12 @@
 }
 
 .modal {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: visible;
+
     &.-custom {
         width: 600px;
-        background-color: #fff;
-        border-radius: 15px;
-        overflow: visible;
 
         .modal-content {
             padding: 25px 40px;
@@ -42,5 +43,16 @@
         p {
             margin: 0 0 10px;
         }
+    }
+}
+
+.modal-default {
+    max-width: 800px;
+    max-height: none;
+    padding: 0;
+
+    .modal-content.-feedback {
+        padding: 45px 90px;
+        text-align: center;
     }
 }

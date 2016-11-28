@@ -38,20 +38,22 @@ nav {
 }
 
 .navbar-nav {
-	a:not(.dropdown-button) {
-		font: 400 16px/1 'Roboto', sans-serif;
-		color: #838383;
-		text-transform: uppercase;
-		transition: box-shadow .3s, color .3s;
-		padding: 32px 15px;
-		font-weight: bold;
+	& > li {
+		& > a:not(.dropdown-button) {
+			font: 400 16px/1 'Roboto', sans-serif;
+			color: #838383;
+			text-transform: uppercase;
+			transition: box-shadow .3s, color .3s;
+			padding: 32px 15px;
+			font-weight: bold;
 
-		&.active,
-		&:hover,
-		&:focus {
-			color: #000;
-			background-color: transparent;
-			box-shadow: 0 6px 0 #000 inset;
+			&.active,
+			&:hover,
+			&:focus {
+				color: #000;
+				background-color: transparent;
+				box-shadow: 0 6px 0 #000 inset;
+			}
 		}
 	}
 	.dropdown-button {

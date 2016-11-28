@@ -1,4 +1,4 @@
-/* Loadin animations */
+/* Loading animations */
 .loading p {
     color: #05b3ef;
     font-weight: bold;
@@ -138,6 +138,7 @@
   0%, 39%, 100% { opacity: 0; }
   40% { opacity: 1; } 
 }
+/*Loading animations END*/
 
 .view-counter {
   font-size: 18px;
@@ -149,3 +150,53 @@
   font-size: 16px;
 }
 .pr15 {padding-right: 15px;}
+
+.bg-primary {
+  background-color: #0080bd;
+}
+.link {
+  color: #05b3ef;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #95a5a6;
+}
+
+/*triangle styles: */
+%triangle { /*core*/
+  overflow: visible;
+  box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+}
+
+%trgl-bot { /*bottom*/
+  &:after {
+    bottom: -8px;
+    border-width: 8px 15px 0 15px;
+    border-color: #fff transparent transparent transparent;
+  }
+}
+%trgl-top {
+  &:after {
+    top: -8px;
+    border-width: 0 15px 8px 15px;
+    border-color: transparent transparent #fff transparent;
+  }
+}
+/*triangle styles end*/
