@@ -1,0 +1,67 @@
+<!--Во всей верстке к айдишникам стили не привязаны-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="all.css">
+	<title>Document</title>
+</head>
+<body>
+<header class="header">
+	<ul id="userSettings" class="dropdown-content list-default arrow-top">
+		<li><a href="/settings.html">Settings</a></li>
+		<li><a class="active" href="/feedback.html">Feedback</a></li>
+		<li><a href="#!">Log out</a></li>
+	</ul>
+	<div class="container">
+		<nav>
+			<div class="nav-wrapper">
+				<ul class="left valign-wrapper">
+					<li class="logo-wrapper"><a href="#" class="brand-logo"><img src="./img/logo.png" alt=""></a></li>
+					<li><a class="waves-effect btn -primary"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
+				</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down navbar-nav">
+					<li><a href="/">Dashboard</a></li>
+					<li><a href="/applications.html">Applications</a></li>
+					<li><a href="/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/following.html">Following</a></li>
+					<li><a href="/search.html">Search</a></li>
+					<li>
+						<a class="dropdown-button" href="#!" data-activates="userSettings">
+							<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">
+							<i class="material-icons right">arrow_drop_down</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<main class="main">
+	<div class="container">
+		<div class="max-w1024 -pt">
+			<div class="content-top-panel">
+				<h2>Feedback</h2>
+			</div>
+			<div class="content -narrow center-align">
+				<h4>Because your feedback matters...</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo perferendis laudantium, ullam beatae debitis possimus architecto ex odio mollitia placeat. Nobis amet, dicta molestiae sit libero, mollitia. Numquam ipsum, molestias laudantium voluptatem. Eligendi alias eos quidem? Dicta!</p>
+				<form action="#?" class="form-feedback">
+					<label for="textareaFeedback">Your feedback:</label>
+					<textarea id="textareaFeedback" class="form-control"></textarea>
+					<div class="center-align">
+						<input type="submit" class="waves-effect waves-light btn -primary -inverse" value="SEND">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+	<script src="./js/jquery/jquery-2.2.2.min.js"></script>
+	<script src="./js/materialize/materialize.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

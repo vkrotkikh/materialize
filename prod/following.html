@@ -9,11 +9,10 @@
 </head>
 <body>
 <header class="header">
-	<ul id="dropdown1" class="dropdown-content">
-		<li><a href="#!">one</a></li>
-		<li><a href="#!">two</a></li>
-		<li class="divider"></li>
-		<li><a href="#!">three</a></li>
+	<ul id="userSettings" class="dropdown-content list-default arrow-top">
+		<li><a href="/settings.html">Settings</a></li>
+		<li><a href="/feedback.html">Feedback</a></li>
+		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
 		<nav>
@@ -26,10 +25,10 @@
 					<li><a href="/">Dashboard</a></li>
 					<li><a href="/applications.html">Applications</a></li>
 					<li><a href="/saved-jobs.html">Saved jobs</a></li>
-					<li><a class="active" href="javascript:void(0);">Following</a></li>
+					<li><a class="active" href="/following.html">Following</a></li>
 					<li><a href="/search.html">Search</a></li>
 					<li>
-						<a class="dropdown-button" href="#!" data-activates="dropdown1">
+						<a class="dropdown-button" href="#!" data-activates="userSettings">
 							<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">
 							<i class="material-icons right">arrow_drop_down</i>
 						</a>
@@ -41,12 +40,13 @@
 </header>
 <main class="main">
 	<div class="container">
-		<div class="content max-w1024">
-			<div class="clearfix content-header">
+		<div class="max-w1024 -pt">
+			<div class="clearfix content-top-panel">
 				<h2>Followed Schools</h2>
 				<strong class="view-counter">9 schools</strong>
 				<div class="right">
 					<select name="sort" id="sortId">
+						<option value="" disabled selected>Please Select</option>
 						<option value="mostRecent">Sort by Most Recent</option>
 						<option value="colsingDate">Sort by Closing Date</option>
 					</select>

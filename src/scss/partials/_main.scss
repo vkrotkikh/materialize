@@ -4,6 +4,10 @@
 .max-w1024 {
     max-width: 1024px;
     margin: 0 auto;
+
+    &.-pt {
+        padding-top: 30px;
+    }
 }
 .clearfix {
     &:after {
@@ -69,6 +73,7 @@
 }
 
 .section {
+    padding: 0;
 
     &-heading {
         background-color: #f4f3f3;
@@ -82,20 +87,17 @@
         font-size: 18px;
         font-style: italic;
         text-align: center;
+        padding: 15px 0;
+
+        p {
+            margin: 0;
+        }
     }
 }
 
 .content {
-    padding: 30px 0 0;
-
-    h2 {
-        margin: 0 0 20px;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    &-header {
-        padding: 0 0 20px;
+    &-top-panel {
+        padding: 0 0 30px;
     }
 }
 
@@ -105,13 +107,17 @@
     padding: 0 0 100px;
 }
 
-.content-single {
+.content {
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
     padding: 35px 50px;
     border-radius: 25px;
     box-shadow: 0 0 15px rgba(#000, .3);
+    &.-narrow {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 
     h1 {
         font-size: 24px;

@@ -11468,6 +11468,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin: 0 auto;
 }
 
+.max-w1024.-pt {
+  padding-top: 30px;
+}
+
 .clearfix:after {
   content: '';
   display: table;
@@ -11570,6 +11574,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   color: #7f8c8d;
 }
 
+.section {
+  padding: 0;
+}
+
 .section-heading {
   background-color: #f4f3f3;
   text-align: center;
@@ -11582,20 +11590,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-size: 18px;
   font-style: italic;
   text-align: center;
+  padding: 15px 0;
 }
 
-.content {
-  padding: 30px 0 0;
+.section-subheading p {
+  margin: 0;
 }
 
-.content h2 {
-  margin: 0 0 20px;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.content-header {
-  padding: 0 0 20px;
+.content-top-panel {
+  padding: 0 0 30px;
 }
 
 .single-block {
@@ -11604,7 +11607,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 0 0 100px;
 }
 
-.content-single {
+.content {
   max-width: 800px;
   margin: 0 auto;
   background-color: #fff;
@@ -11613,7 +11616,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.content-single h1 {
+.content.-narrow {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.content h1 {
   font-size: 24px;
   line-height: 1.1;
   font-weight: bold;
@@ -11621,27 +11629,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   text-align: center;
 }
 
-.content-single h2 {
+.content h2 {
   font-size: 20px;
   line-height: 1.1;
   margin: 0 0 15px;
   font-weight: bold;
 }
 
-.content-single .subheading {
+.content .subheading {
   margin: 0 0 25px;
 }
 
-.content-single .-text {
+.content .-text {
   padding: 15px 0;
 }
 
-.content-single .-location {
+.content .-location {
   margin: 0 -50px;
   padding: 35px 0;
 }
 
-.content-single .-additional .-label {
+.content .-additional .-label {
   text-transform: uppercase;
   color: #7f8c8d;
   margin: 0 0 15px;
@@ -11924,6 +11932,10 @@ hr {
   padding: 10px 15px 8px;
 }
 
+.btn:hover, .btn-large:hover, .btn:focus, .btn-large:focus, .btn:focus:active, .btn-large:focus:active, .btn:active, .btn-large:active {
+  outline: none;
+}
+
 .btn + .btn, .btn-large + .btn, .btn + .btn-large, .btn-large + .btn-large {
   margin: 0 0 0 10px;
 }
@@ -12089,6 +12101,18 @@ hr {
   border-color: transparent transparent #fff transparent;
 }
 
+.select-wrapper.-white {
+  color: #fff;
+}
+
+.select-wrapper.-white input.select-dropdown {
+  border-color: #fff;
+}
+
+.select-wrapper.-white span.caret {
+  color: #fff;
+}
+
 .select-custom input.select-dropdown {
   border-color: #fff;
   color: #fff;
@@ -12180,6 +12204,10 @@ textarea.form-control {
   padding: 15px;
 }
 
+textarea.form-control:focus {
+  outline: none;
+}
+
 .form-feedback {
   text-align: left;
 }
@@ -12196,7 +12224,7 @@ textarea.form-control {
 }
 
 .form-feedback .btn, .form-feedback .btn-large {
-  width: 50%;
+  width: 300px;
 }
 
 .datepicker-wrapper {
@@ -12243,6 +12271,10 @@ textarea.form-control {
   margin: 0;
   font-size: 12px;
   color: #000;
+}
+
+.list-default li > a.active {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .modal-overlay {
@@ -12298,11 +12330,6 @@ textarea.form-control {
   max-width: 800px;
   max-height: none;
   padding: 0;
-}
-
-.modal-default .modal-content.-feedback {
-  padding: 45px 90px;
-  text-align: center;
 }
 
 .nav-pills {
@@ -12441,6 +12468,12 @@ nav .nav-wrapper i {
 .navbar-nav .btn i, .navbar-nav .btn-large i {
   font-size: 16px;
   line-height: 1;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 h4 {

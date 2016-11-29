@@ -11,8 +11,8 @@
 <body>
 <header class="header">
 	<ul id="userSettings" class="dropdown-content list-default arrow-top">
-		<li><a href="#modalSettings">Settings</a></li>
-		<li><a href="#modalFeedback">Feedback</a></li>
+		<li><a href="/settings.html">Settings</a></li>
+		<li><a href="/feedback.html">Feedback</a></li>
 		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
@@ -39,155 +39,23 @@
 		</nav>
 	</div>
 </header>
-
-<!--Modal Settings menu-item-->
-<div id="modalSettings" class="modal modal-default">
-	<form action="#?" class="modal-content form-custom">
-		<div class="row">
-			<div class="col s3">
-				<label for="">Email:</label>
-			</div>
-			<div class="col s4">
-				<input type="text" class="form-control">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3">
-				<label for="">New password:</label>
-			</div>
-			<div class="col s4">
-				<input type="text" class="form-control">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3">
-				<label for="">Confirm new password:</label>
-			</div>
-			<div class="col s4">
-				<input type="text" class="form-control">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3">
-				<label for="">First Name:</label>
-			</div>
-			<div class="col s4">
-				<input type="text" class="form-control">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3">
-				<label for="">Last Name:</label>
-			</div>
-			<div class="col s4">
-				<input type="text" class="form-control">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3">
-				<label for="">Post Code:</label>
-			</div>
-			<div class="col s4">
-				<input type="text" class="form-control">
-			</div>
-			<div class="col s4">
-				<a href="javascript:void(0);" class="waves-effect waves-light btn -primary">Add more postcodes</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3">
-				<label for="">Teacher Number:</label>
-			</div>
-			<div class="col s4">
-				<input type="text" class="form-control">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3"><label>Role:</label></div>
-			<div class="col s4">
-				<select name="" id="">
-					<option value="value1">Value 1</option>
-					<option value="value2">Value 2</option>
-					<option value="value3">Value 3</option>
-					<option value="value4">Value 4</option>
-					<option value="value5">Value 5</option>
-				</select>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3"><label>Subject:</label></div>
-			<div class="col s4">
-				<select name="" id="">
-					<option value="value1">Value 1</option>
-					<option value="value2">Value 2</option>
-					<option value="value3">Value 3</option>
-					<option value="value4">Value 4</option>
-					<option value="value5">Value 5</option>
-				</select>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3"><label>Salary:</label></div>
-			<div class="col s4">
-				<select name="" id="">
-					<option value="value1">Value 1</option>
-					<option value="value2">Value 2</option>
-					<option value="value3">Value 3</option>
-					<option value="value4">Value 4</option>
-					<option value="value5">Value 5</option>
-				</select>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3"><label>Distance from you:</label></div>
-			<div class="col s4">
-				<select name="" id="">
-					<option value="value1">Value 1</option>
-					<option value="value2">Value 2</option>
-					<option value="value3">Value 3</option>
-					<option value="value4">Value 4</option>
-					<option value="value5">Value 5</option>
-				</select>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s3">
-				<label for="">Available from:</label>
-			</div>
-			<div class="col s4 datepicker-wrapper">
-				<input type="date" class="datepicker form-control">
-				<i class="fa fa-calendar-o"></i>
-			</div>
-		</div>
-	</form>
-</div> <!--Modal Settings end-->
-
-<!--Modal feedback menu-item-->
-<div id="modalFeedback" class="modal modal-default">
-	<div class="modal-content -feedback">
-		<h4>Because your feedback matters...</h4>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo perferendis laudantium, quas earum eligendi amet totam, ullam beatae debitis possimus architecto ex odio mollitia placeat. Nobis amet, dicta molestiae sit libero, mollitia. Numquam ipsum, molestias laudantium voluptatem a dicta labore asperiores deleniti, dolor, qui, hic. Eligendi alias eos quidem? Dicta!</p>
-		<form action="#?" class="form-feedback">
-			<label for="textareaFeedback">Your feedback:</label>
-			<textarea id="textareaFeedback" class="form-control"></textarea>
-			<div class="center-align">
-				<input type="submit" class="waves-effect waves-light btn -primary -inverse" value="SEND">
-			</div>
-		</form>
-	</div>
-</div> <!--Modal feedback end-->
-
 <main class="main">
 	<div class="container">
-		<ul id="dropdown2" class="dropdown-content">
-			<li><a href="#!">one</a></li>
-			<li><a href="#!">two</a></li>
-		</ul>
 		<div class="main-top">
 			<div class="max-w1024">
 				<div class="-header flex sb aic">
 					<span class="-description">My overall performance</span>
-					<a class="dropdown-button btn -white" href="#!" data-activates="dropdown2"><span>Last 30 days</span> <i class="material-icons">keyboard_arrow_down</i></a>
+					<a class="dropdown-button btn -white" href="#!" data-activates="dropdown2">
+						<span>Last 30 days</span>
+						<i class="material-icons">keyboard_arrow_down</i>
+					</a>
+					<select id="sortByDays" class="-white">
+						<option value="" disabled selected>Please Select</option>
+						<option value="last30days">Last 30 days</option>
+						<option value="last20days">Last 20 days</option>
+						<option value="last10days">Last 10 days</option>
+						<option value="last5days">Last 5 days</option>
+					</select>
 				</div>
 				<div class="-body flex sb">
 					<div class="-item">
@@ -213,10 +81,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="content max-w1024">
-			<div class="clearfix content-header">
+		<div class="max-w1024 -pt">
+			<div class="clearfix content-top-panel">
 				<div class="right">
 					<select name="sort" id="sortId">
+						<option value="" disabled selected>Please Select</option>
 						<option value="mostRecent">Sort by Most Recent</option>
 						<option value="colsingDate">Sort by Closing Date</option>
 					</select>

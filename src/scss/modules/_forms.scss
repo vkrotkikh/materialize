@@ -26,7 +26,6 @@
     }
     .dropdown-content {
         top: 108% !important;
-        // display: block !important;
         box-shadow: 0 0 20px rgba(#000, .2);
         padding: 10px 0 5px;
         overflow: visible;
@@ -66,6 +65,17 @@
             &:before {
 
             }
+        }
+    }
+
+    &.-white {
+        color: #fff;
+
+        input.select-dropdown {
+            border-color: #fff;
+        }
+        span.caret {
+            color: #fff;
         }
     }
 }
@@ -167,6 +177,10 @@ textarea.form-control {
     height: 230px;
     border-radius: 15px;
     padding: 15px;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .form-feedback {
@@ -184,7 +198,7 @@ textarea.form-control {
     }
 
     .btn {
-        width: 50%;
+        width: 300px;
     }
 }
 
