@@ -1,0 +1,16 @@
+.panel {
+	.left,
+	.right {
+		float: none !important;
+	}
+	.right {
+		margin: 10px 0 0;
+		p:not(.-date) {
+			margin: 0;
+		}
+	}
+	.-date {
+		text-align: left;
+		margin-bottom: 5px;
+	}
+}

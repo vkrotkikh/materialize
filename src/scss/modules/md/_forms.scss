@@ -1,0 +1,12 @@
+.datepicker-wrapper {
+	.fa {
+		color: #eee;
+	}
+}
+.form-custom {
+	&.-cv-edit {
+		.datepicker {
+			padding: 7px 10px;
+		}
+	}
+}

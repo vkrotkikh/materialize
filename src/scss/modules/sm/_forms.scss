@@ -1,0 +1,23 @@
+.form-custom {
+	&.-cv-edit {
+		label {
+			margin: 7px 10px;
+		}
+	}
+}
+
+.form-group {
+	.right-align {
+		text-align: left;
+	}
+	label {
+		margin: 7px 10px;
+	}
+	.col-additional {
+		text-align: center;
+	}
+
+	.btn {
+		margin: 10px 0;
+	}
+}

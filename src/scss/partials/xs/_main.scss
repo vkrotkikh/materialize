@@ -1,0 +1,61 @@
+.main-top {
+	.-header {
+		display: block;
+		padding: 0 0 10px;
+
+		.-description {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+
+	.-body {
+		.select-custom {
+			flex-basis: 100%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.-item {
+		flex-basis: 100%;
+		padding: 5px;
+		margin: 10px 0;
+	}
+}
+
+.content {
+	&-top {
+		padding: 0 0 10px;
+
+		.right {
+			float: none !important;
+
+			&.pr15 {
+				padding-right: 0;
+			}
+		}
+		h2 {
+			margin: 0 0 10px;
+		}
+		.view-counter {
+			display: block;
+			margin: 0 0 10px;
+		}
+		.select-wrapper {
+			margin: 0 0 10px;
+		}
+	}
+
+	&-bottom {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.post {
+	.right {
+		float: none !important;
+		text-align: right;
+	}
+}

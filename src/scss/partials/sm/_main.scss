@@ -1,0 +1,45 @@
+.flex {
+	.col-primary,
+	.col-secondary,
+	.col-additional {
+		flex-basis: 100%;
+	}
+
+	&.form-group {
+		flex-wrap: wrap;
+	}
+}
+
+.content {
+	padding: 25px 20px;
+	border-radius: 15px;
+	&.-narrow {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.-location {
+		margin: 0 -20px;
+	}
+}
+
+.notification {
+	flex-wrap: wrap;
+	padding: 0 15px;
+
+	.half {
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.-text {
+		margin-right: 0;
+		padding: 10px 0;
+		text-align: center;
+		display: block;
+		background: none;
+	}
+	.btn {
+		width: 100%;
+	}
+}

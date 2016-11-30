@@ -2,27 +2,35 @@ $border-radius-list:            10px;
 
 .list-default {
     border-radius: $border-radius-list;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
 
-    .-head {
+    & > .-head {
         background-color: #d8d8d8;
         color: #969696;
         padding: 3px 10px;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 12px;
+        border-radius: $border-radius-list $border-radius-list 0 0;
     }
-    li {
+    & > li {
         min-height: 1px;
 
         & > a {
+            display: block;
             text-align: left;
             padding: 3px 15px;
             margin: 0;
             font-size: 12px;
             color: #000;
+            transition: background-color .2s;
 
             &.active {
                 background-color: rgba(0, 0, 0, .15);
+            }
+
+            &:hover {
+                background-color: #d8d8d8;
             }
         }
 

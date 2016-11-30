@@ -1,39 +1,51 @@
-<!--Во всей верстке к айдишникам стили не привязаны-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="all.css">
+	<link rel="stylesheet" href="../all.css">
 	<title>CV Edit</title>
 </head>
 <body>
 <header class="header">
 	<ul id="userSettings" class="dropdown-content list-default arrow-top">
-		<li><a href="/settings.html">Settings</a></li>
-		<li><a href="/feedback.html">Feedback</a></li>
+		<li><a href="/teacher/settings.html">Settings</a></li>
+		<li><a href="/teacher/feedback.html">Feedback</a></li>
 		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
 		<nav>
 			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
 				<ul class="left valign-wrapper">
-					<li class="logo-wrapper"><a href="/" class="brand-logo"><img src="./img/logo.png" alt=""></a></li>
-					<li><a href="/cv-edit.html" class="waves-effect btn -primary"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
+					<li class="logo-wrapper"><a href="/teacher/" class="brand-logo"><img src="../img/logo.png" alt=""></a></li>
+					<li><a href="/teacher/cv-edit.html" class="waves-effect btn -primary quick-btn"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
 				</ul>
 				<ul id="nav-mobile" class="right hide-on-med-and-down navbar-nav">
-					<li><a href="/">Dashboard</a></li>
-					<li><a href="/applications.html">Applications</a></li>
-					<li><a href="/saved-jobs.html">Saved jobs</a></li>
-					<li><a href="/following.html">Following</a></li>
-					<li><a href="/search.html">Search</a></li>
+					<li><a href="/teacher/">Dashboard</a></li>
+					<li><a href="/teacher/applications.html">Applications</a></li>
+					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/teacher/following.html">Following</a></li>
+					<li><a href="/teacher/search.html">Search</a></li>
 					<li>
 						<a class="dropdown-button" href="#!" data-activates="userSettings">
-							<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">
+							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
+							<i class="material-icons logo-icon">account_circle</i>
 							<i class="material-icons right">arrow_drop_down</i>
 						</a>
 					</li>
+				</ul>
+				<ul class="side-nav center-align" id="mobile-demo">
+					<li><a href="/teacher/">Dashboard</a></li>
+					<li><a href="/teacher/applications.html">Applications</a></li>
+					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/teacher/following.html">Following</a></li>
+					<li><a href="/teacher/search.html">Search</a></li>
+					<hr>
+					<li><a href="/teacher/settings.html">Settings</a></li>
+					<li><a href="/teacher/feedback.html">Feedback</a></li>
+					<li><a href="#!">Log out</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -48,37 +60,37 @@
 			<form action="javascript:void(0);" class="content form-custom -cv-edit">
 				<div class="section">
 					<div class="row">
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="fullName">Full Name:</label>
 							<input id="fullName" type="text" class="form-control">
 						</div>
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="address">Address (it won't be public):</label>
 							<input id="address" type="text" class="form-control">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="email">Email:</label>
 							<input id="email" type="text" class="form-control">
 						</div>
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="phoneNumber">Phone Number:</label>
 							<input id="phoneNumber" type="text" class="form-control">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s8">
-							<label for="personalStatement">Personal Statement:</label>
-							<textarea id="personalStatement" class="form-control"></textarea>
-						</div>
-						<div class="col s4">
+						<div class="col m4 s12 push-m8">
 							<h3>How to write a good personal statement?</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere suscipit voluptates inventore omnis, molestiae dolorum necessitatibus culpa atque, id ducimus!</p>
 						</div>
+						<div class="col m8 s12 pull-m4">
+							<label for="personalStatement">Personal Statement:</label>
+							<textarea id="personalStatement" class="form-control"></textarea>
+						</div>
 					</div>
 					<div class="row">
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="yearsOfXP">Years of experience:</label>
 							<select name="yearsOfXP">
 								<option value="" selected disabled>Please select</option>
@@ -89,13 +101,13 @@
 								<option value="5">5</option>
 							</select>
 						</div>
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="teacherReference">Teacher Reference Number:</label>
 							<input id="teacherReference" type="text" class="form-control">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="subSpecial">Subject specialisations:</label>
 							<select name="subSpecial">
 								<option value="" selected disabled>Please select</option>
@@ -106,7 +118,7 @@
 								<option value="5">5</option>
 							</select>
 						</div>
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="seekEmploy">Reason for seeking employment:</label>
 							<select name="seekEmploy">
 								<option value="" selected disabled>Please select</option>
@@ -119,17 +131,17 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="teacherStatus">Qualified Teacher Status Number:</label>
 							<input id="teacherStatus" type="text" class="form-control">
 						</div>
-						<div class="col s6">
+						<div class="col m6 s12">
 							<label for="nationalInsurance">National Insurance Number:</label>
 							<input id="nationalInsurance" type="text" class="form-control">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s6">
+						<div class="col m6 s12">
 							<input type="checkbox" class="filled-in" id="checkNQT">
 							<label for="checkNQT">I am an NQT</label>
 						</div>
@@ -148,24 +160,24 @@
 					<!--Контент с макета 15. My CV - Ready To Add-->
 					<div class="js-add-experience">
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="xpJotTitle">Job Title:</label>
 								<input id="xpJotTitle" type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="xpSchoolOrganiz">School Organization:</label>
 								<input id="xpSchoolOrganiz" type="text" class="form-control">
 							</div>
-							<div class="col s3">
+							<div class="col m3 s6">
 								<label for="dateFrom">From:</label>
 								<div class="datepicker-wrapper">
 									<input type="date" class="datepicker form-control" placeholder="Select date">
 									<i class="fa fa-calendar-o"></i>
 								</div>
 							</div>
-							<div class="col s3">
+							<div class="col m3 s6">
 								<label for="dateTo">To:</label>
 								<div class="datepicker-wrapper">
 									<input type="date" class="datepicker form-control" placeholder="Select date">
@@ -174,17 +186,17 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="xpClassThought">Classes Thought:</label>
 								<input id="xpClassThought" type="text" class="form-control">
 							</div>
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="xpResponsHeld">Responsibilities held:</label>
 								<input id="xpResponsHeld" type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s8">
+							<div class="col m8 s12">
 								<label for="xpDescription">Description:</label>
 								<textarea id="xpDescription" class="form-control" placeholder="Please provide dates and reasons"></textarea>
 							</div>
@@ -226,18 +238,18 @@
 					<!--Контент с макета 15. My CV - Ready To Add-->
 					<div class="js-add-education">
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="institution">Institution:</label>
 								<input id="institution" type="text" class="form-control">
 							</div>
-							<div class="col s3">
+							<div class="col m3 s12">
 								<label for="dateFrom">From:</label>
 								<div class="datepicker-wrapper">
 									<input type="date" class="datepicker form-control">
 									<i class="fa fa-calendar-o"></i>
 								</div>
 							</div>
-							<div class="col s3">
+							<div class="col m3 s12">
 								<label for="dateTo">To:</label>
 								<div class="datepicker-wrapper">
 									<input type="date" class="datepicker form-control">
@@ -246,17 +258,17 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="edfieldOfStudy">Field of Study:</label>
 								<input id="edfieldOfStudy" type="text" class="form-control">
 							</div>
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="edQualifLvl">Qualification Level:</label>
 								<input id="edQualifLvl" type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s8">
+							<div class="col m8 s12">
 								<label for="edDescription">Description:</label>
 								<textarea id="edDescription" class="form-control"></textarea>
 							</div>
@@ -298,23 +310,23 @@
 					<!--Контент с макета 15. My CV - Ready To Add-->
 					<div class="js-add-qualification">
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="qualQualification">Qualification:</label>
 								<input id="qualQualification" type="text" class="form-control">
 							</div>
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="qualLvl">Level:</label>
 								<input id="qualLvl" type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="qualAwardingBody">Awarding body:</label>
 								<input id="qualAwardingBody" type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s8">
+							<div class="col m8 s12">
 								<label for="qualDescription">Description:</label>
 								<textarea id="qualDescription" class="form-control"></textarea>
 							</div>
@@ -356,14 +368,14 @@
 					<!--Контент с макета 15. My CV - Ready To Add-->
 					<div class="js-add-gaps">
 						<div class="row">
-							<div class="col s3">
+							<div class="col m3 s6">
 								<label for="dateFrom">From:</label>
 								<div class="datepicker-wrapper">
 									<input type="date" class="datepicker form-control" placeholder="Select date">
 									<i class="fa fa-calendar-o"></i>
 								</div>
 							</div>
-							<div class="col s3">
+							<div class="col m3 s6">
 								<label for="dateTo">To:</label>
 								<div class="datepicker-wrapper">
 									<input type="date" class="datepicker form-control" placeholder="Select date">
@@ -372,7 +384,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s8">
+							<div class="col m8 s12">
 								<label for="employReason">Reason:</label>
 								<textarea id="employ" class="form-control"></textarea>
 							</div>
@@ -503,21 +515,21 @@
 					<!--Контент с макета 15. My CV - Ready To Add-->
 					<div class="js-add-reference">
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="refName">Name:</label>
 								<input id="refName" type="text" class="form-control">
 							</div>
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="refAddress">Address:</label>
 								<input id="refAddress" type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="refRelationship">Relationship:</label>
 								<input id="refRelationship" type="text" class="form-control">
 							</div>
-							<div class="col s6">
+							<div class="col m6 s12">
 								<label for="refContactDetails">Contact details:</label>
 								<input id="refContactDetails" type="text" class="form-control">
 							</div>
@@ -557,7 +569,7 @@
 						<strong>Equality monitoring</strong>
 					</div>
 					<div class="row">
-						<div class="col s3">
+						<div class="col m3 s12">
 							<label for="subSpecial">Gender:</label>
 							<select name="subSpecial">
 								<option value="" selected disabled>Please select</option>
@@ -568,14 +580,14 @@
 								<option value="5">5</option>
 							</select>
 						</div>
-						<div class="col s3">
+						<div class="col m3 s12">
 							<label for="subSpecial">Date of Birth:</label>
 							<div class="datepicker-wrapper">
 								<input type="date" class="datepicker form-control" placeholder="Select Date">
 								<i class="fa fa-calendar-o"></i>
 							</div>
 						</div>
-						<div class="col s3">
+						<div class="col m3 s12">
 							<label for="subSpecial">Ethnicity:</label>
 							<select name="subSpecial">
 								<option value="" selected disabled>Please select</option>
@@ -586,7 +598,7 @@
 								<option value="5">5</option>
 							</select>
 						</div>
-						<div class="col s3">
+						<div class="col m3 s12">
 							<label for="subSpecial">Disability:</label>
 							<select name="subSpecial">
 								<option value="" selected disabled>Please select</option>
@@ -602,13 +614,13 @@
 			</form>
 		</div>
 		<div class="content-bottom flex aic c">
-			<a href="/cv-public.html" class="waves-effect waves-light btn -primary -w200">Preview CV</a>
+			<a href="/teacher/cv-public.html" class="waves-effect waves-light btn -primary -w200">Preview CV</a>
 			<a href="javascript:void(0)" class="waves-effect waves-light btn -primary -inverse -lg">Save changes</a>
 		</div>
 	</div>
 </main>
-	<script src="./js/jquery/jquery-2.2.2.min.js"></script>
-	<script src="./js/materialize/materialize.min.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
+	<script src="../js/materialize/materialize.min.js"></script>
+	<script src="../js/main.js"></script>
 </body>
 </html>

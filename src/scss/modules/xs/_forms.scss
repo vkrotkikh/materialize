@@ -1,0 +1,15 @@
+.form-drop {
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	&:after {
+		left: 50%;
+		margin: 0 0 0 -12px;
+	}
+}
+
+.form-feedback {
+	.btn {
+		width: 100%;
+	}
+}

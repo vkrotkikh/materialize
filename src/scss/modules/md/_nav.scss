@@ -1,0 +1,31 @@
+nav {
+	.brand-logo {
+		position: absolute;
+		margin: auto 0;
+		top: 0;
+		bottom: 0;
+	}
+	
+	ul {
+		a.quick-btn {
+			margin: 15px;
+			padding: 17px 20px 15px;
+		}
+	}
+	.button-collapse {
+		height: 64px;
+
+		i {
+			line-height: 64px;
+		}
+	}
+}
+
+.nav-pills {
+	.tab {
+		a {
+			margin: 0;
+			line-height: 1.4;
+		}
+	}
+}

@@ -96,9 +96,8 @@
 }
 
 .form-drop {
+    padding: 10px;
     border-radius: 15px;
-    @extend %triangle;
-    @extend %trgl-bot;
 
     li {
         &:hover {
@@ -116,8 +115,9 @@
     padding: 5px 15px;
 
     .form-control {
+        width: 75%;
         height: 32px;
-        width: auto;
+        float: left;
         border: none;
         margin: 0;
     }
@@ -132,10 +132,11 @@
     button {
         background-color: transparent;
         box-shadow: none;
-        width: 32px;
+        width: 25%;
         height: 32px;
 
         i {
+            width: 100%;
             color: #4099ff;
             font-size: 24px;
             line-height: 32px;

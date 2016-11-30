@@ -1,0 +1,12 @@
+nav {
+	.brand-logo {
+		display: none;
+	}
+}
+.nav-dropdown {
+	position: relative;
+
+	& > li {
+		position: static;
+	}
+}

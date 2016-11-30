@@ -1,0 +1,26 @@
+.main-top {
+	.-body {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.select-custom {
+			flex-basis: 45%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.-item {
+		flex-basis: 25%;
+		margin: 10px 15px;
+	}
+	
+}
+
+.content {
+	.-location {
+		iframe {
+			width: 100% !important;
+		}
+	}
+}

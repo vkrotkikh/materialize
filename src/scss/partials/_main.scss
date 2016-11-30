@@ -8,6 +8,9 @@
     &.-pt {
         padding-top: 30px;
     }
+    &.-pb {
+        padding-bottom: 50px;
+    }
 }
 .clearfix {
     &:after {
@@ -25,15 +28,15 @@
 
     &.aic {align-items: center;}
 
-    .s3 {
+    .col-secondary {
         padding: 0 10px;
         flex-basis: 25%;
     }
-    .s4 {
+    .col-additional {
         padding: 0 10px;
         flex-basis: 33.33333%;
     }
-    .s5 {
+    .col-primary {
         padding: 0 10px;
         flex-basis: 41.66667%;
     }
@@ -187,10 +190,11 @@
 }
 
 .notification {
-    padding: 15px 30px;
+    padding: 0 30px;
 
     .btn {
         padding: 18px 49px 15px;
+        margin: 15px 0;
     }
 
     .-text {

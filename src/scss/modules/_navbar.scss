@@ -9,7 +9,8 @@ nav {
 	.brand-logo {
 		position: static;
 		height: 50px;
-		margin: 15px 0;
+		margin: 15px 0 15px 15px;
+
 		&:hover,
 		&:focus {
 			background-color: transparent;
@@ -30,6 +31,21 @@ nav {
 			height: auto;
 			color: #838383;
 			transition: color .3s;
+		}
+
+		.logo-icon {
+			font-size: 50px;
+			line-height: 1;
+		}
+	}
+
+	.button-collapse {
+		margin: 8px 15px;
+
+		i {
+			height: 100%;
+			line-height: 1;
+			font-size: 40px;
 		}
 	}
 }

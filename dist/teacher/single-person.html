@@ -1,39 +1,51 @@
-<!--Во всей верстке к айдишникам стили не привязаны-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="all.css">
+	<link rel="stylesheet" href="../all.css">
 	<title>Document</title>
 </head>
 <body>
 <header class="header">
 	<ul id="userSettings" class="dropdown-content list-default arrow-top">
-		<li><a href="/settings.html">Settings</a></li>
-		<li><a href="/feedback.html">Feedback</a></li>
+		<li><a href="/teacher/settings.html">Settings</a></li>
+		<li><a href="/teacher/feedback.html">Feedback</a></li>
 		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
 		<nav>
 			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
 				<ul class="left valign-wrapper">
-					<li class="logo-wrapper"><a href="/" class="brand-logo"><img src="./img/logo.png" alt=""></a></li>
-					<li><a href="/cv-edit.html" class="waves-effect btn -primary"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
+					<li class="logo-wrapper"><a href="/teacher/" class="brand-logo"><img src="../img/logo.png" alt=""></a></li>
+					<li><a href="/teacher/cv-edit.html" class="waves-effect btn -primary quick-btn"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
 				</ul>
 				<ul id="nav-mobile" class="right hide-on-med-and-down navbar-nav">
-					<li><a href="/">Dashboard</a></li>
-					<li><a href="/applications.html">Applications</a></li>
-					<li><a href="/saved-jobs.html">Saved jobs</a></li>
-					<li><a href="/following.html">Following</a></li>
-					<li><a href="/search.html">Search</a></li>
+					<li><a href="/teacher/">Dashboard</a></li>
+					<li><a href="/teacher/applications.html">Applications</a></li>
+					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/teacher/following.html">Following</a></li>
+					<li><a href="/teacher/search.html">Search</a></li>
 					<li>
 						<a class="dropdown-button" href="#!" data-activates="userSettings">
-							<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">
+							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
+							<i class="material-icons logo-icon">account_circle</i>
 							<i class="material-icons right">arrow_drop_down</i>
 						</a>
 					</li>
+				</ul>
+				<ul class="side-nav center-align" id="mobile-demo">
+					<li><a href="/teacher/">Dashboard</a></li>
+					<li><a href="/teacher/applications.html">Applications</a></li>
+					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/teacher/following.html">Following</a></li>
+					<li><a href="/teacher/search.html">Search</a></li>
+					<hr>
+					<li><a href="/teacher/settings.html">Settings</a></li>
+					<li><a href="/teacher/feedback.html">Feedback</a></li>
+					<li><a href="#!">Log out</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -41,7 +53,7 @@
 </header>
 <main class="main">
 	<div class="container bg-primary">
-		<div class="max-w1024 -pt">
+		<div class="max-w1024 -pt -pb">
 			<div class="content-top">
 				<button class="waves-effect waves-light btn -primary -inverse" onclick="window.history.back()">
 					<i class="material-icons">arrow_back</i>
@@ -102,7 +114,7 @@
 				</div>
 				<div class="-additional">
 					<h4 class="-label">Open vacancies</h4>
-					<a href="/single-object.html" class="panel clearfix">
+					<a href="/teacher/single-object.html" class="panel clearfix">
 						<div class="left">
 							<h4>Foundation Phase Teacher</h4>
 							<span class="-info">Wimbledon High School</span>
@@ -116,28 +128,6 @@
 		</div>
 	</div>
 	<div class="container">
-		<!-- Dropdown Structure -->
-		<ul id='notInteresing' class='dropdown-content list-default arrow-bottom'>
-			<li class="-head">Anonymous feedback</li>
-			<li><a href="#!">The salart isn't right</a></li>
-			<li><a href="#!">Too far away</a></li>
-			<li><a href="#!">Too much responsibility</a></li>
-			<li><a href="#!">Not enough responsibility</a></li>
-			<li><a href="#!">School doesn't seem a good fit</a></li>
-			<li><a href="#!">Role doesn't seem a good fit</a></li>
-			<li><a href="#!">Other</a></li>
-		</ul>
-		<ul id='sendToFriend' class='dropdown-content form-drop'>
-			<li>
-				<form action="#?">
-					<div class="input-inline">
-						<input type="text" class="form-control" placeholder="email address">
-						<button type="submit" class="btn-floating waves-effect waves-light"><i class="fa fa-paper-plane"></i></button>
-					</div>
-				</form>
-			</li>
-		</ul>
-
 		<div class="notification flex sb aic">
 			<div class="half">
 				<ul class="nav-dropdown flex">
@@ -146,12 +136,28 @@
 							<i class="material-icons">close</i>
 							<span class="-caption">Not interested</span>
 						</a>
+						<ul class="dropup-menu list-default">
+							<li class="-head">Anonymous feedback</li>
+							<li><a href="#!">The salart isn't right</a></li>
+							<li><a href="#!">Too far away</a></li>
+							<li><a href="#!">Too much responsibility</a></li>
+							<li><a href="#!">Not enough responsibility</a></li>
+							<li><a href="#!">School doesn't seem a good fit</a></li>
+							<li><a href="#!">Role doesn't seem a good fit</a></li>
+							<li><a href="#!">Other</a></li>
+						</ul>
 					</li>
 					<li>
 						<a class='dropup-button' href='#' data-activates='sendToFriend'>
 							<i class="material-icons">mail_outline</i>
 							<span class="-caption">Send to friend</span>
 						</a>
+						<form action="#?" class="dropup-menu form-drop">
+							<div class="input-inline">
+								<input type="text" class="form-control" placeholder="email address">
+								<button type="submit" class="btn-floating waves-effect waves-light"><i class="fa fa-paper-plane"></i></button>
+							</div>
+						</form>
 					</li>
 					<li>
 						<a class='dropup-button' href='javascript:void(0);'>
@@ -167,8 +173,9 @@
 		</div>
 	</div>
 </main>
-	<script src="./js/jquery/jquery-2.2.2.min.js"></script>
-	<script src="./js/materialize/materialize.min.js"></script>
-	<script src="./js/main.js"></script>
+
+	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
+	<script src="../js/materialize/materialize.min.js"></script>
+	<script src="../js/main.js"></script>
 </body>
 </html>

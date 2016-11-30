@@ -1,39 +1,51 @@
-<!--Во всей верстке к айдишникам стили не привязаны-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="all.css">
+	<link rel="stylesheet" href="../all.css">
 	<title>Document</title>
 </head>
 <body>
 <header class="header">
 	<ul id="userSettings" class="dropdown-content list-default arrow-top">
-		<li><a class="active" href="/settings.html">Settings</a></li>
-		<li><a href="/feedback.html">Feedback</a></li>
+		<li><a class="active" href="/teacher/settings.html">Settings</a></li>
+		<li><a href="/teacher/feedback.html">Feedback</a></li>
 		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
 		<nav>
 			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
 				<ul class="left valign-wrapper">
-					<li class="logo-wrapper"><a href="/" class="brand-logo"><img src="./img/logo.png" alt=""></a></li>
-					<li><a href="/cv-edit.html" class="waves-effect btn -primary"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
+					<li class="logo-wrapper"><a href="/teacher/" class="brand-logo"><img src="../img/logo.png" alt=""></a></li>
+					<li><a href="/teacher/cv-edit.html" class="waves-effect btn -primary quick-btn"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
 				</ul>
 				<ul id="nav-mobile" class="right hide-on-med-and-down navbar-nav">
-					<li><a href="/">Dashboard</a></li>
-					<li><a href="/applications.html">Applications</a></li>
-					<li><a href="/saved-jobs.html">Saved jobs</a></li>
-					<li><a href="/following.html">Following</a></li>
-					<li><a href="/search.html">Search</a></li>
+					<li><a href="/teacher/">Dashboard</a></li>
+					<li><a href="/teacher/applications.html">Applications</a></li>
+					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/teacher/following.html">Following</a></li>
+					<li><a href="/teacher/search.html">Search</a></li>
 					<li>
 						<a class="dropdown-button" href="#!" data-activates="userSettings">
-							<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">
+							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
+							<i class="material-icons logo-icon">account_circle</i>
 							<i class="material-icons right">arrow_drop_down</i>
 						</a>
 					</li>
+				</ul>
+				<ul class="side-nav center-align" id="mobile-demo">
+					<li><a href="/teacher/">Dashboard</a></li>
+					<li><a href="/teacher/applications.html">Applications</a></li>
+					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/teacher/following.html">Following</a></li>
+					<li><a href="/teacher/search.html">Search</a></li>
+					<hr>
+					<li><a href="/teacher/settings.html">Settings</a></li>
+					<li><a href="/teacher/feedback.html">Feedback</a></li>
+					<li><a href="#!">Log out</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -48,69 +60,69 @@
 			</div>
 			<form action="#?" class="content form-custom">
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Email:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<input type="text" class="form-control">
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">New password:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<input type="text" class="form-control">
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Confirm new password:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<input type="text" class="form-control">
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">First Name:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<input type="text" class="form-control">
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Last Name:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<input type="text" class="form-control">
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Post Code:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<input type="text" class="form-control">
 					</div>
-					<div class="s4">
+					<div class="col-additional">
 						<a href="javascript:void(0);" class="waves-effect waves-light btn -primary">Add more postcodes</a>
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Teacher Number:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<input type="text" class="form-control">
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Role:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<select name="" id="">
 							<option value="" disabled selected>Please Select</option>
 							<option value="value1">Value 1</option>
@@ -122,10 +134,10 @@
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Subject:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<select name="" id="">
 							<option value="" disabled selected>Please Select</option>
 							<option value="value1">Value 1</option>
@@ -137,10 +149,10 @@
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Salary:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<select name="" id="">
 							<option value="" disabled selected>Please Select</option>
 							<option value="value1">Value 1</option>
@@ -152,10 +164,10 @@
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Distance from you:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<select name="" id="">
 							<option value="" disabled selected>Please Select</option>
 							<option value="value1">Value 1</option>
@@ -167,19 +179,19 @@
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Available from:</label>
 					</div>
-					<div class="s5 datepicker-wrapper">
+					<div class="col-primary datepicker-wrapper">
 						<input type="date" class="datepicker form-control">
 						<i class="fa fa-calendar-o"></i>
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">Notify me about new jobs from schools in following:</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<span>
 							<input class="with-gap" name="radio-notify" value="Immediately" type="radio" id="notify-immediately" />
 							<label for="notify-immediately">Immediately</label>
@@ -195,10 +207,10 @@
 					</div>
 				</div>
 				<div class="flex aic form-group">
-					<div class="s3">
+					<div class="col-secondary">
 						<label for="" class="right-align">A'd like to receive information on new opportunities</label>
 					</div>
-					<div class="s5">
+					<div class="col-primary">
 						<span>
 							<input class="with-gap" name="radio-receive" value="Yes" type="radio" id="receive-confirm" />
 							<label for="receive-confirm">Yes</label>
@@ -219,8 +231,8 @@
 		</div>
 	</div>
 </main>
-	<script src="./js/jquery/jquery-2.2.2.min.js"></script>
-	<script src="./js/materialize/materialize.min.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
+	<script src="../js/materialize/materialize.min.js"></script>
+	<script src="../js/main.js"></script>
 </body>
 </html>
