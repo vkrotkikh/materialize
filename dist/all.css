@@ -11513,6 +11513,24 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
           align-items: center;
 }
 
+.flex .s3 {
+  padding: 0 10px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.flex .s4 {
+  padding: 0 10px;
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+}
+
+.flex .s5 {
+  padding: 0 10px;
+  -ms-flex-preferred-size: 41.66667%;
+      flex-basis: 41.66667%;
+}
+
 .main-nav {
   padding: 30px 0;
 }
@@ -11574,15 +11592,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   color: #7f8c8d;
 }
 
-.section {
-  padding: 0;
-}
-
 .section-heading {
   background-color: #f4f3f3;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding: 12px 0;
+  margin: 15px 0;
   color: #838383;
 }
 
@@ -11595,16 +11611,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .section-subheading p {
   margin: 0;
-}
-
-.content-top-panel {
-  padding: 0 0 30px;
-}
-
-.single-block {
-  max-width: 1010px;
-  margin: 0 auto;
-  padding: 0 0 100px;
 }
 
 .content {
@@ -11621,12 +11627,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding-right: 150px;
 }
 
+.content.-mb {
+  margin-bottom: 80px;
+}
+
+.content-top {
+  padding: 0 0 30px;
+}
+
+.content-bottom {
+  padding: 30px 0;
+}
+
 .content h1 {
   font-size: 24px;
   line-height: 1.1;
   font-weight: bold;
   margin: 0 0 10px;
-  text-align: center;
 }
 
 .content h2 {
@@ -11689,6 +11706,41 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 14px 45px 14px 0;
   background: url(img/arrow-to.png) no-repeat 100% 100%/40px 17px;
   margin-right: 20px;
+}
+
+.post {
+  padding: 15px 0;
+}
+
+.post-header {
+  padding: 0 0 15px;
+}
+
+.post-header h4 {
+  margin: 0;
+}
+
+.post-header .-caption {
+  color: #515151;
+  font-weight: bold;
+  margin: 0;
+}
+
+.post-header .-additional {
+  font-size: 12px;
+}
+
+.post-body p {
+  margin: 0 0 10px;
+}
+
+.post-body .address,
+.post-body .contact {
+  margin: 0;
+}
+
+.post-body .contact .link {
+  margin-left: 20px;
 }
 
 /* Специфические стили страницы */
@@ -11922,6 +11974,13 @@ hr {
 }
 
 /*triangle styles end*/
+.marked-text {
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(5, 179, 239, 0.2);
+}
+
 /* Модули */
 .btn, .btn-large {
   border: 1px solid transparent;
@@ -12007,6 +12066,16 @@ hr {
   box-shadow: none;
 }
 
+.btn.-lg, .-lg.btn-large {
+  width: 236px;
+  height: 55px;
+  line-height: 35px;
+}
+
+.btn.-w200, .-w200.btn-large {
+  width: 200px;
+}
+
 .dropdown-button {
   text-transform: none;
 }
@@ -12033,6 +12102,10 @@ hr {
   font-size: 40px;
   line-height: 1;
   color: #0091cf;
+}
+
+.btn-holder {
+  padding: 15px 0;
 }
 
 .select-wrapper span.caret {
@@ -12173,9 +12246,13 @@ hr {
   box-shadow: none;
 }
 
+.form-custom {
+  padding: 35px;
+}
+
 .form-custom .form-control {
-  border: 1px solid #838383;
-  padding: 8px 15px;
+  border: 1px solid #d8d8d8;
+  padding: 10px 15px;
   border-radius: 25px;
   height: auto;
   box-sizing: border-box;
@@ -12186,6 +12263,17 @@ hr {
   outline: none;
 }
 
+.form-custom .select-wrapper input.select-dropdown {
+  border-color: #d8d8d8;
+  height: 40px;
+  line-height: 1;
+}
+
+.form-custom span.caret,
+.form-custom .fa {
+  color: #d8d8d8;
+}
+
 .form-custom input[type=text].form-control:focus {
   box-shadow: none;
   border-color: #838383;
@@ -12193,8 +12281,84 @@ hr {
 
 .form-custom label {
   display: block;
-  text-align: right;
-  padding: 9px 0;
+  color: #515151;
+}
+
+.form-custom .with-gap + label {
+  padding: 0 0 0 30px;
+}
+
+.form-custom [type="radio"]:checked + label:after,
+.form-custom [type="radio"].with-gap:checked + label:before,
+.form-custom [type="radio"].with-gap:checked + label:after {
+  border-color: #4099ff;
+}
+
+.form-custom [type="radio"]:checked + label:after,
+.form-custom [type="radio"].with-gap:checked + label:after {
+  background-color: #4099ff;
+}
+
+.form-custom [type="radio"]:checked + label {
+  color: #4099ff;
+}
+
+.form-custom.-cv-edit label {
+  margin: 0 0 10px 10px;
+}
+
+.form-custom.-cv-edit textarea.form-control {
+  border-radius: 10px;
+  min-height: 135px;
+}
+
+.form-custom.-cv-edit h3 {
+  font-size: 24px;
+  margin: 28px 0 15px;
+}
+
+.form-custom.-cv-edit h5 {
+  font-size: 0.8rem;
+  margin: 0 0 10px 10px;
+}
+
+.form-custom.-cv-edit p {
+  font-size: 14px;
+}
+
+.form-custom.-cv-edit .form-control {
+  font-size: 14px;
+  color: #515151;
+}
+
+.form-custom.-cv-edit .form-control::-webkit-input-placeholder {
+  color: #515151;
+}
+
+.form-custom.-cv-edit .form-control::-moz-placeholder {
+  color: #515151;
+}
+
+.form-custom.-cv-edit .form-control:-ms-input-placeholder {
+  color: #515151;
+}
+
+.form-custom.-cv-edit .datepicker-wrapper .fa {
+  right: 12px;
+  color: #515151;
+}
+
+.form-custom.-cv-edit .datepicker {
+  padding-right: 20px;
+  padding-left: 12px;
+}
+
+.form-custom.-cv-edit .btn, .form-custom.-cv-edit .btn-large {
+  width: 200px;
+}
+
+.form-group {
+  padding: 0 0 15px;
 }
 
 textarea.form-control {
@@ -12234,7 +12398,8 @@ textarea.form-control:focus {
 .datepicker-wrapper .fa {
   position: absolute;
   right: 25px;
-  top: 10px;
+  top: 50%;
+  margin-top: -8px;
   pointer-events: none;
 }
 
@@ -12324,6 +12489,10 @@ textarea.form-control:focus {
 
 .modal.-custom p {
   margin: 0 0 10px;
+}
+
+.modal .modal-footer .btn, .modal .modal-footer .btn-large {
+  margin: 6px 10px;
 }
 
 .modal-default {

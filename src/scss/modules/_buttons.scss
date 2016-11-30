@@ -77,11 +77,21 @@
 		background-color: transparent;
 		color: #fff;
 		border-color: #fff;
-		
+
 		&:hover,
 		&:focus {
 			box-shadow: none;
 		}
+	}
+
+	&.-lg {
+		width: 236px;
+		height: 55px;
+		line-height: 35px;
+	}
+
+	&.-w200 {
+		width: 200px;
 	}
 }
 
@@ -112,4 +122,8 @@
 		line-height: 1;
 		color: #0091cf;
 	}
+}
+
+.btn-holder {
+	padding: 15px 0;
 }

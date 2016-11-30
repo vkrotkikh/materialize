@@ -1,0 +1,614 @@
+<!--Во всей верстке к айдишникам стили не привязаны-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="all.css">
+	<title>CV Edit</title>
+</head>
+<body>
+<header class="header">
+	<ul id="userSettings" class="dropdown-content list-default arrow-top">
+		<li><a href="/settings.html">Settings</a></li>
+		<li><a href="/feedback.html">Feedback</a></li>
+		<li><a href="#!">Log out</a></li>
+	</ul>
+	<div class="container">
+		<nav>
+			<div class="nav-wrapper">
+				<ul class="left valign-wrapper">
+					<li class="logo-wrapper"><a href="/" class="brand-logo"><img src="./img/logo.png" alt=""></a></li>
+					<li><a href="/cv-edit.html" class="waves-effect btn -primary"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
+				</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down navbar-nav">
+					<li><a href="/">Dashboard</a></li>
+					<li><a href="/applications.html">Applications</a></li>
+					<li><a href="/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/following.html">Following</a></li>
+					<li><a href="/search.html">Search</a></li>
+					<li>
+						<a class="dropdown-button" href="#!" data-activates="userSettings">
+							<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">
+							<i class="material-icons right">arrow_drop_down</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<main class="main">
+	<div class="container">
+		<div class="max-w1024 -pt">
+			<div class="content-top">
+				<h2>My CV</h2>
+			</div>
+			<form action="javascript:void(0);" class="content form-custom -cv-edit">
+				<div class="section">
+					<div class="row">
+						<div class="col s6">
+							<label for="fullName">Full Name:</label>
+							<input id="fullName" type="text" class="form-control">
+						</div>
+						<div class="col s6">
+							<label for="address">Address (it won't be public):</label>
+							<input id="address" type="text" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s6">
+							<label for="email">Email:</label>
+							<input id="email" type="text" class="form-control">
+						</div>
+						<div class="col s6">
+							<label for="phoneNumber">Phone Number:</label>
+							<input id="phoneNumber" type="text" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s8">
+							<label for="personalStatement">Personal Statement:</label>
+							<textarea id="personalStatement" class="form-control"></textarea>
+						</div>
+						<div class="col s4">
+							<h3>How to write a good personal statement?</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere suscipit voluptates inventore omnis, molestiae dolorum necessitatibus culpa atque, id ducimus!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s6">
+							<label for="yearsOfXP">Years of experience:</label>
+							<select name="yearsOfXP">
+								<option value="" selected disabled>Please select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<div class="col s6">
+							<label for="teacherReference">Teacher Reference Number:</label>
+							<input id="teacherReference" type="text" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s6">
+							<label for="subSpecial">Subject specialisations:</label>
+							<select name="subSpecial">
+								<option value="" selected disabled>Please select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<div class="col s6">
+							<label for="seekEmploy">Reason for seeking employment:</label>
+							<select name="seekEmploy">
+								<option value="" selected disabled>Please select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s6">
+							<label for="teacherStatus">Qualified Teacher Status Number:</label>
+							<input id="teacherStatus" type="text" class="form-control">
+						</div>
+						<div class="col s6">
+							<label for="nationalInsurance">National Insurance Number:</label>
+							<input id="nationalInsurance" type="text" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s6">
+							<input type="checkbox" class="filled-in" id="checkNQT">
+							<label for="checkNQT">I am an NQT</label>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-heading">
+						<strong>Experience</strong>
+					</div>
+
+					<!--Кнопка с макета 14. My CV - Empty-->
+					<div class="center-align btn-holder">
+						<a href="javascript:void(0)" class="waves-effect waves-light btn -primary -w200">Add experience</a>
+					</div>
+
+					<!--Контент с макета 15. My CV - Ready To Add-->
+					<div class="js-add-experience">
+						<div class="row">
+							<div class="col s6">
+								<label for="xpJotTitle">Job Title:</label>
+								<input id="xpJotTitle" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<label for="xpSchoolOrganiz">School Organization:</label>
+								<input id="xpSchoolOrganiz" type="text" class="form-control">
+							</div>
+							<div class="col s3">
+								<label for="dateFrom">From:</label>
+								<div class="datepicker-wrapper">
+									<input type="date" class="datepicker form-control" placeholder="Select date">
+									<i class="fa fa-calendar-o"></i>
+								</div>
+							</div>
+							<div class="col s3">
+								<label for="dateTo">To:</label>
+								<div class="datepicker-wrapper">
+									<input type="date" class="datepicker form-control" placeholder="Select date">
+									<i class="fa fa-calendar-o"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<label for="xpClassThought">Classes Thought:</label>
+								<input id="xpClassThought" type="text" class="form-control">
+							</div>
+							<div class="col s6">
+								<label for="xpResponsHeld">Responsibilities held:</label>
+								<input id="xpResponsHeld" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s8">
+								<label for="xpDescription">Description:</label>
+								<textarea id="xpDescription" class="form-control" placeholder="Please provide dates and reasons"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 center-align">
+								<button type="button" class="waves-effect waves-light btn -primary -inverse">Save</button>
+							</div>
+						</div>
+					</div>
+
+					<!--Контент с макета 16. My CV - Added-->
+					<div class="js-added-experience">
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional">Dec 2009 - Present (6 years 11 months)</span>
+								</div>
+								<h4>Science Teacher</h4>
+								<p class="-caption">Ashford Park Primary School</p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-heading">
+						<strong>Education</strong>
+					</div>
+
+					<!--Кнопка с макета 14. My CV - Empty-->
+					<div class="center-align btn-holder">
+						<a href="javascript:void(0)" class="waves-effect waves-light btn -primary -w200">Add education</a>
+					</div>
+
+					<!--Контент с макета 15. My CV - Ready To Add-->
+					<div class="js-add-education">
+						<div class="row">
+							<div class="col s6">
+								<label for="institution">Institution:</label>
+								<input id="institution" type="text" class="form-control">
+							</div>
+							<div class="col s3">
+								<label for="dateFrom">From:</label>
+								<div class="datepicker-wrapper">
+									<input type="date" class="datepicker form-control">
+									<i class="fa fa-calendar-o"></i>
+								</div>
+							</div>
+							<div class="col s3">
+								<label for="dateTo">To:</label>
+								<div class="datepicker-wrapper">
+									<input type="date" class="datepicker form-control">
+									<i class="fa fa-calendar-o"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<label for="edfieldOfStudy">Field of Study:</label>
+								<input id="edfieldOfStudy" type="text" class="form-control">
+							</div>
+							<div class="col s6">
+								<label for="edQualifLvl">Qualification Level:</label>
+								<input id="edQualifLvl" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s8">
+								<label for="edDescription">Description:</label>
+								<textarea id="edDescription" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 center-align">
+								<button type="button" class="waves-effect waves-light btn -primary -inverse">Save</button>
+							</div>
+						</div>
+					</div>
+
+					<!--Контент с макета 16. My CV - Added-->
+					<div class="js-added-education">
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional">Dec 2009 - Present (6 years 11 months)</span>
+								</div>
+								<h4>MSc Biophysics</h4>
+								<p class="-caption">The University of Manchester</p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-heading">
+						<strong>Qualification</strong>
+					</div>
+
+					<!--Кнопка с макета 14. My CV - Empty-->
+					<div class="center-align btn-holder">
+						<a href="javascript:void(0)" class="waves-effect waves-light btn -primary -w200">Add qualification</a>
+					</div>
+
+					<!--Контент с макета 15. My CV - Ready To Add-->
+					<div class="js-add-qualification">
+						<div class="row">
+							<div class="col s6">
+								<label for="qualQualification">Qualification:</label>
+								<input id="qualQualification" type="text" class="form-control">
+							</div>
+							<div class="col s6">
+								<label for="qualLvl">Level:</label>
+								<input id="qualLvl" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<label for="qualAwardingBody">Awarding body:</label>
+								<input id="qualAwardingBody" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s8">
+								<label for="qualDescription">Description:</label>
+								<textarea id="qualDescription" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 center-align">
+								<button type="button" class="waves-effect waves-light btn -primary -inverse">Save</button>
+							</div>
+						</div>
+					</div>
+
+					<!--Контент с макета 16. My CV - Added-->
+					<div class="js-added-qualification">
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional">Qualification Level</span>
+								</div>
+								<h4>Sample Qualification</h4>
+								<p class="-caption">Institution Name</p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-heading">
+						<strong>Gaps of employment</strong>
+					</div>
+
+					<!--Кнопка с макета 14. My CV - Empty-->
+					<div class="center-align btn-holder">
+						<a href="javascript:void(0)" class="waves-effect waves-light btn -primary -w200">Add gap period</a>
+					</div>
+
+					<!--Контент с макета 15. My CV - Ready To Add-->
+					<div class="js-add-gaps">
+						<div class="row">
+							<div class="col s3">
+								<label for="dateFrom">From:</label>
+								<div class="datepicker-wrapper">
+									<input type="date" class="datepicker form-control" placeholder="Select date">
+									<i class="fa fa-calendar-o"></i>
+								</div>
+							</div>
+							<div class="col s3">
+								<label for="dateTo">To:</label>
+								<div class="datepicker-wrapper">
+									<input type="date" class="datepicker form-control" placeholder="Select date">
+									<i class="fa fa-calendar-o"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s8">
+								<label for="employReason">Reason:</label>
+								<textarea id="employ" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 center-align">
+								<button type="button" class="waves-effect waves-light btn -primary -inverse">Save</button>
+							</div>
+						</div>
+					</div>
+
+					<!--Контент с макета 16. My CV - Added-->
+					<div class="js-added-qualification">
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional"></span>
+								</div>
+								<h4>Dec 2009 - Feb 2011</h4>
+								<p class="-caption"></p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-heading">
+						<strong>Other</strong>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<h5>Eligible to work in the UK:</h5>
+							<span>
+								<input class="with-gap" name="eligibleToWork" type="radio" id="eligibleNo" checked>
+								<label for="eligibleNo">No</label>
+							</span>
+							<span>
+								<input class="with-gap" name="eligibleToWork" type="radio" id="eligibleYes">
+								<label for="eligibleYes">Yes</label>
+							</span>
+						</div>
+						<div class="col s9 offset-s1 js-showOnYes">
+							<label for="provideAdditionalInfo">Please provide additional info:</label>
+							<textarea id="provideAdditionalInfo" class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<h5>Criminal Convictions</h5>
+							<span>
+								<input class="with-gap" name="criminalConv" type="radio" id="criminalConvNo" checked>
+								<label for="criminalConvNo">No</label>
+							</span>
+							<span>
+								<input class="with-gap" name="criminalConv" type="radio" id="criminalConvYes">
+								<label for="criminalConvYes">Yes</label>
+							</span>
+						</div>
+						<div class="col s9 offset-s1 js-showOnYes">
+							<p class="marked-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ea modi nobis quae necessitatibus voluptatum odio repudiandae alias dolores voluptatibus?</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<h5>Membership of professional organization:</h5>
+							<span>
+								<input class="with-gap" name="profMember" type="radio" id="profMemberNo" checked>
+								<label for="profMemberNo">No</label>
+							</span>
+							<span>
+								<input class="with-gap" name="profMember" type="radio" id="profMemberYes">
+								<label for="profMemberYes">Yes</label>
+							</span>
+						</div>
+						<div class="col s9 offset-s1 js-showOnYes">
+							<label for="provideAdditionalInfo">Please provide additional info:</label>
+							<textarea id="provideAdditionalInfo" class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<h5>Barred from working with children list:</h5>
+							<span>
+								<input class="with-gap" name="workWithChildren" type="radio" id="workWithChildrenNo" checked>
+								<label for="workWithChildrenNo">No</label>
+							</span>
+							<span>
+								<input class="with-gap" name="workWithChildren" type="radio" id="workWithChildrenYes">
+								<label for="workWithChildrenYes">Yes</label>
+							</span>
+						</div>
+						<div class="col s9 offset-s1 js-showOnYes">
+							<p class="marked-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ea modi nobis quae necessitatibus voluptatum odio repudiandae alias dolores voluptatibus?</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<h5>Relationship at school:</h5>
+							<span>
+								<input class="with-gap" name="relationshipAtSchool" type="radio" id="relationshipAtSchoolNo" checked>
+								<label for="relationshipAtSchoolNo">No</label>
+							</span>
+							<span>
+								<input class="with-gap" name="relationshipAtSchool" type="radio" id="relationshipAtSchoolYes">
+								<label for="relationshipAtSchoolYes">Yes</label>
+							</span>
+						</div>
+						<div class="col s9 offset-s1 js-showOnYes">
+							<label for="provideAdditionalInfo">Please provide additional info:</label>
+							<textarea id="provideAdditionalInfo" class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-heading">
+						<strong>References</strong>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis cumque similique reprehenderit maiores magnam explicabo maxime officia dolorem amet.</p>
+
+					<!--Кнопка с макета 14. My CV - Empty-->
+					<div class="center-align btn-holder">
+						<a href="javascript:void(0)" class="waves-effect waves-light btn -primary -w200">Add reference</a>
+					</div>
+
+					<!--Контент с макета 15. My CV - Ready To Add-->
+					<div class="js-add-reference">
+						<div class="row">
+							<div class="col s6">
+								<label for="refName">Name:</label>
+								<input id="refName" type="text" class="form-control">
+							</div>
+							<div class="col s6">
+								<label for="refAddress">Address:</label>
+								<input id="refAddress" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<label for="refRelationship">Relationship:</label>
+								<input id="refRelationship" type="text" class="form-control">
+							</div>
+							<div class="col s6">
+								<label for="refContactDetails">Contact details:</label>
+								<input id="refContactDetails" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 center-align">
+								<button type="button" class="waves-effect waves-light btn -primary -inverse">Save</button>
+							</div>
+						</div>
+					</div>
+
+					<!--Контент с макета 16. My CV - Added-->
+					<div class="js-added-reference">
+						
+					</div>
+
+					<!--Контент с макета 16. My CV - Added-->
+					<div class="js-added-qualification">
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional"></span>
+								</div>
+								<h4>Simon Smith</h4>
+								<p class="-caption">Head Teacher at Wimbledon High School</p>
+							</div>
+							<div class="post-body">
+								<p class="address">62 Pelham Road, SW19 1NY, London UK</p>
+								<p class="contact">0123456789 <a class="link" href="javascript:void(0);">s.smith@wiblhighschool.gov.uk</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-heading">
+						<strong>Equality monitoring</strong>
+					</div>
+					<div class="row">
+						<div class="col s3">
+							<label for="subSpecial">Gender:</label>
+							<select name="subSpecial">
+								<option value="" selected disabled>Please select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<div class="col s3">
+							<label for="subSpecial">Date of Birth:</label>
+							<div class="datepicker-wrapper">
+								<input type="date" class="datepicker form-control" placeholder="Select Date">
+								<i class="fa fa-calendar-o"></i>
+							</div>
+						</div>
+						<div class="col s3">
+							<label for="subSpecial">Ethnicity:</label>
+							<select name="subSpecial">
+								<option value="" selected disabled>Please select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<div class="col s3">
+							<label for="subSpecial">Disability:</label>
+							<select name="subSpecial">
+								<option value="" selected disabled>Please select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="content-bottom flex aic c">
+			<a href="/cv-public.html" class="waves-effect waves-light btn -primary -w200">Preview CV</a>
+			<a href="javascript:void(0)" class="waves-effect waves-light btn -primary -inverse -lg">Save changes</a>
+		</div>
+	</div>
+</main>
+	<script src="./js/jquery/jquery-2.2.2.min.js"></script>
+	<script src="./js/materialize/materialize.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

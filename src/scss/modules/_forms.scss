@@ -148,9 +148,11 @@
     }
 }
 .form-custom {
+    padding: 35px;
+
     .form-control {
-        border: 1px solid #838383;
-        padding: 8px 15px;
+        border: 1px solid #d8d8d8;
+        padding: 10px 15px;
         border-radius: 25px;
         height: auto;
         box-sizing: border-box;
@@ -161,6 +163,17 @@
             outline: none;
         }
     }
+
+    .select-wrapper input.select-dropdown {
+        border-color: #d8d8d8;
+        height: 40px;
+        line-height: 1;
+    }
+    span.caret,
+    .fa {
+        color: #d8d8d8;
+    }
+
     input[type=text].form-control:focus {
         box-shadow: none;
         border-color: #838383;
@@ -168,10 +181,79 @@
 
     label {
         display: block;
-        text-align: right;
-        padding: 9px 0;
+        color: #515151;
+    }
+    .with-gap + label {
+        padding: 0 0 0 30px;
+    }
+
+    [type="radio"]:checked + label:after,
+    [type="radio"].with-gap:checked + label:before,
+    [type="radio"].with-gap:checked + label:after {
+        border-color: #4099ff;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"].with-gap:checked + label:after {
+        background-color: #4099ff;
+    }
+    [type="radio"]:checked + label {
+        color: #4099ff;
+    }
+
+    &.-cv-edit {
+        label {
+            margin: 0 0 10px 10px;
+        }
+        textarea.form-control {
+            border-radius: 10px;
+            min-height: 135px;
+        }
+        h3 {
+            font-size: 24px;
+            margin: 28px 0 15px;
+        }
+        h5 {
+            font-size: 0.8rem;
+            margin: 0 0 10px 10px;
+        }
+        p {
+            font-size: 14px;
+        }
+
+        .form-control {
+            font-size: 14px;
+            color: #515151;
+
+            &::-webkit-input-placeholder {
+                color: #515151;
+            }
+            &::-moz-placeholder {
+                color: #515151;
+            }
+            &:-ms-input-placeholder {
+                color: #515151;
+            }
+        }
+
+        .datepicker-wrapper .fa {
+            right: 12px;
+            color: #515151;
+        }
+        .datepicker {
+            padding-right: 20px;
+            padding-left: 12px;
+        }
+
+        .btn {
+            width: 200px;
+        }
     }
 }
+
+.form-group {
+    padding: 0 0 15px;
+}
+
 textarea.form-control {
     resize: none;
     height: 230px;
@@ -208,7 +290,8 @@ textarea.form-control {
     .fa {
         position: absolute;
         right: 25px;
-        top: 10px;
+        top: 50%;
+        margin-top: -8px;
         pointer-events: none;
     }
 }

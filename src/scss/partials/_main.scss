@@ -18,13 +18,25 @@
 }
 .flex {
     display: flex;
-
     &.sb {justify-content: space-between;}
     &.sa {justify-content: space-around;}
     &.fe {justify-content: flex-end;}
     &.c {justify-content: center;}
 
     &.aic {align-items: center;}
+
+    .s3 {
+        padding: 0 10px;
+        flex-basis: 25%;
+    }
+    .s4 {
+        padding: 0 10px;
+        flex-basis: 33.33333%;
+    }
+    .s5 {
+        padding: 0 10px;
+        flex-basis: 41.66667%;
+    }
 }
 
 .main-nav {
@@ -73,13 +85,14 @@
 }
 
 .section {
-    padding: 0;
 
     &-heading {
         background-color: #f4f3f3;
+        font-size: 14px;
         text-align: center;
         text-transform: uppercase;
-        padding: 10px 0;
+        padding: 12px 0;
+        margin: 15px 0;
         color: #838383;
     }
 
@@ -96,18 +109,6 @@
 }
 
 .content {
-    &-top-panel {
-        padding: 0 0 30px;
-    }
-}
-
-.single-block {
-    max-width: 1010px;
-    margin: 0 auto;
-    padding: 0 0 100px;
-}
-
-.content {
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -119,12 +120,23 @@
         padding-right: 150px;
     }
 
+    &.-mb {
+        margin-bottom: 80px;
+    }
+
+    &-top {
+        padding: 0 0 30px;
+    }
+
+    &-bottom {
+        padding: 30px 0;
+    }
+
     h1 {
         font-size: 24px;
         line-height: 1.1;
         font-weight: bold;
         margin: 0 0 10px;
-        text-align: center;
     }
     h2 {
         font-size: 20px;
@@ -185,5 +197,42 @@
         padding: 14px 45px 14px 0;
         background: url(img/arrow-to.png) no-repeat 100% 100% / 40px 17px;
         margin-right: 20px;
+    }
+}
+
+.post {
+    padding: 15px 0;
+
+    &-header {
+        padding: 0 0 15px;
+
+        h4 {
+            margin: 0;
+        }
+
+        .-caption {
+            color: #515151;
+            font-weight: bold;
+            margin: 0;
+        }
+        .-additional {
+            font-size: 12px;
+        }
+    }
+
+    &-body {
+        p {
+            margin: 0 0 10px;
+        }
+
+        .address,
+        .contact {
+            margin: 0;
+        }
+        .contact {
+            .link {
+                margin-left: 20px;
+            }
+        }
     }
 }
