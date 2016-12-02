@@ -59,13 +59,13 @@
 </header>
 <main class="main">	
 	<div class="container">
-		<div class="max-w1024 -pt">
+		<div class="max-w1024 -pt -pb">
 			<div class="clearfix content-top">
 				<div class="left">
 					<h2>New Job Vacancy</h2>
 				</div>
 				<div class="right">
-					<a href="javascript:void(0);" class="waves-effect waves-light btn -primary">Save as draft</a>
+					<a href="/school/foundation-phase-teacher.html" class="waves-effect waves-light btn -primary">Save as draft</a>
 					<a href="javascript:void(0);" class="waves-effect waves-light btn -primary">Cancel</a>
 				</div>
 			</div>
@@ -134,30 +134,91 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col m6 s12 flex aic sb -ml120">
-							<button type="submit" class="waves-effect waves-light btn -primary">Preview as applicant</button>
+						<div class="col m6 s12 flex aic sb">
+							<button type="submit" class="waves-effect waves-light btn -primary -ml120">Preview as applicant</button>
 						</div>
 					</div>
 				</form>
 
-				<div class="row">
-					<div class="col m5 s12">
-
+				<!--Шаблон блока Free users/Pro Members с макета 3. New Vacancy - Free-->
+				<div class="row flex flex-sm-off aic sb">
+					<div class="col m5 s12 center-align">
+						<h2 class="mt">Free users</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, necessitatibus.</p>
+						<a href="javascript:void(0);" class="waves-effect waves-light btn -primary -inverse -lg">Publish only</a>
 					</div>
-					<div class="col m7 s12">
-						<form action="#">
-							<p class="range-field">
-								<input type="range" id="test5" min="0" max="100" />
-							</p>
+					<div class="col m7 s12 bordered-left">
+						<h2 class="mt">PRO Members</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, deserunt.</p>
+						<form class="form-members" action="#">
+							<div class="flex aic sb">
+								<div class="panel-window -additional trgl-right-lg">
+									<div class="range-wrapper">
+										<label for="xpLvl">Experience level:</label>
+										<span class="range-xp-lvl-result">Unqualified</span>
+										<p class="range-field">
+											<!--Стандартный кастомизированый хтмл5 инпут-ренж-->
+											<input type="range" id="xpLvl">
+										</p>
+									</div>
+									<div class="range-wrapper">
+										<label for="livesWithin">Lives within:</label>
+										<span class="lives-within-result">10 miles</span>
+										<p class="range-field">
+											<input type="range" id="livesWithin">
+										</p>
+									</div>
+								</div>
+								<div class="stats">
+									<div class="-item small -green">
+										<span class="-count">6,784</span>
+										<span class="-description">Potencial Candidates</span>
+									</div>
+								</div>
+							</div>
+							<div class="btn-holder">
+								<a href="javascript:void(0);" class="waves-effect waves-light btn -lg">Publish and send</a>
+							</div>
 						</form>
 					</div>
 				</div>
+
+				<!--Шаблон блока Pro Members с макета 4. New Vacancy - Pro-->
+				<form class="form-members flex aic sb" action="#">
+					<div class="flex aic sb fb60p">
+						<div class="panel-window -additional trgl-right-lg">
+							<div class="range-wrapper">
+								<label for="xpLvl">Experience level:</label>
+								<span class="range-xp-lvl-result">Unqualified</span>
+								<p class="range-field">
+									<!--Стандартный кастомизированый хтмл5 инпут-ренж-->
+									<input type="range" id="xpLvl">
+								</p>
+							</div>
+							<div class="range-wrapper">
+								<label for="livesWithin">Lives within:</label>
+								<span class="lives-within-result">10 miles</span>
+								<p class="range-field">
+									<input type="range" id="livesWithin">
+								</p>
+							</div>
+						</div>
+						<div class="stats">
+							<div class="-item small -green">
+								<span class="-count">6,784</span>
+								<span class="-description">Potencial Candidates</span>
+							</div>
+						</div>
+					</div>
+					<a href="javascript:void(0);" class="waves-effect waves-light btn -lg fb35p">Publish and send</a>
+				</form>
 			</div>
 		</div>
 	</div>
 </main>
 	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
-	<script src="../js/nouislider/nouislider.min.js"></script>
+	<!--<script src="../js/nouislider/nouislider.min.js"></script>-->
+	<script src="../js/chartist/chartist.min.js"></script>
 	<script src="../js/materialize/materialize.min.js"></script>
 	<script src="../js/main.js"></script>
 </body>

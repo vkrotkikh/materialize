@@ -13,7 +13,7 @@
     h4 {
         margin: 0 0 10px;
         font-size: 20px;
-        color: #05b3ef;
+        color: map-get($pallete, primary);
     }
 
     .-date,
@@ -35,21 +35,32 @@ a.panel {
 }
 
 .panel-window {
-    background-color: rgba(#05b3ef, .1);
+    background-color: rgba(map-get($pallete, primary), .1);
     padding: 10px 15px;
-    border-radius: 4px;
+    border-radius: 10px;
 
     &.-transparent {
         background-color: transparent;
     }
 
-    & > .-heading {
-        color: #05b3ef;
-        padding: 0 0 10px;
+    &.-additional {
+        background-color: rgba(map-get($pallete, additional), .1);
+
+        &.trgl-right-lg {
+            box-shadow: none;
+            &:after {
+                border-color: transparent transparent transparent rgba(map-get($pallete, additional), .1);
+            }
+        }
     }
 
-    & > .-body {
+    &.-default {
+        background-color: rgba(#838383, .1);
+    }
 
+    & > .-heading {
+        color: map-get($pallete, primary);
+        padding: 0 0 10px;
     }
 }
 
@@ -78,11 +89,25 @@ a.panel {
     .card-action {
         .btn {
             width: 100%;
-            color: #05b3ef;
+            color: map-get($pallete, primary);
             background-color: #fff;
             padding: 17px 15px 15px;
             font-size: 16px;
             font-weight: bold;
+        }
+    }
+}
+
+.panel-comment {
+    padding: 10px 0;
+
+    & > .heading {
+        padding-bottom: 5px;
+        .link {
+            text-decoration: none;
+            &:hover {
+                color: map-get($pallete, primary-dark);
+            }
         }
     }
 }

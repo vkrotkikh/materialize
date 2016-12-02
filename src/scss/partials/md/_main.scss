@@ -35,4 +35,12 @@
 			width: 100% !important;
 		}
 	}
+
+	&-top {
+		.left,
+		.right {
+			float: none !important;
+			padding: 10px 0;
+		}
+	}
 }

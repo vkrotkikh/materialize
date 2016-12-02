@@ -1,0 +1,31 @@
+.chart-default {
+	height: 220px;
+
+	.black {
+		stroke: #000;
+		fill: #000;
+	}
+
+	.red {
+		stroke: red;
+		fill: red;
+	}
+	.green {
+		stroke: map-get($pallete, additional);
+		fill: map-get($pallete, additional);
+	}
+	.blue {
+		stroke: map-get($pallete, primary);
+		fill: map-get($pallete, primary);
+	}
+	
+	.ct-label {
+		fill: transparent; // меняет цвет текста в чарте
+	}
+}
+
+.chart-stats {
+	.-item {
+		margin: 0 auto;
+	}
+}

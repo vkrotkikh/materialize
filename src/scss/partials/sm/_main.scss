@@ -8,6 +8,10 @@
 	&.form-group {
 		flex-wrap: wrap;
 	}
+
+	&.flex-sm-off {
+		display: block;
+	}
 }
 
 .content {

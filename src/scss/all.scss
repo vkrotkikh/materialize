@@ -16,6 +16,9 @@
 /* Стили плагина nouislider */
 @import 'nouislider/nouislider';
 
+/* Стили chartist*/
+@import 'chartist/chartist';
+
 /* Генератор спрайтов */
 // @import 'sprite';
 
@@ -42,6 +45,7 @@
 @import 'modules/panel';
 @import 'modules/badge';
 @import 'modules/table';
+@import 'modules/charts';
 
 
 /* 992px до 1199px */
@@ -62,6 +66,7 @@
 	@import 'modules/lg/panel';
 	@import 'modules/lg/badge';
 	@import 'modules/lg/table';
+	@import 'modules/lg/charts';
 }
 
 /* 768px до 991px */
@@ -82,6 +87,7 @@
 	@import 'modules/md/panel';
 	@import 'modules/md/badge';
 	@import 'modules/md/table';
+	@import 'modules/md/charts';
 }
 
 /* 480px до 767px */
@@ -102,6 +108,7 @@
 	@import 'modules/sm/panel';
 	@import 'modules/sm/badge';
 	@import 'modules/sm/table';
+	@import 'modules/sm/charts';
 }
 
 /* до 480px */
@@ -122,4 +129,5 @@
 	@import 'modules/xs/panel';
 	@import 'modules/xs/badge';
 	@import 'modules/xs/table';
+	@import 'modules/xs/charts';
 }

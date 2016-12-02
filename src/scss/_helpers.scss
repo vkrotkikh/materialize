@@ -199,6 +199,25 @@ hr {
     border-color: transparent transparent #fff transparent;
   }
 }
+%trgl-right-lg {
+  &:after {
+    top: 50%;
+    margin-top: -25px;
+    left: auto;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 20px;
+    border-color: transparent transparent transparent #fff;
+  }
+}
+
+.trgl-right-lg {
+  position: relative;
+  @extend %triangle;
+  @extend %trgl-right-lg;
+}
 /*triangle styles end*/
 .marked-text {
   margin: 0;
@@ -230,4 +249,24 @@ hr {
   .link-primary {
     font-size: 14px;
   }
+}
+
+.bordered-left {
+  border-left: 1px solid #ddd;
+  &.col {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bordered-left {
+    border-left: none;
+    &.col {
+      padding-left: 0.75rem;
+    }
+  }
+}
+
+.fz20 {
+  font-size: 20px !important;
 }
