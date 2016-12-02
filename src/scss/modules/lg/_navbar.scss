@@ -1,6 +1,6 @@
 .navbar-nav {
 	& > li {
-		& > a:not(.dropdown-button) {
+		& > a:not(.dropdown-button):not(.btn) {
 			padding: 32px 10px;
 		}
 	}

@@ -16,10 +16,10 @@
 
             &.active {
                 background-color: #fff;
-                color: #0091cf;
+                color: map-get($pallete, primary-dark);
 
                 &:hover {
-                    color: #0091cf;
+                    color: map-get($pallete, primary-dark);
                 }
             }
 

@@ -27,20 +27,20 @@
 	}
 
 	&.-primary {
-		border-color: #49aae3;
+		border-color: map-get($pallete, primary);
 		background: #fff;
-		color: #49aae3;
+		color: map-get($pallete, primary);
 		box-shadow: none;
 
 		i, span {
-			color: #49aae3;
+			color: map-get($pallete, primary);
 		}
 
 		&:active,
 		&:active:focus,
 		&:hover,
 		&:focus {
-			background-color: #49aae3;
+			background-color: map-get($pallete, primary);
 			color: #fff;
 
 			i,
@@ -50,7 +50,7 @@
 		}
 
 		&.-inverse {
-			background-color: #49aae3;
+			background-color: map-get($pallete, primary);
 			color: #fff;
 
 			i,
@@ -62,12 +62,12 @@
 			&:active:focus,
 			&:hover,
 			&:focus {
-				color: #49aae3;
+				color: map-get($pallete, primary);
 				background-color: #fff;
 
 				i,
 				span {
-					color: #49aae3;
+					color: map-get($pallete, primary);
 				}
 			}
 		}

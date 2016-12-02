@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="../all.css">
-	<title>Document</title>
+	<title>School Homepage</title>
 </head>
 <body>
 <header class="header">
 	<ul id="userSettings" class="dropdown-content list-default arrow-top">
-		<li><a href="/teacher/settings.html">Settings</a></li>
-		<li><a href="/teacher/feedback.html">Feedback</a></li>
+		<li><a href="/school/settings.html">Settings</a></li>
+		<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+		<li><a href="/school/feedback.html">Feedback</a></li>
 		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
@@ -21,18 +22,18 @@
 				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
 				<ul class="left valign-wrapper">
 					<li class="logo-wrapper">
-						<a href="/teacher/" class="brand-logo">
+						<a href="/school/" class="brand-logo">
 							<img src="../img/logo.png" alt="">
 						</a>
 					</li>
-					<li><a href="/teacher/cv-edit.html" class="waves-effect btn -primary quick-btn"><i class="material-icons">add</i> <span>ADD CV</span></a></li>
+					<li>
+						<a href="/school/" class="link-primary">Wibledon high school</a>
+					</li>
 				</ul>
-				<ul id="nav-mobile" class="right hide-on-med-and-down navbar-nav">
-					<li><a class="active" href="/teacher/">Dashboard</a></li>
-					<li><a href="/teacher/applications.html">Applications</a></li>
-					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
-					<li><a href="/teacher/following.html">Following</a></li>
-					<li><a href="/teacher/search.html">Search</a></li>
+				<ul id="nav-mobile" class="right flex aic hide-on-med-and-down navbar-nav">
+					<li>
+						<a href="/school/new-job-vacancy.html" class="waves-effect btn"><i class="material-icons">add</i> <span>New Vacancy</span></a>
+					</li>
 					<li>
 						<a class="dropdown-button" href="#!" data-activates="userSettings">
 							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
@@ -42,14 +43,15 @@
 					</li>
 				</ul>
 				<ul class="side-nav center-align" id="mobile-demo">
-					<li><a class="active" href="/teacher/">Dashboard</a></li>
-					<li><a href="/teacher/applications.html">Applications</a></li>
-					<li><a href="/teacher/saved-jobs.html">Saved jobs</a></li>
-					<li><a href="/teacher/following.html">Following</a></li>
-					<li><a href="/teacher/search.html">Search</a></li>
+					<li><a class="active" href="/school/">Dashboard</a></li>
+					<li><a href="/school/applications.html">Applications</a></li>
+					<li><a href="/school/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/school/following.html">Following</a></li>
+					<li><a href="/school/search.html">Search</a></li>
 					<hr>
-					<li><a href="/teacher/settings.html">Settings</a></li>
-					<li><a href="/teacher/feedback.html">Feedback</a></li>
+					<li><a href="/school/settings.html">Settings</a></li>
+					<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+					<li><a href="/school/feedback.html">Feedback</a></li>
 					<li><a href="#!">Log out</a></li>
 				</ul>
 			</div>
@@ -60,66 +62,160 @@
 	<div class="container">
 		<div class="main-top">
 			<div class="max-w1024">
-				<div class="-header flex sb aic">
-					<span class="-description">My overall performance</span>
-					<select id="sortByDays" class="-white">
-						<option value="" disabled selected>Please Select</option>
-						<option value="last30days">Last 30 days</option>
-						<option value="last20days">Last 20 days</option>
-						<option value="last10days">Last 10 days</option>
-						<option value="last5days">Last 5 days</option>
-					</select>
-				</div>
-				<div class="-body flex sb">
-					<div class="-item">
-						<span class="-count">98</span>
-						<span class="-description">Received Vacancies</span>
+				<div class="row">
+					<div class="col m12 s12 l9">
+						<div class="-header flex sb aic">
+							<span class="-description">My overall performance</span>
+							<select id="sortByDays" class="-white">
+								<option value="" disabled selected>Please Select</option>
+								<option value="last30days">Last 30 days</option>
+								<option value="last20days">Last 20 days</option>
+								<option value="last10days">Last 10 days</option>
+								<option value="last5days">Last 5 days</option>
+							</select>
+						</div>
+						<div class="table table-custom">
+							<div class="table-head">
+								<div class="table-row">
+									<div class="table-cell c1 fb14p">Data</div>
+									<div class="table-cell c2 fb40p">Vacancy</div>
+									<div class="table-cell c3 fb13p">Received</div>
+									<div class="table-cell c4 fb20p">Shortlisted</div>
+									<div class="table-cell c5 fb13p">Status</div>
+								</div>
+							</div>
+							<div class="table-body">
+								<div class="table-row">
+									<div class="table-cell c1 fb14p">12.09.2016</div>
+									<div class="table-cell c2 fb40p">Foundation Phase Teacher</div>
+									<div class="table-cell c3 fb13p">12</div>
+									<div class="table-cell c4 fb20p">3</div>
+									<div class="table-cell c5 fb13p">Open</div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell c1 fb14p">12.09.2016</div>
+									<div class="table-cell c2 fb40p">Foundation Phase Teacher</div>
+									<div class="table-cell c3 fb13p">12</div>
+									<div class="table-cell c4 fb20p">3</div>
+									<div class="table-cell c5 fb13p">Open</div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell c1 fb14p">12.09.2016</div>
+									<div class="table-cell c2 fb40p">Foundation Phase Teacher</div>
+									<div class="table-cell c3 fb13p">12</div>
+									<div class="table-cell c4 fb20p">3</div>
+									<div class="table-cell c5 fb13p">Open</div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell c1 fb14p">12.09.2016</div>
+									<div class="table-cell c2 fb40p">Foundation Phase Teacher</div>
+									<div class="table-cell c3 fb13p">12</div>
+									<div class="table-cell c4 fb20p">3</div>
+									<div class="table-cell c5 fb13p">Open</div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell c1 fb14p">12.09.2016</div>
+									<div class="table-cell c2 fb40p">Foundation Phase Teacher</div>
+									<div class="table-cell c3 fb13p">12</div>
+									<div class="table-cell c4 fb20p">3</div>
+									<div class="table-cell c5 fb13p">Open</div>
+								</div>
+							</div>
+							<div class="table-footer flex sa stats">
+								<div class="-item small">
+									<span class="-count">98</span>
+									<span class="-description">Received</span>
+								</div>
+								<div class="-item small -green">
+									<span class="-count">24</span>
+									<span class="-description">Shortlisted</span>
+								</div>
+								<div class="-item small -blue">
+									<span class="-count">13</span>
+									<span class="-description">Interviews</span>
+								</div>
+								<div class="-item small">
+									<span class="-count">0</span>
+									<span class="-description">Hired</span>
+								</div>
+								<div class="-item small -gray">
+									<span class="-count">8</span>
+									<span class="-description">Rejected</span>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="-item -green">
-						<span class="-count">24</span>
-						<span class="-description">Submitted Applications</span>
-					</div>
-					<div class="-item -blue">
-						<span class="-count">13</span>
-						<span class="-description">Interview Invitations</span>
-					</div>
-					<div class="-item">
-						<span class="-count">0</span>
-						<span class="-description">Hired</span>
-					</div>
-					<div class="-item -gray">
-						<span class="-count">8</span>
-						<span class="-description">Rejections</span>
+					<div class="col m12 s12 l3">
+						<div class="card card-custom"> <!--Кастомные стили .card находятся в файле modules/panel-->
+							<div class="card-content white-text">
+								<span class="card-title">Wibledon High School</span>
+								<p class="address">Manisel Road, London, SW19 4AB</p>
+								<p class="contact">0123456789 <a href="javascript:void(0)" class="link">contact@example.co.uk</a></p>
+							</div>
+							<div class="card-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quo nihil ipsam veritatis magni similique voluptate neque alias illo voluptates!</p>
+							</div>
+							<div class="card-action">
+								<a href="javascript:void(0);" class="waves-effect waves-teal btn-large">View/Edit</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="max-w1024 -pt">
-			<div class="clearfix content-top">
-				<div class="right">
-					<select name="sort" id="sortId">
-						<option value="" disabled selected>Please Select</option>
-						<option value="mostRecent">Sort by Most Recent</option>
-						<option value="colsingDate">Sort by Closing Date</option>
-					</select>
-				</div>
+			<div class="clearfix content-top center-align">
+				<a class="waves-effect waves-teal btn-flat blue-text">Open</a>
+				<a class="waves-effect waves-teal btn-flat blue-text">Closed</a>
+				<a class="waves-effect waves-teal btn-flat blue-text">Button</a>
 			</div>
 			<section class="section">
-				<div class="section-heading">
-					<strong>This week</strong>
-				</div>
-				<div class="section-subheading">
-					<p>3 schools starting to looking for someone like you</p>
+				<div class="section-subheading -l">
+					<p>You have 35 open vacancies at the moment</p>
 				</div>
 
 				<!--panel - независимый компонент, который повторяется на следующих страницах-->
-				<a href="/teacher/single-person.html" class="panel clearfix">
-					<div class="left">
-						<h4>Foundation Phase Teacher</h4>
-						<span class="-info">Wimbledon High School</span>
+				<a href="/school/#!" class="panel clearfix row">
+					<div class="col l6 m7 s12">
+						<h4>Foundation Phase school <span class="new badge -custom">1 Hired</span></h4>
+						<div class="-info">
+							<ul class="list-info">
+								<li>Salary: <span>Main Scale</span></li>
+								<li>Contract: <span>Full Time</span></li>
+								<li>Start Date: <span>ASAP</span></li>
+								<li>NQTs Considered: <span>Yes</span></li>
+							</ul>
+						</div>
+						<div class="-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aliquam dolorum perspiciatis, hic veniam pariatur iure laborum consequatur deserunt et mollitia doloribus odio maiores rerum obcaecati maxime non ratione laudantium, tempore sit vel magni! Voluptas et labore culpa! Itaque, quos, cumque? Assumenda tenetur fuga, corrupti officiis itaque blanditiis delectus suscipit.</p>
+						</div>
 					</div>
-					<div class="right">
-						<p class="-date">Closing date: 12 Feb, 2017</p>
+					<div class="col l5 offset-l1 m5 s12">
+						<p class="-date right-align">Closing date: 12 Feb, 2017</p>
+						<div class="panel-window">
+							<div class="stats flex sb wrap">
+								<div class="-item x-small">
+									<span class="-count">98</span>
+									<span class="-description">Received</span>
+								</div>
+								<div class="-item x-small -green">
+									<span class="-count">24</span>
+									<span class="-description">Shortlisted</span>
+								</div>
+								<div class="-item x-small -blue">
+									<span class="-count">13</span>
+									<span class="-description">Interviews</span>
+								</div>
+								<div class="-item x-small -gray">
+									<span class="-count">8</span>
+									<span class="-description">Rejected</span>
+								</div>
+							</div>
+							<div class="btn-holder center-align">
+								<button class="waves-effect btn -primary">Performance</button>
+								<button class="waves-effect btn -primary">Applications</button>
+							</div>
+						</div>
 					</div>
 				</a> <!--Конец компонента panel-->
 

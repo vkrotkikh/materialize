@@ -1,0 +1,10 @@
+.panel-window {
+	.btn-holder {
+		.btn + .btn {
+			margin-left: 0;
+		}
+		.btn {
+			margin: 5px 0;
+		}
+	}
+}

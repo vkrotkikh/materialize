@@ -2,14 +2,16 @@
 $roboto-font-path:					'./fonts/roboto/';
 
 // Color
-$brand-color: (
-	primary: #000,
-	secondary: #666,
-	additional: #ccc
+$pallete: (
+	primary: #05b3ef,
+	primary-dark: #0091cf,
+	secondary: #0091cf,
+	additional: #00ad64,
+	default: #535353
 );
 
 $text-color:						#000;
-$link-color:						map-get($brand-color, primary);
+$link-color:						map-get($pallete, primary);
 
 
 
@@ -49,8 +51,8 @@ $grid-float-breakpoint:				$screen-md;
 
 /* Buttons */
 $btn-primary-color:					#fff;
-$btn-primary-bg: 					map-get($brand-color, primary);
-$btn-primary-border:				map-get($brand-color, primary);
+$btn-primary-bg: 					map-get($pallete, primary);
+$btn-primary-border:				map-get($pallete, primary);
 
 $grid-columns:						15;
 $grid-gutter-width:					20px;

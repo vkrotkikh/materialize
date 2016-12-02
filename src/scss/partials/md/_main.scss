@@ -9,12 +9,24 @@
 			margin-bottom: 10px;
 		}
 	}
+}
+
+.valign-wrapper {
+	height: 100%;
+}
+
+.stats {
 
 	.-item {
 		flex-basis: 25%;
 		margin: 10px 15px;
+
+		&.x-small {
+			margin: 5px 0;
+			width: 100%;
+			flex-basis: 50%;
+		}
 	}
-	
 }
 
 .content {

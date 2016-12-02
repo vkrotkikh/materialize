@@ -55,7 +55,7 @@ nav {
 
 .navbar-nav {
 	& > li {
-		& > a:not(.dropdown-button) {
+		& > a:not(.dropdown-button):not(.btn) {
 			font: 400 16px/1 'Roboto', sans-serif;
 			color: #838383;
 			text-transform: uppercase;
@@ -88,12 +88,11 @@ nav {
 	}
 
 	.btn {
-		padding: 0 15px;
-		font-size: 14px;
 
 		i {
 			font-size: 16px;
 			line-height: 1;
+			color: #fff;
 		}
 	}
 }

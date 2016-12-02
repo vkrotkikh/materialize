@@ -43,3 +43,12 @@
 		width: 100%;
 	}
 }
+
+.stats {
+
+	.-item {
+		&.x-small {
+			flex-basis: 25%;
+		}
+	}
+}

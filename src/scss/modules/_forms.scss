@@ -201,6 +201,15 @@
         color: #4099ff;
     }
 
+    .datepicker-wrapper .fa {
+        right: 12px;
+        color: #515151;
+    }
+    .datepicker {
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+
     &.-cv-edit {
         label {
             margin: 0 0 10px 10px;
@@ -236,17 +245,34 @@
             }
         }
 
-        .datepicker-wrapper .fa {
-            right: 12px;
-            color: #515151;
-        }
-        .datepicker {
-            padding-right: 20px;
-            padding-left: 12px;
-        }
-
         .btn {
             width: 200px;
+        }
+    }
+
+    &.-new-vacancy {
+        padding: 0;
+
+        label {
+            padding: 0 15px 0 0;
+        }
+
+        textarea.form-control {
+            border-radius: 10px;
+            height: 200px;
+        }
+
+        .row {
+            margin-bottom: 0;
+        }
+        .flex {
+            padding-bottom: 15px;
+        }
+        .-pb {
+            padding-bottom: 15px;
+        }
+        .-ml120 {
+            margin-left: 120px;
         }
     }
 }

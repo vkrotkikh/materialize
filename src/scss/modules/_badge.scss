@@ -3,12 +3,26 @@ span.badge {
     padding: 2px 5px;
 }
 span.badge.new {
-    background-color: #00ad64;
+    background-color: map-get($pallete, additional);
 }
 .badge.new.-primary {
-    background-color: #00b1ef;
+    background-color: map-get($pallete, primary);
 }
 
 .badge.new.-default {
     background-color: #969696;
+}
+
+span.badge.-custom {
+    background-color: #e6e4e4;
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 3px 15px;
+    border-radius: 10px;
+    vertical-align: middle;
+
+    &:after {
+        content: '';
+    }
 }

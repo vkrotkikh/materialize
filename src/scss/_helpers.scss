@@ -1,6 +1,6 @@
 /* Loading animations */
 .loading p {
-    color: #05b3ef;
+    color: map-get($pallete, primary);
     font-weight: bold;
 }
 .sk-fading-circle {
@@ -24,7 +24,7 @@
   margin: 0 auto;
   width: 10px;
   height: 10px;
-  background-color: #05b3ef;
+  background-color: map-get($pallete, primary);
   border-radius: 100%;
   -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
           animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
@@ -146,13 +146,13 @@
 }
 .text-primary {
   font-weight: bold;
-  color: #05b3ef;
+  color: map-get($pallete, primary);
   font-size: 16px;
 }
 .pr15 {padding-right: 15px;}
 
 .bg-primary {
-  background-color: #0080bd;
+  background-color: map-get($pallete, primary-dark);
 }
 .link {
   color: #05b3ef;
@@ -204,5 +204,30 @@ hr {
   margin: 0;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgba(#05b3ef, .2);
+  background-color: rgba(map-get($pallete, primary), .2);
+}
+
+.link-primary {
+  font-size: 14px;
+  font-weight: bold;
+  color: map-get($pallete, primary);
+  text-transform: uppercase;
+  transition: color .2s;
+
+  &:hover {
+    background-color: transparent;
+    color: map-get($pallete, primary-dark);
+  }
+}
+
+@media (max-width: 600px) {
+  .link-primary {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 479px) {
+  .link-primary {
+    font-size: 14px;
+  }
 }

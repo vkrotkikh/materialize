@@ -53,3 +53,11 @@ $border-radius-list:            10px;
         @extend %trgl-top;
     }
 }
+
+.list-info {
+    font-size: 12px;
+    span {
+        font-size: 14px;
+        color: #000;
+    }
+}

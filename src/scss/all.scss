@@ -13,6 +13,9 @@
 /* Стили materialize ui */
 @import 'materialize/materialize';
 
+/* Стили плагина nouislider */
+@import 'nouislider/nouislider';
+
 /* Генератор спрайтов */
 // @import 'sprite';
 
@@ -38,6 +41,7 @@
 @import 'modules/types';
 @import 'modules/panel';
 @import 'modules/badge';
+@import 'modules/table';
 
 
 /* 992px до 1199px */
@@ -57,6 +61,7 @@
 	@import 'modules/lg/types';
 	@import 'modules/lg/panel';
 	@import 'modules/lg/badge';
+	@import 'modules/lg/table';
 }
 
 /* 768px до 991px */
@@ -76,6 +81,7 @@
 	@import 'modules/md/types';
 	@import 'modules/md/panel';
 	@import 'modules/md/badge';
+	@import 'modules/md/table';
 }
 
 /* 480px до 767px */
@@ -95,6 +101,7 @@
 	@import 'modules/sm/types';
 	@import 'modules/sm/panel';
 	@import 'modules/sm/badge';
+	@import 'modules/sm/table';
 }
 
 /* до 480px */
@@ -114,4 +121,5 @@
 	@import 'modules/xs/types';
 	@import 'modules/xs/panel';
 	@import 'modules/xs/badge';
+	@import 'modules/xs/table';
 }
