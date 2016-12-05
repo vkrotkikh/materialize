@@ -1,6 +1,8 @@
 .select-wrapper {
     span.caret {
         right: 15px;
+        z-index: 1;
+        pointer-events: none;
     }
 
     &.-wider {
@@ -12,6 +14,16 @@
         & + .btn-search {
             margin-left: 10px;
             margin-right: 10px;
+        }
+    }
+    &.-mr {
+        margin-right: 20px;
+    }
+    &.-bgc-white {
+        input {
+            &.select-dropdown {
+                background-color: #fff;
+            }
         }
     }
 
@@ -169,6 +181,7 @@
         border-radius: 25px;
         height: auto;
         box-sizing: border-box;
+        background-color: #fff;
         margin: 0;
 
         &:focus,
@@ -262,7 +275,7 @@
         }
     }
 
-    &.-new-vacancy {
+    &.-inline-form {
         padding: 0;
 
         label {
@@ -295,6 +308,7 @@
 
 textarea.form-control {
     resize: none;
+    background-color: #fff;
     height: 230px;
     border-radius: 15px;
     padding: 15px;
@@ -302,6 +316,13 @@ textarea.form-control {
     &:focus {
         outline: none;
     }
+
+    &.-mr {
+        margin-right: 30px;
+    }
+
+    &.-h120 {height: 120px;}
+    &.-h320 {height: 320px;}
 }
 
 .form-feedback {

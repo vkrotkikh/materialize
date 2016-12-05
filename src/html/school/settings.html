@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../all.css">
+	<title>School Settings</title>
+</head>
+<body>
+<header class="header">
+	<ul id="userSettings" class="dropdown-content list-default arrow-top">
+		<li><a href="/school/settings.html">Settings</a></li>
+		<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+		<li><a href="/school/feedback.html">Feedback</a></li>
+		<li><a href="#!">Log out</a></li>
+	</ul>
+	<div class="container">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+				<ul class="left valign-wrapper">
+					<li class="logo-wrapper">
+						<a href="/school/" class="brand-logo">
+							<img src="../img/logo.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="/school/" class="link-primary">Wibledon high school</a>
+					</li>
+				</ul>
+				<ul id="nav-mobile" class="right flex aic hide-on-med-and-down navbar-nav">
+					<li>
+						<a href="/school/new-job-vacancy.html" class="waves-effect btn"><i class="material-icons">add</i> <span>New Vacancy</span></a>
+					</li>
+					<li>
+						<a class="dropdown-button" href="#!" data-activates="userSettings">
+							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
+							<i class="material-icons logo-icon">business</i>
+							<i class="material-icons right">arrow_drop_down</i>
+						</a>
+					</li>
+				</ul>
+				<ul class="side-nav center-align" id="mobile-demo">
+					<li><a class="active" href="/school/">Dashboard</a></li>
+					<li><a href="/school/applications.html">Applications</a></li>
+					<li><a href="/school/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/school/following.html">Following</a></li>
+					<li><a href="/school/search.html">Search</a></li>
+					<hr>
+					<li><a href="/school/settings.html">Settings</a></li>
+					<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+					<li><a href="/school/feedback.html">Feedback</a></li>
+					<li><a href="#!">Log out</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<main class="main">
+	<div class="container">
+		<div class="max-w1024 -pt -pb">
+			<div class="content-top clearfix">
+				<h2 class="left">My School Profile</h2>
+				<button class="right waves-effect waves-light btn -primary -inverse" onclick="window.history.back()">
+					<i class="material-icons">arrow_back</i>
+					<span>Back</span>
+				</button>
+			</div>
+			<div class="content">
+				<form action="#?" class="form-custom -inline-form">
+					<div class="row">
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb120">School Name:</label>
+							<input type="text" class="form-control fb100p">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb120">Tagline:</label>
+							<input type="text" class="form-control fb100p">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb120">Address:</label>
+							<input type="text" class="form-control fb100p">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb120">Phone:</label>
+							<input type="tel" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb120">Email:</label>
+							<input type="email" class="form-control fb100p">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb120">Website:</label>
+							<input type="text" class="form-control fb100p">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m10 s12 flex">
+							<label for="personalStatement" class="right-align fb120">Description:</label>
+							<textarea id="personalStatement" class="form-control fb100p"></textarea>
+						</div>
+					</div>
+					<div class="text-center flex aic c">
+						<button type="submit" class="waves-effect waves-light btn -primary">Preview as applicant</button>
+						<button type="submit" class="waves-effect waves-light btn -primary -inverse -lg">Save changes</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
+	<!--<script src="../js/chartist/chartist.min.js"></script>-->
+	<script src="../js/materialize/materialize.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

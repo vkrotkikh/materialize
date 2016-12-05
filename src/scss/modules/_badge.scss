@@ -1,6 +1,15 @@
 span.badge {
     float: none;
     padding: 2px 5px;
+    
+    &.-lg {
+        font-size: 13px;
+        padding: 4px 7px;
+    }
+
+    &.m0 {
+        margin: 0;
+    }
 }
 span.badge.new {
     background-color: map-get($pallete, additional);

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../all.css">
+	<title>FPT Received</title>
+</head>
+<body>
+<header class="header">
+	<ul id="userSettings" class="dropdown-content list-default arrow-top">
+		<li><a href="/school/settings.html">Settings</a></li>
+		<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+		<li><a href="/school/feedback.html">Feedback</a></li>
+		<li><a href="#!">Log out</a></li>
+	</ul>
+	<div class="container">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+				<ul class="left valign-wrapper">
+					<li class="logo-wrapper">
+						<a href="/school/" class="brand-logo">
+							<img src="../img/logo.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="/school/" class="link-primary">Wibledon high school</a>
+					</li>
+				</ul>
+				<ul id="nav-mobile" class="right flex aic hide-on-med-and-down navbar-nav">
+					<li>
+						<a href="/school/new-job-vacancy.html" class="waves-effect btn"><i class="material-icons">add</i> <span>New Vacancy</span></a>
+					</li>
+					<li>
+						<a class="dropdown-button" href="#!" data-activates="userSettings">
+							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
+							<i class="material-icons logo-icon">business</i>
+							<i class="material-icons right">arrow_drop_down</i>
+						</a>
+					</li>
+				</ul>
+				<ul class="side-nav center-align" id="mobile-demo">
+					<li><a class="active" href="/school/">Dashboard</a></li>
+					<li><a href="/school/applications.html">Applications</a></li>
+					<li><a href="/school/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/school/following.html">Following</a></li>
+					<li><a href="/school/search.html">Search</a></li>
+					<hr>
+					<li><a href="/school/settings.html">Settings</a></li>
+					<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+					<li><a href="/school/feedback.html">Feedback</a></li>
+					<li><a href="#!">Log out</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<main class="main">
+	<div class="container">
+		<div class="max-w1024 -pt -pb">
+			<div class="content-top clearfix">
+				<div class="left flex aic">
+					<button class="waves-effect waves-light btn -primary -inverse" onclick="window.history.back()">
+						<i class="material-icons">arrow_back</i>
+						<span>Back</span>
+					</button>
+					<div class="heading-caption">
+						<h2>Foundation Phase Teacher</h2>
+						<span class="-date">Closing date: 12 Feb, 2017</span>
+					</div>
+				</div>
+				<div class="right flex aic">
+					<select name="sort" id="sortId" class="select-primary">
+						<option value="" disabled selected>Open Vacancy</option>
+						<option value="vacancy1">Vacancy 1</option>
+						<option value="vacancy2">Vacancy 2</option>
+						<option value="vacancy3">Vacancy 3</option>
+						<option value="vacancy4">Vacancy 4</option>
+					</select>
+					<a href="javascript:void(0);" class="waves-effect btn -primary -h40">Delete</a>
+				</div>
+			</div>
+			<div class="btn-holder center-align">
+				<a href="/school/fpt-performance.html" class="waves-effect waves-teal btn-flat blue-text">Performance</a>
+				<a href="/school/fpt-received.html" class="waves-effect waves-teal btn-flat blue-text">Received</a>
+				<a href="/school/fpt-shortlisted.html" class="waves-effect waves-teal btn-flat blue-text active">Shorlisted</a>
+				<a href="/school/fpt-interviews.html" class="waves-effect waves-teal btn-flat blue-text">Interviews</a>
+				<a href="/school/fpt-edit.html" class="waves-effect waves-teal btn-flat blue-text">Edit</a>
+			</div>
+			<div class="flex aib sb content-top">
+				<button id="showPanelFilter" class="waves-effect waves-teal btn -default">
+					<span>Filter Candidates</span>
+					<i class="material-icons">keyboard_arrow_down</i>
+				</button>
+				<div class="item flex ">
+					<select name="sort" id="sortId" class="select-primary">
+						<option value="" disabled selected>Open Vacancy</option>
+						<option value="vacancy1">Vacancy 1</option>
+						<option value="vacancy2">Vacancy 2</option>
+						<option value="vacancy3">Vacancy 3</option>
+						<option value="vacancy4">Vacancy 4</option>
+					</select>
+					<select name="sort" id="sortId" class="select-primary">
+						<option value="" disabled selected>Open Vacancy</option>
+						<option value="vacancy1">Vacancy 1</option>
+						<option value="vacancy2">Vacancy 2</option>
+						<option value="vacancy3">Vacancy 3</option>
+						<option value="vacancy4">Vacancy 4</option>
+					</select>
+				</div>
+			</div>
+			<form id="additionalFilter" action="javascript:void(0);" class="panel-filter form-custom flex aic sb">
+				<div class="-item fb23p">
+					<label for="">Level of Qualification:</label>
+					<select name="sort" id="sortId" class="-bgc-white">
+						<option value="" disabled selected>Please Select</option>
+						<option value="vacancy1">Vacancy 1</option>
+						<option value="vacancy2">Vacancy 2</option>
+						<option value="vacancy3">Vacancy 3</option>
+						<option value="vacancy4">Vacancy 4</option>
+					</select>
+				</div>
+				<div class="-item fb31p">
+					<label for="">Years of Experience:</label>
+					<div class="flex aic sb">
+						<input type="text" class="form-control" placeholder="From:">
+					<span class="separator">—</span>
+					<input type="text" class="form-control" placeholder="To:">
+					</div>
+				</div>
+				<div class="-item fb33p">
+					<label for="">NQTs Available:</label>
+					<div class="flex check-wrapper">
+						<p>
+							<input class="with-gap" name="nqt-available" type="radio" id="nqtAvailableAny">
+							<label for="nqtAvailableAny">Any</label>
+						</p>
+						<p>
+							<input class="with-gap" name="nqt-available" type="radio" id="nqtAvailableYes">
+							<label for="nqtAvailableYes">Yes</label>
+						</p>
+						<p>
+							<input class="with-gap" name="nqt-available" type="radio" id="nqtAvailableNo">
+							<label for="nqtAvailableNo">No</label>
+						</p>
+					</div>
+				</div>
+				<div class="-item fb13p right-align">
+					<button type="submit" class="waves-effect waves-teal btn -primary -inverse">Apply</button>
+				</div>
+			</form>
+			<div class="section">
+				<div class="panel flex aic sb">
+					<span class="-name fb33p">Simon Smith</span>
+					<div class="fb25p center-align">
+						<span class="-date">Applied on 12 Oct, 2016</span>
+					</div>
+					<div class="fb33p center-align relative">
+						<button class="waves-effect waves-teal btn -primary hover-drop-menu">Forward</button>
+						<form action="#?" class="drop-menu form-drop">
+							<div class="input-inline">
+								<input type="text" class="form-control" placeholder="email address">
+								<button type="submit" class="btn-floating waves-effect waves-light"><i class="fa fa-paper-plane"></i></button>
+							</div>
+						</form>
+					</div>
+					<div class="fb9p right-align panel-arrow">
+						<i class="fa fa-arrow-right "></i>
+					</div>
+				</div>
+				<div class="panel flex aic sb">
+					<span class="-name fb33p">Simon Smith</span>
+					<div class="fb25p center-align">
+						<span class="-date">Applied on 12 Oct, 2016</span>
+					</div>
+					<div class="fb33p center-align">
+						<button class="waves-effect waves-teal btn -primary">Forward</button>
+					</div>
+					<div class="fb9p right-align panel-arrow">
+						<i class="fa fa-arrow-right "></i>
+					</div>
+				</div>
+				<div class="panel flex aic sb">
+					<span class="-name fb33p">Simon Smith</span>
+					<div class="fb25p center-align">
+						<span class="-date">Applied on 12 Oct, 2016</span>
+					</div>
+					<div class="fb33p center-align">
+						<button class="waves-effect waves-teal btn -primary">Forward</button>
+					</div>
+					<div class="fb9p right-align panel-arrow">
+						<i class="fa fa-arrow-right "></i>
+					</div>
+				</div>
+				<div class="panel flex aic sb">
+					<span class="-name fb33p">Simon Smith</span>
+					<div class="fb25p center-align">
+						<span class="-date">Applied on 12 Oct, 2016</span>
+					</div>
+					<div class="fb33p center-align">
+						<button class="waves-effect waves-teal btn -primary">Forward</button>
+					</div>
+					<div class="fb9p right-align panel-arrow">
+						<i class="fa fa-arrow-right "></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="loading">
+		<div class="sk-fading-circle">
+			<div class="sk-circle1 sk-circle"></div>
+			<div class="sk-circle2 sk-circle"></div>
+			<div class="sk-circle3 sk-circle"></div>
+			<div class="sk-circle4 sk-circle"></div>
+			<div class="sk-circle5 sk-circle"></div>
+			<div class="sk-circle6 sk-circle"></div>
+			<div class="sk-circle7 sk-circle"></div>
+			<div class="sk-circle8 sk-circle"></div>
+			<div class="sk-circle9 sk-circle"></div>
+			<div class="sk-circle10 sk-circle"></div>
+			<div class="sk-circle11 sk-circle"></div>
+			<div class="sk-circle12 sk-circle"></div>
+		</div>
+		<p class="center-align">loading...</p>
+	</div>
+</main>
+	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
+	<!--<script src="../js/chartist/chartist.min.js"></script>-->
+	<script src="../js/materialize/materialize.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

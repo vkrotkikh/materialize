@@ -1,4 +1,3 @@
-<!--Во всей верстке к айдишникам стили не привязаны-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="../all.css">
-	<title>Foundation Phase Teacher</title>
+	<title>FPT Edit</title>
 </head>
 <body>
 <header class="header">
@@ -59,7 +58,6 @@
 	</div>
 </header>
 <main class="main">
-	<!--<div class="overall-performance-chart"></div>-->
 	<div class="container">
 		<div class="max-w1024 -pt -pb">
 			<div class="content-top clearfix">
@@ -85,92 +83,89 @@
 				</div>
 			</div>
 			<div class="btn-holder center-align">
-				<a class="waves-effect waves-teal btn-flat blue-text active">Performance</a>
-				<a class="waves-effect waves-teal btn-flat blue-text">Received</a>
-				<a class="waves-effect waves-teal btn-flat blue-text">Shorlisted</a>
-				<a class="waves-effect waves-teal btn-flat blue-text">Interviews</a>
-				<a class="waves-effect waves-teal btn-flat blue-text">Edit</a>
+				<a href="/school/fpt-performance.html" class="waves-effect waves-teal btn-flat blue-text">Performance</a>
+				<a href="/school/fpt-received.html" class="waves-effect waves-teal btn-flat blue-text">Received</a>
+				<a href="/school/fpt-shortlisted.html" class="waves-effect waves-teal btn-flat blue-text">Shorlisted</a>
+				<a href="/school/fpt-interviews.html" class="waves-effect waves-teal btn-flat blue-text">Interviews</a>
+				<a href="/school/fpt-edit.html" class="waves-effect waves-teal btn-flat blue-text active">Edit</a>
 			</div>
-			<div class="section">
-				<div class="section-heading">
-					<strong>Direct Matching</strong>
-				</div>
-				<ul class="list-output -half-childs">
-					<li>Recepients: <span>345</span></li>
-					<li>Experience level: <span>Unqualified</span></li>
-					<li>Sent on: <span>Mon 24 Nov, 2016</span></li>
-					<li>Distance: <span>10 miles</span></li>
-				</ul>
-			</div>
-			<div class="section">
-				<div class="section-heading">
-					<strong>Overall Performance</strong>
-				</div>
-				<div class="chart-stats flex sb aic">
-					<div class="fb50p flex aic sb">
-						<div class="fb50p stats -vertical">
-							<div class="-item small -green">
-								<span class="-count">56</span>
-								<span class="-description">Applied</span>
-							</div>
-							<div class="-item small">
-								<span class="-count">278</span>
-								<span class="-description">Not Responded</span>
-							</div>
-							<div class="-item small -red">
-								<span class="-count">11</span>
-								<span class="-description">Not Interested</span>
-							</div>
+			<div class="content -w100p -mt">
+				<form action="/school/person-single.html" class="form-custom -inline-form">
+					<div class="row">
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Title:</label>
+							<input type="text" class="form-control fb100p">
 						</div>
-						<div class="fb50p">
-							<div class="overall-performance-chart chart-default"></div>
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">NQTs Considered:</label>
+							<input type="text" class="form-control fb100p">
 						</div>
 					</div>
-					<div class="fb50p">
-						<div class="list-output">
-							<li>Interviewed: <span>12</span></li>
-							<li>New follows: <span>98</span></li>
-							<li>New applicants: <span>98</span></li>
-							<li>Read it:  <span>156</span></li>
+					<div class="row">
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Salary:</label>
+							<input type="text" class="form-control fb100p">
+						</div>
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Phase:</label>
+							<input type="text" class="form-control fb100p">
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="section">
-				<div class="section-heading">
-					<strong>Provided Feedback</strong>
-				</div>
-			</div>
-				<div class="chart-stats flex sb aifs">
-					<div class="fb50p flex aic sb">
-						<ul class="list-output -stats fb50p">
-							<li class="green-text">Option 1: <span class="fz20 green-text">12</span> <span class="grey-text">7%</span></li>
-							<li class="red-text">Option 2: <span class="fz20 red-text">99</span> <span class="grey-text">7%</span></li>
-							<li class="blue-text">Option 3: <span class="fz20 blue-text">99</span> <span class="grey-text">7%</span></li>
-							<li class="red-text">Option 4: <span class="fz20 red-text">99</span> <span class="grey-text">7%</span></li>
-							<li class="green-text">Option 5: <span class="fz20 green-text">99</span> <span class="grey-text">7%</span></li>
-						</ul>
-						<div class="fb50p">
-							<div class="provided-feedback-chart chart-default"></div>
+					<div class="row">
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Contract:</label>
+							<input type="text" class="form-control fb100p">
+						</div>
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Role:</label>
+							<input type="text" class="form-control fb100p">
 						</div>
 					</div>
-					<div class="fb50p">
-						<!--Независимый блок .panel-comment-->
-						<div class="panel-comment">
-							<div class="heading">
-								<a href="javascript:void(0);" class="link">Simon Smith</a>
+					<div class="row">
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Start Date:</label>
+							<div class="datepicker-wrapper fb100p">
+								<input type="date" class="datepicker form-control" placeholder="Select date">
+								<i class="fa fa-calendar-o"></i>
 							</div>
-							<div class="panel-window -default">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laboriosam nemo enim porro aut obcaecati eaque, consequuntur, ducimus, facere, vel numquam tempore doloremque sint. Ratione natus consequuntur, perspiciatis odit blanditiis minima placeat! Eveniet, dolorem! Repellat dolorem officia et dicta dolor culpa, minima optio, quas soluta a aliquid. Nemo, quis, optio.</p>
+						</div>
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Subject Required:</label>
+							<input type="text" class="form-control fb100p">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m6 s12 flex aic sb">
+							<label for="" class="right-align fb120">Vacancy End Date:</label>
+							<div class="datepicker-wrapper fb100p">
+								<input type="date" class="datepicker form-control" placeholder="Select date">
+								<i class="fa fa-calendar-o"></i>
 							</div>
 						</div>
 					</div>
-				</div>
+					<div class="row">
+						<div class="col m4 s12 push-m8 -pb">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere suscipit voluptates inventore omnis, molestiae dolorum necessitatibus culpa atque, id ducimus!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, maiores.</p>
+						</div>
+						<div class="col m8 s12 pull-m4 flex sb">
+							<label for="personalStatement" class="right-align fb120">Description:</label>
+							<textarea id="personalStatement" class="form-control fb100p"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 flex aic c">
+							<a href="/school/person-single.html" class="waves-effect waves-light btn -primary">Preview as applicant</a>
+							<button type="submit" class="waves-effect waves-light btn -primary -inverse -lg">Save changes</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </main>
 	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
-	<script src="../js/chartist/chartist.min.js"></script>
+	<!--<script src="../js/chartist/chartist.min.js"></script>-->
 	<script src="../js/materialize/materialize.min.js"></script>
 	<script src="../js/main.js"></script>
 </body>

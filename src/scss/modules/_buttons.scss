@@ -93,6 +93,12 @@
 	&.-w200 {
 		width: 200px;
 	}
+
+	&.-default {
+		border-color: #838383;
+		color: #838383;
+		background-color: transparent;
+	}
 }
 
 .dropdown-button {

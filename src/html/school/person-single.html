@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../all.css">
+	<title>Person single</title>
+</head>
+<body>
+<header class="header">
+	<ul id="userSettings" class="dropdown-content list-default arrow-top">
+		<li><a href="/school/settings.html">Settings</a></li>
+		<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+		<li><a href="/school/feedback.html">Feedback</a></li>
+		<li><a href="#!">Log out</a></li>
+	</ul>
+	<div class="container">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+				<ul class="left valign-wrapper">
+					<li class="logo-wrapper">
+						<a href="/school/" class="brand-logo">
+							<img src="../img/logo.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="/school/" class="link-primary">Wibledon high school</a>
+					</li>
+				</ul>
+				<ul id="nav-mobile" class="right flex aic hide-on-med-and-down navbar-nav">
+					<li>
+						<a href="/school/new-job-vacancy.html" class="waves-effect btn"><i class="material-icons">add</i> <span>New Vacancy</span></a>
+					</li>
+					<li>
+						<a class="dropdown-button" href="#!" data-activates="userSettings">
+							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
+							<i class="material-icons logo-icon">business</i>
+							<i class="material-icons right">arrow_drop_down</i>
+						</a>
+					</li>
+				</ul>
+				<ul class="side-nav center-align" id="mobile-demo">
+					<li><a class="active" href="/school/">Dashboard</a></li>
+					<li><a href="/school/applications.html">Applications</a></li>
+					<li><a href="/school/saved-jobs.html">Saved jobs</a></li>
+					<li><a href="/school/following.html">Following</a></li>
+					<li><a href="/school/search.html">Search</a></li>
+					<hr>
+					<li><a href="/school/settings.html">Settings</a></li>
+					<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
+					<li><a href="/school/feedback.html">Feedback</a></li>
+					<li><a href="#!">Log out</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<main class="main">
+	<div class="container">
+		<div class="max-w1024 -pt -pb">
+			<div class="content-top clearfix">
+				<button class="waves-effect waves-light btn -primary -inverse" onclick="window.history.back()">
+					<i class="material-icons">arrow_back</i>
+					<span>Back</span>
+				</button>
+			</div>
+			<div class="content -mt">
+				<div class="-header flex aic sb">
+					<div class="-item">
+						<h1 class="left-align centered-inner"><span>Simon Smith</span> <span class="badge new" data-badge-caption="Shortlisted"></span></h1>
+						<p class="-caption">Wibledon, SW19, London UK</p>
+						<p class="contact">0123456789 <a href="javascript:void(0);" class="link">s.smith@wiblhighschool.gov.uk</a></p>
+					</div>
+					<div class="-item">
+						<!--Блок из макета 12. Candidate 2-->
+						<a href="javascript:void(0);" class="waves-effect btn -primary">Send interview invitation</a>
+
+						<!--Блок из макета 13. Candidate 3 -->
+						<div class="panel-window">
+							<div class="-heading">
+								<span>Candidate invited for an interview</span>
+							</div>
+							<div class="-body center-align">
+								<span class="text-primary">Accepted on 16th, Oct, 2016</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="-body">
+					<!--Блок из макета 12. Candidate 2-->
+					<div class="panel-window -custom -mtb flex">
+						<form action="javascript:void(0);">
+							<span class="label-heading">Change status:</span>
+							<div class="flex">
+								<select name="sort" id="sortId" class="-bgc-white -mr">
+									<option value="" disabled selected>Not approved</option>
+									<option value="Shortlisted">Shortlisted</option>
+									<option value="Interview">Interview</option>
+									<option value="Not approved">Not approved</option>
+									<option value="Declined job offer">Declined job offer</option>
+									<option value="Hired">Hired</option>
+								</select>
+								<button type="submit" class="waves-effect btn -primary -inverse">Save changes</button>
+							</div>
+						</form>
+					</div>
+
+					<!--Блок из макета 13. Candidate 3 -->
+					<div class="panel-window -custom -mtb">
+						<div class="flex sb w70p section">
+							<div class="fb45p">
+								<span class="label-heading">Change status:</span>
+								<select name="sort" id="sortId" class="-bgc-white">
+									<option value="" disabled selected>Not approved</option>
+									<option value="Shortlisted">Shortlisted</option>
+									<option value="Interview">Interview</option>
+									<option value="Not approved">Not approved</option>
+									<option value="Declined job offer">Declined job offer</option>
+									<option value="Hired">Hired</option>
+								</select>
+							</div>
+							<div class="fb45p">
+								<span class="label-heading">Change status:</span>
+								<select name="sort" id="sortId" class="-bgc-white">
+									<option value="Sample Feedback 1">Sample Feedback 1</option>
+									<option value="Sample Feedback 2">Sample Feedback 2</option>
+									<option value="Sample Feedback 3">Sample Feedback 3</option>
+									<option value="Sample Feedback 4">Sample Feedback 4</option>
+									<option value="other" selected>Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="flex wrap section">
+							<span class="fb100p">Your feedback:</span>
+							<div class="flex w100p aic">
+								<textarea class="form-control fb70p -mr -h120"></textarea>
+								<button type="submit" class="waves-effect btn -primary -inverse">Save changes</button>
+							</div>
+						</div>
+					</div>
+					<div class="section">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, voluptas aut dignissimos ab obcaecati eos odit et nam aspernatur, quae accusantium iure praesentium nisi asperiores perferendis magnam dolores repellendus molestias est eligendi ipsam maiores iste? Eum porro eius ipsum illum est sed totam obcaecati ipsa, velit fugit laudantium, vel aliquam inventore possimus odio, voluptate quas incidunt pariatur sint mollitia voluptates deleniti veritatis! Laudantium nihil suscipit rem ipsum eaque hic tenetur mollitia beatae nisi pariatur nemo asperiores fugiat ex recusandae modi eligendi libero quas saepe, ducimus nobis. Nam animi laboriosam quisquam consectetur, ad at, nesciunt suscipit voluptate deleniti soluta mollitia eveniet!</p>
+					</div>
+					<hr>
+					<div class="section">
+						<div class="row">
+							<div class="col s6">
+								<span class="fz12">Years of experience:</span>
+								<p>7 years, 10 months</p>
+							</div>
+							<div class="col s6">
+								<span class="fz12">Teacher Ref Number:</span>
+								<p>0123456789</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<span class="fz12">Subject specialisations:</span>
+								<p>Sample Subject</p>
+							</div>
+							<div class="col s6">
+								<span class="fz12">Reason for seeking employment:</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, id.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<span class="fz12">Qualified Teacher Status Number:</span>
+								<p>0123456789</p>
+							</div>
+							<div class="col s6">
+								<span class="fz12">National Insurance Number:</span>
+								<p>HJ3267864</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<span class="fz12">NQT Considered:</span>
+								<p>YES</p>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="section">
+						<div class="section-heading">
+							<strong>Experience</strong>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional">Dec 2009 - Present (6 years 11 months)</span>
+								</div>
+								<h4>Science Teacher</h4>
+								<p class="-caption">Ashford Park Primary School</p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="section">
+						<div class="section-heading">
+							<strong>Education</strong>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional">Dec 2009 - Present (6 years 11 months)</span>
+								</div>
+								<h4>MSc Biophysics</h4>
+								<p class="-caption">The University of Manchester</p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="section">
+						<div class="section-heading">
+							<strong>Qualification</strong>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional">Qualification Level</span>
+								</div>
+								<h4>Sample Qualification</h4>
+								<p class="-caption">Institution Name</p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="section">
+						<div class="section-heading">
+							<strong>Gaps of employment</strong>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional"></span>
+								</div>
+								<h4>Dec 2009 - Feb 2011</h4>
+								<p class="-caption"></p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="section">
+						<div class="section-heading">
+							<strong>Other</strong>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional"></span>
+								</div>
+								<h4></h4>
+								<p class="-caption">Eligible to work in the UK</p>
+							</div>
+							<div class="post-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minima dolorum, soluta. Nisi sapiente obcaecati ullam doloribus voluptates, ex nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque explicabo id ullam consequatur esse saepe dolor cum minima laborum.</p>
+							</div>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional"></span>
+								</div>
+								<h4></h4>
+								<p class="-caption">Criminal Convictions</p>
+							</div>
+							<div class="post-body">
+								<p>YES</p>
+							</div>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional"></span>
+								</div>
+								<h4></h4>
+								<p class="-caption">Barred from working with children list</p>
+							</div>
+							<div class="post-body">
+								<p>YES</p>
+							</div>
+						</div>
+					</div>
+					<div class="section">
+						<div class="section-heading">
+							<strong>References</strong>
+						</div>
+						<!--post — Независимый компонент-->
+						<div class="post">
+							<div class="post-header">
+								<div class="right">
+									<span class="-additional"></span>
+								</div>
+								<h4>Simon Smith</h4>
+								<p class="-caption">Head Teacher at Wimbledon High School</p>
+							</div>
+							<div class="post-body">
+								<p class="address">62 Pelham Road, SW19 1NY, London UK</p>
+								<p class="contact">0123456789 <a class="link" href="javascript:void(0);">s.smith@wiblhighschool.gov.uk</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="section">
+						<div class="section-heading">
+							<strong>Equality monitoring</strong>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<span class="fz12">Gender:</span>
+								<p>Male</p>
+							</div>
+							<div class="col s6">
+								<span class="fz12">Date of Birth:</span>
+								<p>12 Oct, 1982</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<span class="fz12">Ethnicity:</span>
+								<p>Asian British</p>
+							</div>
+							<div class="col s6">
+								<span class="fz12">Disability:</span>
+								<p>NO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+	<script src="../js/jquery/jquery-2.2.2.min.js"></script>
+	<!--<script src="../js/chartist/chartist.min.js"></script>-->
+	<script src="../js/materialize/materialize.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

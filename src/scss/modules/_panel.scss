@@ -26,8 +26,21 @@
         font-size: 14px;
     }
 
+    .-name {
+        font-size: 30px;
+        color: map-get($pallete, primary);
+        font-weight: bold;
+    }
+
     p {
         margin: 0 0 15px;
+    }
+
+    &-arrow {
+        .fa {
+            font-size: 24px;
+            color: #e6e4e4;
+        }
     }
 }
 a.panel {
@@ -38,6 +51,10 @@ a.panel {
     background-color: rgba(map-get($pallete, primary), .1);
     padding: 10px 15px;
     border-radius: 10px;
+
+    &.-mtb {
+        margin: 20px 0;
+    }
 
     &.-transparent {
         background-color: transparent;
@@ -58,10 +75,15 @@ a.panel {
         background-color: rgba(#838383, .1);
     }
 
+    &.-custom {
+        padding: 25px;
+    }
+
     & > .-heading {
         color: map-get($pallete, primary);
         padding: 0 0 10px;
     }
+
 }
 
 .card-custom {
@@ -109,5 +131,31 @@ a.panel {
                 color: map-get($pallete, primary-dark);
             }
         }
+    }
+}
+
+.panel-filter {
+    padding: 15px 30px;
+    background-color: #f2f2f2;
+    .-item {
+        padding: 0 30px 0 0;
+    }
+
+    .separator {
+        display: block;
+        margin: 0 5px;
+    }
+
+    .check-wrapper {
+        padding: 8px 0 7px;
+        p {
+            margin: 0 10px;
+        }
+        p:first-child {margin-left: 0;}
+        p:last-child {margin-right: 0;}
+    }
+
+    .btn {
+        padding: 15px 25px 13px;
     }
 }

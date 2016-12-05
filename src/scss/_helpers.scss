@@ -267,6 +267,42 @@ hr {
   }
 }
 
+.fz12 {
+  font-size: 12px;
+}
 .fz20 {
   font-size: 20px !important;
+}
+
+.dblock {display: block;}
+
+.no-more-results {
+  text-align: center;
+  color: #cfcfcf;
+  padding: 20px 0;
+
+  i {
+    font-size: 60px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.w70p {width: 70%;}
+.w100p {width: 100%;}
+
+.label-heading {
+  display: block;
+  margin: 0 0 5px;
+}
+
+.centered-inner {
+  > * {
+    vertical-align: middle;
+  }
 }

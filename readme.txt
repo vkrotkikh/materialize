@@ -20,3 +20,4 @@
 	Это единичные стили margin-bottom, padding-top, margin, {padding-right: 15px; padding-left: 15px}
 8. Подключил и кастомизировал ползунки (input[type=range] дефолтный хтмл). Если нужны какие то другие ползунки, то я скачал и вставил плагин nouislider. 
 	Цсс плагина подключен в общий цсс файл, js-файл плагина находится в папке js/nouislider/.
+9. fpt - foundation phase teacher.

@@ -73,6 +73,17 @@
     }
     
 }
+.hover-drop-menu {
+    &:hover + .dropup-menu {
+        opacity: 1;
+        visibility: visible;
+        bottom: 100%;
+    }
+    &:hover + .drop-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
 
 .dropup-menu {
@@ -92,4 +103,17 @@
         margin-right: 0;
         left: 38px;
     }
+}
+
+.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: hidden;
+    background-color: #fff;
+    
+    min-width: 200px;
+    @extend %triangle;
+    @extend %trgl-top;
 }

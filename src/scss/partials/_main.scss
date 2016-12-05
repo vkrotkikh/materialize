@@ -31,6 +31,8 @@
 
     &.wrap {flex-wrap: wrap;}
 
+    .asfe {align-self: flex-end;}
+
     .col-secondary {
         padding: 0 10px;
         flex-basis: 25%;
@@ -49,9 +51,17 @@
         flex-basis: 120px;
     }
     .fb100p {flex-basis: 100%;}
+    .fb70p {flex-basis: 70%;}
     .fb60p {flex-basis: 60%;}
     .fb50p {flex-basis: 50%;}
+    .fb45p {flex-basis: 45%;}
     .fb35p {flex-basis: 35%;}
+    .fb31p {flex-basis: 31%;}
+    .fb33p {flex-basis: 33%;}
+    .fb25p {flex-basis: 25%;}
+    .fb23p {flex-basis: 23%;}
+    .fb13p {flex-basis: 13%;}
+    .fb9p {flex-basis: 9%;}
 }
 
 .main-nav {
@@ -164,9 +174,12 @@
     &.-mb {
         margin-bottom: 80px;
     }
+    &.-mt {
+        margin-top: 30px;
+    }
 
     &-top {
-        padding: 0 0 30px;
+        padding: 15px 0;
 
         .-h40 {
             line-height: 1.1;
@@ -220,6 +233,15 @@
             color: #7f8c8d;
             margin: 0 0 15px;
             font-size: 14px;
+        }
+    }
+
+    > .-header {
+        p {
+            margin: 0 0 5px;
+            &:last-child {
+                margin: 0;
+            }
         }
     }
 }
