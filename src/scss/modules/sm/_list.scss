@@ -1,0 +1,8 @@
+.list-output:not(.browser-default) {
+	&.-half-childs {
+		> li {
+			width: 100%;
+			float: none;
+		}
+	}
+}

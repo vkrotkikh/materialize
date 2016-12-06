@@ -19,15 +19,24 @@
 }
 
 .stats {
-	// flex-direction: column;
+	flex-wrap: wrap;
+
 	.-item {
 		flex-basis: 100%;
 		padding: 5px;
 		margin: 10px 0;
+
+		&.small {
+			flex-basis: 30%;
+			margin: 5px 0;
+		}
 	}
+	
 }
 
 .content {
+	padding: 15px;
+
 	&-top {
 		padding: 0 0 10px;
 
@@ -47,6 +56,11 @@
 		}
 		.select-wrapper {
 			margin: 0 0 10px;
+
+			&.alignment {
+				margin: 0 20px 0 0;
+				flex-basis: 60%;
+			}
 		}
 	}
 

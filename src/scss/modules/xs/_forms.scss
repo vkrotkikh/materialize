@@ -13,3 +13,63 @@
 		width: 100%;
 	}
 }
+.form-custom {
+	&.-inline-form {
+		.flex {
+			display: block;
+
+			.fb120 {
+				flex-basis: 100%;
+			}
+		}
+		label:not(.label-check) {
+			width: 100%;
+			text-align: left;
+			padding: 0 0 5px 15px;
+		}
+
+		.-ml120 {
+			margin-left: 0;
+			width: 100%;
+		}
+		.-ml150 {
+			margin-left: 0;
+			width: 100%;
+		}
+	}
+	.btn-holder {
+		.btn {
+			margin: 5px 0;
+			width: 100%;
+		}
+	}
+
+	&.-as-panel {
+		label:not(.label-check) {
+			padding: 0 0 10px;
+		}
+		.right-align {
+			text-align: center;
+		}
+		[class^="heading-"] {
+			display: block;
+			padding: 0 0 5px;
+		}
+	}
+}
+.datepicker-wrapper {
+	width: 100%;	
+}
+.form-control {
+	width: 100%; /*for ios*/
+}
+
+.form-members {
+	&.flex {
+		display: block;
+	}
+}
+
+.form-control-info {
+	margin: 0 0 15px;
+}

@@ -50,6 +50,10 @@
         flex-shrink: 0;
         flex-basis: 120px;
     }
+    .fb150 {
+        flex-shrink: 0;
+        flex-basis: 150px;
+    }
     .fb100p {flex-basis: 100%;}
     .fb70p {flex-basis: 70%;}
     .fb60p {flex-basis: 60%;}
@@ -191,6 +195,9 @@
         }
         .select-wrapper {
             margin: 0 15px;
+
+            &.-ml0 {margin-left: 0;}
+            &.-mr0 {margin-right: 0;}
         }
     }
 

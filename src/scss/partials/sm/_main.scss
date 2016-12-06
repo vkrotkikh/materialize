@@ -14,9 +14,19 @@
 	}
 }
 
+.max-w1024 {
+	&.-pb {
+		padding-bottom: 20px
+	}
+	&.-pt {
+		padding-top: 0;
+	}
+}
+
 .content {
 	padding: 25px 20px;
 	border-radius: 15px;
+
 	&.-narrow {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -24,6 +34,23 @@
 
 	.-location {
 		margin: 0 -20px;
+	}
+
+	&-top {
+		.btn-back {
+			// margin: 0 0 10px;
+		}
+	}
+
+	> .-header {
+		display: block;
+
+		.-item {
+			padding: 5px 0;
+		}
+		.btn-holder {
+			padding: 10px 0;
+		}
 	}
 }
 
@@ -51,8 +78,27 @@
 .stats {
 
 	.-item {
+		&.small {
+			width: auto;
+		}
 		&.x-small {
 			flex-basis: 25%;
 		}
+	}
+}
+
+.heading-caption {
+	padding: 10px 0 0;
+}
+
+.section {
+	padding: 0;
+}
+
+.filter {
+	display: block;
+
+	&-item {
+		padding: 5px 0;
 	}
 }

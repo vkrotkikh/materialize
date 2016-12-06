@@ -1,161 +1,181 @@
 .panel {
-    padding: 20px 30px;
-    border: 1px solid #ddd;
-    margin: 0 0 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: box-shadow .3s;
+	padding: 20px 30px;
+	border: 1px solid #ddd;
+	margin: 0 0 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: box-shadow .3s;
 
-    &:hover {
-        box-shadow: 0 0 30px -5px rgba(#000, .2);
-    }
+	&:hover {
+		box-shadow: 0 0 30px -5px rgba(#000, .2);
+	}
 
-    h4 {
-        margin: 0 0 10px;
-        font-size: 20px;
-        color: map-get($pallete, primary);
-    }
+	h4 {
+		margin: 0 0 10px;
+		font-size: 20px;
+		color: map-get($pallete, primary);
+	}
 
-    .-date,
-    .-range {
-        font-size: 14px;
-        color: #9a9a9a;
-    }
-    .-info {
-        color: #818181;
-        font-size: 14px;
-    }
+	.-date,
+	.-range {
+		font-size: 14px;
+		color: #9a9a9a;
+	}
+	.-info {
+		color: #818181;
+		font-size: 14px;
+	}
 
-    .-name {
-        font-size: 30px;
-        color: map-get($pallete, primary);
-        font-weight: bold;
-    }
+	.-name {
+		font-size: 30px;
+		color: map-get($pallete, primary);
+		font-weight: bold;
+	}
 
-    p {
-        margin: 0 0 15px;
-    }
+	.item1 {
+		flex-basis: 33%;
+	}
+	.item2 {
+		flex-basis: 25%;
+	}
+	.item3 {
+		flex-basis: 9%;
+	}
+	.item4 {
+		flex-basis: 33%;
+	}
 
-    &-arrow {
-        .fa {
-            font-size: 24px;
-            color: #e6e4e4;
-        }
-    }
+	p {
+		margin: 0 0 15px;
+	}
+
+	&-arrow {
+		.fa {
+			font-size: 24px;
+			color: #e6e4e4;
+		}
+	}
 }
 a.panel {
-    display: block;
+	display: block;
+	p {
+		color: #000;
+	}
 }
 
 .panel-window {
-    background-color: rgba(map-get($pallete, primary), .1);
-    padding: 10px 15px;
-    border-radius: 10px;
+	background-color: rgba(map-get($pallete, primary), .1);
+	padding: 10px 15px;
+	border-radius: 10px;
 
-    &.-mtb {
-        margin: 20px 0;
-    }
+	&.-mtb {
+		margin: 20px 0;
+	}
 
-    &.-transparent {
-        background-color: transparent;
-    }
+	&.-transparent {
+		background-color: transparent;
+	}
 
-    &.-additional {
-        background-color: rgba(map-get($pallete, additional), .1);
+	&.-additional {
+		background-color: rgba(map-get($pallete, additional), .1);
 
-        &.trgl-right-lg {
-            box-shadow: none;
-            &:after {
-                border-color: transparent transparent transparent rgba(map-get($pallete, additional), .1);
-            }
-        }
-    }
+		&.trgl-right-lg {
+			box-shadow: none;
+			&:after {
+				border-color: transparent transparent transparent rgba(map-get($pallete, additional), .1);
+			}
+		}
+	}
 
-    &.-default {
-        background-color: rgba(#838383, .1);
-    }
+	&.-default {
+		background-color: rgba(#838383, .1);
+	}
 
-    &.-custom {
-        padding: 25px;
-    }
+	&.-custom {
+		padding: 25px;
 
-    & > .-heading {
-        color: map-get($pallete, primary);
-        padding: 0 0 10px;
-    }
+		.item {
+			flex-basis: 45%;
+		}
+	}
+
+	& > .-heading {
+		color: map-get($pallete, primary);
+		padding: 0 0 10px;
+	}
 
 }
 
 .card-custom {
-    margin: 0;
-    overflow: hidden;
-    background-color: #0080bd;
-    border-radius: 15px;
-    border: 1px solid #009cda;
-    box-shadow: none;
-    font-size: 12px;
+	margin: 0;
+	overflow: hidden;
+	background-color: #0080bd;
+	border-radius: 15px;
+	border: 1px solid #009cda;
+	box-shadow: none;
+	font-size: 12px;
 
-    .card-content {
-        border-radius: 0;
+	.card-content {
+		border-radius: 0;
 
-        .card-title {
-            display: block;
-            font: 20px/1.1 'Helvetica', sans-serif;
-            margin: 0 0 10px;
-        }
-    }
-    .card-body {
-        color: #fff;
-        padding: 0 20px;
-    }
-    .card-action {
-        .btn {
-            width: 100%;
-            color: map-get($pallete, primary);
-            background-color: #fff;
-            padding: 17px 15px 15px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-    }
+		.card-title {
+			display: block;
+			font: 20px/1.1 'Helvetica', sans-serif;
+			margin: 0 0 10px;
+		}
+	}
+	.card-body {
+		color: #fff;
+		padding: 0 20px;
+	}
+	.card-action {
+		.btn {
+			width: 100%;
+			color: map-get($pallete, primary);
+			background-color: #fff;
+			padding: 17px 15px 15px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
 }
 
 .panel-comment {
-    padding: 10px 0;
+	padding: 10px 0;
 
-    & > .heading {
-        padding-bottom: 5px;
-        .link {
-            text-decoration: none;
-            &:hover {
-                color: map-get($pallete, primary-dark);
-            }
-        }
-    }
+	& > .heading {
+		padding-bottom: 5px;
+		.link {
+			text-decoration: none;
+			&:hover {
+				color: map-get($pallete, primary-dark);
+			}
+		}
+	}
 }
 
 .panel-filter {
-    padding: 15px 30px;
-    background-color: #f2f2f2;
-    .-item {
-        padding: 0 30px 0 0;
-    }
+	padding: 15px 30px;
+	background-color: #f2f2f2;
+	.-item {
+		padding: 0 30px 0 0;
+	}
 
-    .separator {
-        display: block;
-        margin: 0 5px;
-    }
+	.separator {
+		display: block;
+		margin: 0 5px;
+	}
 
-    .check-wrapper {
-        padding: 8px 0 7px;
-        p {
-            margin: 0 10px;
-        }
-        p:first-child {margin-left: 0;}
-        p:last-child {margin-right: 0;}
-    }
+	.check-wrapper {
+		padding: 8px 0 7px;
+		p {
+			margin: 0 10px;
+		}
+		p:first-child {margin-left: 0;}
+		p:last-child {margin-right: 0;}
+	}
 
-    .btn {
-        padding: 15px 25px 13px;
-    }
+	.btn {
+		padding: 15px 25px 13px;
+	}
 }

@@ -1,4 +1,6 @@
 .panel-window {
+	padding: 10px;
+
 	.btn-holder {
 		.btn + .btn {
 			margin-left: 0;
@@ -6,5 +8,14 @@
 		.btn {
 			margin: 5px 0;
 		}
+	}
+}
+
+.panel {
+	.item3 {
+		flex-basis: 20%
+	}
+	.item4 {
+		flex-basis: 22%;
 	}
 }

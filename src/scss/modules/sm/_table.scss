@@ -1,0 +1,17 @@
+.table {
+	&-body {
+		overflow-y: auto;
+
+		.table-row {
+			min-width: 500px;
+		}
+	}
+
+	&-custom {
+		.table-body {
+			.c2 {
+				text-align: center;
+			}
+		}
+	}
+}

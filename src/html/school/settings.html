@@ -10,7 +10,7 @@
 <body>
 <header class="header">
 	<ul id="userSettings" class="dropdown-content list-default arrow-top">
-		<li><a href="/school/settings.html">Settings</a></li>
+		<li><a class="active" href="/school/settings.html">Settings</a></li>
 		<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
 		<li><a href="/school/feedback.html">Feedback</a></li>
 		<li><a href="#!">Log out</a></li>
@@ -61,59 +61,107 @@
 	<div class="container">
 		<div class="max-w1024 -pt -pb">
 			<div class="content-top clearfix">
-				<h2 class="left">My School Profile</h2>
-				<button class="right waves-effect waves-light btn -primary -inverse" onclick="window.history.back()">
-					<i class="material-icons">arrow_back</i>
-					<span>Back</span>
-				</button>
+				<h2 class="left">Settings</h2>
+			</div>
+			<!--Компонент с макета 15. Settings - Downgrade-->
+			<div class="content -mb">
+				<div class="form-custom -inline-form -as-panel">
+					<div class="row flex flex-sm-off aic">
+						<div class="col m8 s12 flex -pb0 aic">
+							<label for="" class="right-align fb150">Your membership plan:</label>
+							<span class="heading-additional">Professional</span>
+						</div>
+						<div class="col m4 s12 right-align">
+							<a href="javascript:void(0);">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Компонент с макета 15. Settings - Upgrade -->
+			<div class="content -mb">
+				<div class="form-custom -inline-form -as-panel">
+					<div class="row flex flex-sm-off aic">
+						<div class="col m8 s12 flex -pb0 aic">
+							<label for="" class="right-align fb150">Your membership plan:</label>
+							<span class="heading-default">FREE</span>
+						</div>
+						<div class="col m4 s12 right-align">
+							<a href="javascript:void(0);" class="waves-effect btn -lg">Upgrade</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="content">
 				<form action="#?" class="form-custom -inline-form">
 					<div class="row">
 						<div class="col m8 s12 flex aic sb">
-							<label for="" class="right-align fb120">School Name:</label>
+							<label for="" class="right-align fb150">School Unique Refference Nu. (URN):</label>
 							<input type="text" class="form-control fb100p">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col m8 s12 flex aic sb">
-							<label for="" class="right-align fb120">Tagline:</label>
+							<label for="" class="right-align fb150">First Name:</label>
 							<input type="text" class="form-control fb100p">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col m8 s12 flex aic sb">
-							<label for="" class="right-align fb120">Address:</label>
+							<label for="" class="right-align fb150">Last Name:</label>
 							<input type="text" class="form-control fb100p">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col m8 s12 flex aic sb">
-							<label for="" class="right-align fb120">Phone:</label>
+							<label for="" class="right-align fb150">Position:</label>
 							<input type="tel" class="form-control">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col m8 s12 flex aic sb">
-							<label for="" class="right-align fb120">Email:</label>
+						<div class="col m8 s12 flex -pb5 aic sb">
+							<label for="" class="right-align fb150">Email address:</label>
 							<input type="email" class="form-control fb100p">
 						</div>
+						<div class="col m8">
+							<span class="form-control-info center-align">Must be an officialemail address, which will be associated with your account. You can always change this later.</span>
+						</div>
 					</div>
 					<div class="row">
 						<div class="col m8 s12 flex aic sb">
-							<label for="" class="right-align fb120">Website:</label>
-							<input type="text" class="form-control fb100p">
+							<label for="" class="right-align fb150">New Password:</label>
+							<input type="password" class="form-control fb100p">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col m10 s12 flex">
-							<label for="personalStatement" class="right-align fb120">Description:</label>
-							<textarea id="personalStatement" class="form-control fb100p"></textarea>
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb150">Confirm New Password:</label>
+							<input type="password" class="form-control fb100p">
 						</div>
 					</div>
-					<div class="text-center flex aic c">
-						<button type="submit" class="waves-effect waves-light btn -primary">Preview as applicant</button>
-						<button type="submit" class="waves-effect waves-light btn -primary -inverse -lg">Save changes</button>
+					<div class="row">
+						<div class="col m8 s12 flex aic sb">
+							<label for="" class="right-align fb150">Notify me about new jobs from schools in following:</label>
+							<div class="fb100p flex sb">
+								<span>
+									<input class="with-gap" name="radio-notify" value="Immediately" type="radio" id="notify-immediately" />
+									<label for="notify-immediately" class="label-check">Immediately</label>
+								</span>
+								<span>
+									<input class="with-gap" name="radio-notify" value="Daily" type="radio" id="notify-daily" />
+									<label for="notify-daily" class="label-check">Daily</label>
+								</span>
+								<span>
+									<input class="with-gap" name="radio-notify" value="Weekly" type="radio" id="notify-weekly" />
+									<label for="notify-weekly" class="label-check">Weekly</label>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m8 s12 flex">
+							<button type="submit" class="waves-effect waves-light btn -primary -inverse -lg -ml150 fb100p">Save changes</button>
+						</div>
 					</div>
 				</form>
 			</div>

@@ -1,4 +1,8 @@
 .panel {
+	&.-row {
+		padding: 15px 10px;
+	}
+
 	.left,
 	.right {
 		float: none !important;
@@ -12,5 +16,61 @@
 	.-date {
 		text-align: left;
 		margin-bottom: 5px;
+	}
+
+	.-name {
+		font-size: 20px;
+	}
+	%item {
+		padding: 0 5px;
+	}
+
+	.item1 {
+		@extend %item;
+		flex-basis: 35%;
+	}
+	.item2 {
+		@extend %item;
+		flex-basis: 35%;
+	}
+	.item3 {
+		@extend %item;
+		flex-basis: 20%;
+	}
+	.item4 {
+		@extend %item;
+		flex-basis: 10%;
+	}
+}
+
+.panel-filter {
+	display: block;
+	padding: 5px 15px;
+
+	.-item {
+		padding: 10px 0;
+	}
+}
+
+.panel-window {
+	&.-custom {
+		padding: 15px;
+
+		.w70p {
+			width: 100%;
+		}
+
+		.item {
+			padding: 0 0 15px;
+		}
+
+		textarea.form-control {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+		.textarea-wrapper {
+			display: block;
+			text-align: center;
+		}
 	}
 }

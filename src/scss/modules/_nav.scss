@@ -74,12 +74,16 @@
     
 }
 .hover-drop-menu {
+    display: inline-block;
+    padding: 0 0 10px;
+    margin-top: 10px;
+
     &:hover + .dropup-menu {
         opacity: 1;
         visibility: visible;
         bottom: 100%;
     }
-    &:hover + .drop-menu {
+    &:hover .drop-menu {
         opacity: 1;
         visibility: visible;
     }
@@ -106,14 +110,16 @@
 }
 
 .drop-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    opacity: 1;
-    visibility: hidden;
-    background-color: #fff;
-    
-    min-width: 200px;
     @extend %triangle;
     @extend %trgl-top;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 2;
+    min-width: 300px;
+    background-color: #fff;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility .2s, top .2s;
 }
