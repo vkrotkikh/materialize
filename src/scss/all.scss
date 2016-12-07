@@ -1,13 +1,9 @@
-/* Кастомные шрифты */
 @import 'fonts';
-
-/* Font Awesome */
 @import 'fontawesome/font-awesome';
 
 /* Глобальные переменные */
 @import 'variables';
 
-/* Стили бутстрап bootstrap */
 @import 'bootstrap';
 
 /* Стили materialize ui */
@@ -19,16 +15,10 @@
 /* Стили chartist*/
 @import 'chartist/chartist';
 
-/* Генератор спрайтов */
-// @import 'sprite';
-
 /* Стили частей страницы */
 @import 'partials/header';
 @import 'partials/main';
 @import 'partials/footer';
-
-/* Специфические стили страницы */
-// @import 'pages/';
 
 @import 'helpers';
 

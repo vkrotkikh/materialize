@@ -88,6 +88,17 @@
 		width: 236px;
 		height: 55px;
 		line-height: 35px;
+		&.w100p {
+			width: 100%;
+		}
+	}
+
+	&.-xl {
+		width: 430px;
+		height: 80px;
+		font-size: 24px;
+		line-height: 60px;
+		font-weight: bold;
 	}
 
 	&.-w200 {
@@ -137,5 +148,20 @@
 .btn-flat {
 	&.active {
 		background-color: rgba(0, 0, 0, 0.1);
+	}
+}
+
+.additional-disabled {
+	background-color: #7fd5b1;
+	color: #00824b;
+	text-transform: none;
+	font-weight: bold;
+	cursor: no-drop;
+
+	&:hover,
+	&:focus {
+		box-shadow: none;
+		background-color: #7fd5b1;
+		color: #00824b;
 	}
 }

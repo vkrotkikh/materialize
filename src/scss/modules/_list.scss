@@ -85,3 +85,36 @@ $border-radius-list:            10px;
         }
     }
 }
+
+.list-steps {
+    @extend .flex;
+    @extend .c;
+    margin: 25px 0;
+    color: map-get($pallete, primary);
+
+    .item {
+        flex-basis: 220px;
+        text-align: center;
+
+        i {
+            font-size: 70px;
+        }
+        .icon-wrapper {
+            height: 80px;
+        }
+        .item-caption {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+
+    .step-next {
+        flex-basis: 70px;
+        text-align: center;
+
+        i {
+            font-size: 70px;
+            color: #ddd;
+        }
+    }
+}

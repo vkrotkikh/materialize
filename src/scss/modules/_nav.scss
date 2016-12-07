@@ -87,6 +87,13 @@
         opacity: 1;
         visibility: visible;
     }
+
+    &.text {
+        .drop-menu {
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
 }
 
 
@@ -122,4 +129,19 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity .2s, visibility .2s, top .2s;
+}
+
+.nav-authorize {
+    @extend .flex;
+    @extend .aic;
+    height: 100%;
+    float: right;
+
+    li {
+        padding: 10px 0;
+
+        &:first-child {
+            border-right: 1px solid #ddd;
+        }
+    }
 }

@@ -75,6 +75,7 @@
 			}]
 		});
 	}
+
 	/*Функция открытия/закрытия дополнительного фильтра. Шаблон /school/fpt-received.html*/
 	showPanelFilter();
 	function showPanelFilter() {

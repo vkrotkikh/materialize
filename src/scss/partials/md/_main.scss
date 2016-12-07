@@ -9,6 +9,18 @@
 			margin-bottom: 10px;
 		}
 	}
+
+	&.-heading {
+		flex-wrap: wrap;
+
+		.fb50p {
+			flex-basis: 100%;
+		}
+
+		.btn-holder {
+			text-align: center;
+		}
+	}
 }
 
 .valign-wrapper {
