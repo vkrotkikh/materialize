@@ -11,21 +11,28 @@
 
 	.-body {
 		.select-custom {
-			flex-basis: 100%;
-			margin-top: 10px;
-			margin-bottom: 10px;
+			width: 100%;
+			margin: 10px 0;
 		}
+	}
+
+	&.-heading {
+		display: block;
 	}
 }
 
 .flex-xs-off {
 	display: block;
+	.flex {
+		display: block;
+	}
 }
 
 .stats {
 	flex-wrap: wrap;
 
 	.-item {
+		width: 100%;
 		flex-basis: 100%;
 		padding: 5px;
 		margin: 10px 0;
@@ -70,6 +77,11 @@
 	&-bottom {
 		padding-left: 15px;
 		padding-right: 15px;
+
+		.btn {
+			width: 100%;
+			margin: 5px 0;
+		}
 	}
 
 	.-location {

@@ -28,3 +28,35 @@
 		}
 	}
 }
+
+.panel {
+	padding: 15px;
+	border-radius: 10px;
+
+	.heading-n-badge {
+		font-size: 18px;
+	}
+
+	&.row { /*Перебиваем стили блока сетки*/
+		.col {
+			padding: 0;
+		}
+	}
+
+	&.-row { /*Задаем стили для модификатора*/
+		display: block;
+		padding: 10px 15px;
+
+		[class^="item"] {
+			padding: 5px 0;
+		}
+
+		.item1 {
+			display: block;
+			text-align: center;
+		}
+		.panel-arrow {
+			text-align: center;
+		}
+	}
+}

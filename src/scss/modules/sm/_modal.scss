@@ -1,5 +1,7 @@
 .modal {
 	&.-custom {
-		width: 95%;
+		width: 85%;
+		height: auto;
+		max-height: none;
 	}
 }

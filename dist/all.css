@@ -12833,6 +12833,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .content-top input.select-dropdown {
   height: 40px;
+  line-height: 40px;
 }
 
 .content-top .select-wrapper {
@@ -13657,6 +13658,14 @@ hr {
   color: #00824b;
 }
 
+.btn-open {
+  text-align: left;
+}
+
+.btn-open i {
+  float: right;
+}
+
 .select-wrapper span.caret {
   right: 15px;
   z-index: 1;
@@ -13803,13 +13812,17 @@ hr {
   box-shadow: none;
   width: 25%;
   max-width: 40px;
+  min-width: 30px;
   height: 32px;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 .input-inline button i {
   width: 100%;
   color: #4099ff;
-  font-size: 24px;
+  font-size: inherit;
   line-height: 32px;
 }
 
@@ -14010,6 +14023,7 @@ textarea.form-control {
   height: 230px;
   border-radius: 15px;
   padding: 15px;
+  border: 1px solid #ddd;
 }
 
 textarea.form-control:focus {
@@ -14114,6 +14128,8 @@ input[type=range]::-moz-range-thumb {
 }
 
 .input-group .form-control {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
   border: 1px solid transparent;
   background-color: #fff;
   box-shadow: none;
@@ -14131,8 +14147,7 @@ input[type=range]::-moz-range-thumb {
 .input-group .btn, .input-group .btn-large {
   -ms-flex-preferred-size: 170px;
       flex-basis: 170px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  height: 54px;
   border-radius: 0 30px 30px 0;
   background-color: #002a3e;
 }
@@ -14451,7 +14466,7 @@ input[type=range]::-moz-range-thumb {
   position: absolute;
   top: 100%;
   left: 50%;
-  z-index: 2;
+  z-index: 10;
   min-width: 300px;
   background-color: #fff;
   -webkit-transform: translate(-50%, 0);
@@ -14538,7 +14553,7 @@ nav .button-collapse i {
 .logo-wrapper.-arrow {
   position: relative;
   padding-right: 35px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .logo-wrapper.-arrow:after {
@@ -14747,7 +14762,7 @@ a.panel p {
   margin: 0;
   overflow: hidden;
   background-color: #0080bd;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 1px solid #009cda;
   box-shadow: none;
   font-size: 12px;
@@ -14857,10 +14872,11 @@ span.badge.-custom {
   background-color: #e6e4e4;
   color: #000;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
   padding: 3px 15px;
   border-radius: 10px;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 span.badge.-custom:after {
@@ -15270,7 +15286,9 @@ span.badge.-custom:after {
     font-size: 16px;
   }
   .modal.-custom {
-    width: 95%;
+    width: 85%;
+    height: auto;
+    max-height: none;
   }
   .nav-dropdown {
     -webkit-box-pack: center;
@@ -15396,12 +15414,16 @@ span.badge.-custom:after {
     margin-bottom: 10px;
   }
   .main-top .-body .select-custom {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .main-top.-heading {
+    display: block;
   }
   .flex-xs-off {
+    display: block;
+  }
+  .flex-xs-off .flex, .flex-xs-off .main-top.-heading, .flex-xs-off .list-steps, .flex-xs-off .nav-authorize, .flex-xs-off .table-row {
     display: block;
   }
   .stats {
@@ -15409,6 +15431,7 @@ span.badge.-custom:after {
         flex-wrap: wrap;
   }
   .stats .-item {
+    width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding: 5px;
@@ -15447,6 +15470,10 @@ span.badge.-custom:after {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .content-bottom .btn, .content-bottom .btn-large {
+    width: 100%;
+    margin: 5px 0;
+  }
   .content .-location {
     margin: 0 -15px;
   }
@@ -15473,6 +15500,9 @@ span.badge.-custom:after {
   .btn.-xl, .-xl.btn-large {
     width: 100%;
     font-size: 20px;
+  }
+  .btn-wrapper {
+    text-align: center;
   }
   .form-drop {
     left: 50%;
@@ -15533,6 +15563,20 @@ span.badge.-custom:after {
   .form-control-info {
     margin: 0 0 15px;
   }
+  .input-group {
+    display: block;
+    overflow: hidden;
+  }
+  .input-group .form-control {
+    float: left;
+    max-width: 60%;
+  }
+  .input-group .btn, .input-group .btn-large {
+    float: left;
+    max-width: 40%;
+    padding: 10px 10px 8px;
+    font-size: 12px;
+  }
   .list-default.dropup-menu:after {
     margin-left: 0;
   }
@@ -15575,6 +15619,39 @@ span.badge.-custom:after {
   .panel-window.-custom .textarea-wrapper .btn, .panel-window.-custom .textarea-wrapper .btn-large {
     display: block;
     width: 100%;
+  }
+  .panel {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .panel .heading-n-badge {
+    font-size: 18px;
+  }
+  .panel.row {
+    /*Перебиваем стили блока сетки*/
+  }
+  .panel.row .col {
+    padding: 0;
+  }
+  .panel.-row {
+    /*Задаем стили для модификатора*/
+    display: block;
+    padding: 10px 15px;
+  }
+  .panel.-row [class^="item"] {
+    padding: 5px 0;
+  }
+  .panel.-row .item1 {
+    display: block;
+    text-align: center;
+  }
+  .panel.-row .panel-arrow {
+    text-align: center;
+  }
+  span.badge.-custom {
+    font-size: 13px;
+    margin-left: 3%;
+    padding: 3px 10px;
   }
   .chart-stats {
     display: block;

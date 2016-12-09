@@ -85,12 +85,12 @@
 		blockFilter.slideUp();
 		btn.click(function() {
 			if (btn.hasClass('open')) {
-				icon.text('keyboard_arrow_up');
+				icon.text('keyboard_arrow_down');
 				btn.removeClass('open');
 				blockFilter.slideUp();
 			} else {
 				btn.addClass('open');
-				icon.text('keyboard_arrow_down');
+				icon.text('keyboard_arrow_up');
 				blockFilter.slideDown();
 			}
 		});

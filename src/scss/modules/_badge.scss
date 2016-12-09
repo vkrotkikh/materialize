@@ -26,10 +26,11 @@ span.badge.-custom {
     background-color: #e6e4e4;
     color: #000;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     padding: 3px 15px;
     border-radius: 10px;
     vertical-align: middle;
+    white-space: nowrap;
 
     &:after {
         content: '';

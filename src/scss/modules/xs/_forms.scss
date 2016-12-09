@@ -73,3 +73,19 @@
 .form-control-info {
 	margin: 0 0 15px;
 }
+
+.input-group {
+	display: block;
+	overflow: hidden;
+
+	.form-control {
+		float: left;
+		max-width: 60%;
+	}
+	.btn {
+		float: left;
+		max-width: 40%;
+		padding: 10px 10px 8px;
+		font-size: 12px;
+	}
+}
