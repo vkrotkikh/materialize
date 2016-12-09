@@ -23,7 +23,9 @@ nav {
 		}
 	}
 
-	.nav-wrapper {
+	&.nav-wrapper {
+		position: relative;
+
 		i {
 			display: inline-block;
 			line-height: 1;
@@ -51,6 +53,25 @@ nav {
 }
 .logo-wrapper {
 	font-size: 0;
+
+	&.-arrow {
+		position: relative;
+		padding-right: 35px;
+		margin-right: 10px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 5px;
+			right: 0;
+			display: block;
+			width: 70px;
+			height: 70px;
+			transform: rotate(45deg);
+			box-shadow: 10px -10px 15px -5px rgba(0, 0, 0, .1);
+			pointer-events: none;
+		}
+	}
 }
 
 .navbar-nav {

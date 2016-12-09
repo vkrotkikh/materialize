@@ -16,44 +16,35 @@
 		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
-				<ul class="left valign-wrapper">
-					<li class="logo-wrapper">
-						<a href="/school/" class="brand-logo">
-							<img src="../img/logo.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="/school/" class="link-primary">Wibledon high school</a>
-					</li>
-				</ul>
-				<ul id="nav-mobile" class="right flex aic hide-on-med-and-down navbar-nav">
-					<li>
-						<a href="/school/new-job-vacancy.html" class="waves-effect btn"><i class="material-icons">add</i> <span>New Vacancy</span></a>
-					</li>
-					<li>
-						<a class="dropdown-button" href="#!" data-activates="userSettings">
-							<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
-							<i class="material-icons logo-icon">business</i>
-							<i class="material-icons right">arrow_drop_down</i>
-						</a>
-					</li>
-				</ul>
-				<ul class="side-nav center-align" id="mobile-demo">
-					<li><a class="active" href="/school/">Dashboard</a></li>
-					<li><a href="/school/applications.html">Applications</a></li>
-					<li><a href="/school/saved-jobs.html">Saved jobs</a></li>
-					<li><a href="/school/following.html">Following</a></li>
-					<li><a href="/school/search.html">Search</a></li>
-					<hr>
-					<li><a href="/school/settings.html">Settings</a></li>
-					<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
-					<li><a href="/school/feedback.html">Feedback</a></li>
-					<li><a href="#!">Log out</a></li>
-				</ul>
-			</div>
+		<nav class="nav-wrapper">
+			<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+			<ul class="left valign-wrapper">
+				<li class="logo-wrapper -arrow">
+					<a href="/school/" class="brand-logo">
+						<img src="../img/logo.png" alt="">
+					</a>
+				</li>
+				<li><a href="/school/" class="link-primary">Wimbledon high school</a></li>
+			</ul>
+			<ul id="nav-mobile" class="right flex aic hide-on-med-and-down navbar-nav">
+				<li><a href="/school/new-job-vacancy.html" class="waves-effect btn"><i class="material-icons">add</i> <span>New Vacancy</span></a></li>
+				<li>
+					<a class="dropdown-button" href="#!" data-activates="userSettings">
+						<!--<img class="circle responsive-img" width="50" src="http://materializecss.com/images/yuna.jpg" alt="">-->
+						<i class="material-icons logo-icon">business</i>
+						<i class="material-icons right">arrow_drop_down</i>
+					</a>
+				</li>
+			</ul>
+			<ul id="mobile-demo" class="side-nav">
+				<li><a class="active" href="/school/"><i class="fa fa-bars"></i>Dashboard</a></li>
+				<li><a href="/school/new-job-vacancy.html"><i class="fa fa-plus"></i> New Vacancy</a></li>
+				<hr>
+				<li><a href="/school/settings.html"><i class="fa fa-cogs"></i> Settings</a></li>
+				<li><a href="javascript:void(0);"><i class="fa fa-info"></i> Help &amp; FAQs</a></li>
+				<li><a href="/school/feedback.html"><i class="fa fa-commenting-o"></i> Feedback</a></li>
+				<li><a href="javascript:void(0);"><i class="fa fa-sign-out"></i> Log out</a></li>
+			</ul>
 		</nav>
 	</div>
 </header>
@@ -72,7 +63,7 @@
 					</div>
 				</div>
 				<div class="right flex aic">
-					<select name="sort" id="sortId" class="select-primary alignment">
+					<select name="sort" id="sortId" class="select-primary alignment -ml0">
 						<option value="" disabled selected>Open Vacancy</option>
 						<option value="vacancy1">Vacancy 1</option>
 						<option value="vacancy2">Vacancy 2</option>

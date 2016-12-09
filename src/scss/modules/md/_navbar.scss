@@ -1,0 +1,10 @@
+.logo-wrapper {
+	&.-arrow {
+		position: static;
+		padding: 0;
+
+		&:after {
+			display: none;
+		}
+	}
+}

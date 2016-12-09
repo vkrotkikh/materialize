@@ -12,47 +12,44 @@
 	<ul id="userSettings" class="dropdown-content list-default arrow-top">
 		<li><a href="/marketing/settings.html">Settings</a></li>
 		<li><a href="javascript:void(0);">Help &amp; FAQs</a></li>
-		<li><a href="/marketing/feedback.html">Feedback</a></li>
+		<li><a href="javascript:void(0);">Feedback</a></li>
 		<li><a href="#!">Log out</a></li>
 	</ul>
 	<div class="container">
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
-				<ul class="left valign-wrapper">
-					<li class="logo-wrapper">
-						<a href="/marketing/" class="brand-logo">
-							<img src="../img/logo.png" alt="">
-						</a>
-					</li>
-				</ul>
-				<ul id="nav-mobile" class="left flex aic hide-on-med-and-down navbar-nav -ml">
-					<li><a href="/marketing/">Home</a></li>
-					<li><a href="/marketing/search-job.html">Jobs</a></li>
-					<li><a href="/marketing/search-school.html">School</a></li>
-				</ul>
-				<ul class="hide-on-med-and-down navbar-nav nav-authorize">
-					<li>
-						<a class="waves-effect waves-light btn">
-							<i class="material-icons">business</i>
-							<span>Claim my school</span>
-						</a>
-					</li>
-					<li>
-						<a href="/marketing/sign-up.html" class="waves-effect waves-light btn -primary -inverse">Sign up</a>
-					</li>
-					<li>
-						<a href="/marketing/sign-in.html" class="waves-effect waves-light btn -primary">Login</a>
-					</li>
-				</ul>
-				<ul class="side-nav center-align" id="mobile-demo">
-					<li><a class="active" href="/marketing/">Dashboard</a></li>
-					<li><a href="/marketing/applications.html">Applications</a></li>
-					<li><a href="/marketing/saved-jobs.html">Saved jobs</a></li>
-					<li><a href="/marketing/following.html">Following</a></li>
-					<li><a href="/marketing/search.html">Search</a></li>
-				</ul>
-			</div>
+		<nav class="nav-wrapper">
+			<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+			<ul class="left valign-wrapper">
+				<li class="logo-wrapper">
+					<a href="/marketing/" class="brand-logo">
+						<img src="../img/logo.png" alt="">
+					</a>
+				</li>
+			</ul>
+			<ul id="nav-mobile" class="left flex aic hide-on-med-and-down navbar-nav -ml">
+				<li><a href="/marketing/">Home</a></li>
+				<li><a href="/marketing/search-job.html">Jobs</a></li>
+				<li><a href="/marketing/search-school.html">School</a></li>
+			</ul>
+			<ul class="hide-on-med-and-down navbar-nav nav-authorize">
+				<li>
+					<a href="/marketing/school-claim.html" class="waves-effect waves-light btn">
+						<i class="material-icons">business</i>
+						<span>Claim my school</span>
+					</a>
+				</li>
+				<li><a href="/marketing/sign-up.html" class="waves-effect waves-light btn -primary -inverse">Sign up</a></li>
+				<li><a href="/marketing/sign-in.html" class="waves-effect waves-light btn -primary">Login</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="/marketing/"><i class="fa fa-bars"></i>Dashboard</a></li>
+				<li><a href="/marketing/search-job.html"><i class="fa fa-building-o" aria-hidden="true"></i>Jobs</a></li>
+				<li><a href="/marketing/search-school.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>School</a></li>
+				<hr>
+				<li><a href="/marketing/settings.html"><i class="fa fa-cogs"></i>Settings</a></li>
+				<li><a href="javascript:void(0);"><i class="fa fa-info"></i>Help &amp; FAQs</a></li>
+				<li><a href="javascript:void(0);"><i class="fa fa-commenting-o"></i>Feedback</a></li>
+				<li><a href="javascript:void(0);"><i class="fa fa-sign-out"></i>Log out</a></li>
+			</ul>
 		</nav>
 	</div>
 </header>
@@ -68,34 +65,34 @@
 			<div class="content">
 				<h1 class="center-align">Wibledon High School</h1>
 				<p class="subheading center-align">Independent School in London, England</p>
+				<div class="claim-wrapper">
+					<!--Блок с макета 7. Search - Schools-->
+					<a href="/marketing/school-claim.html" class="waves-effect waves-light btn -lg">
+						<i class="material-icons">business</i>
+						<span>Claim this school</span>
+					</a>
+
+					<!--Блок с макета 11. School - Claimed-->
+					<!--<div class="claimed">
+						<a href="javascript:void(0);" class="btn -lg additional-disabled">
+							<i class="material-icons">business</i>
+							<span>Claimed</span>
+						</a>
+					</div>
+					<div class="w100p center-align">
+						<div class="hover-drop-menu text relative">
+							<a href="#?" class="link">Who claimed this school?</a>
+							<div class="drop-menu left-align">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque facere nihil quam, optio nesciunt voluptas maxime sapiente dolorum omnis.</p>
+							</div>
+						</div>
+					</div>-->
+				</div>
 				<div class="information">
-					<div class="info-item flex sb aic">
+					<div class="info-item">
 						<div class="part">
 							<span class="-label">Address:</span>
 							<p>Manisel Road, London, SW19 4AB</p>
-						</div>
-						<div class="part">
-							<!--Блок с макета 7. Search - Schools-->
-							<!--<a href="javascript:void(0);" class="waves-effect waves-light btn -lg">
-								<i class="material-icons">business</i>
-								<span>Claim this school</span>
-							</a>-->
-
-							<!--Блок с макета 11. School - Claimed-->
-							<div class="claimed">
-								<a href="javascript:void(0);" class="btn -lg additional-disabled">
-									<i class="material-icons">business</i>
-									<span>Claimed</span>
-								</a>
-							</div>
-							<div class="w100p center-align">
-								<div class="hover-drop-menu text relative">
-									<a href="#?" class="link">Who claimed this school?</a>
-									<div class="drop-menu left-align">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque facere nihil quam, optio nesciunt voluptas maxime sapiente dolorum omnis.</p>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 					<div class="info-item">
@@ -122,7 +119,7 @@
 				</div>
 				<div class="-additional">
 					<h4 class="-label">Open vacancies</h4>
-					<a href="/teacher/single-object.html" class="panel clearfix">
+					<a href="/marketing/school-single.html" class="panel clearfix">
 						<div class="left">
 							<h4>Foundation Phase Teacher</h4>
 							<span class="-info">Wimbledon High School</span>
@@ -140,7 +137,7 @@
 	<div class="container">
 		<div class="max-w1024">
 			<div class="row">
-				<div class="col m3 s6">
+				<div class="col m3 s6 footer-item">
 					<div class="section-heading">
 						<strong>For schools</strong>
 					</div>
@@ -153,7 +150,7 @@
 						<li><a class="green-text text-accent-3" href="javascript:void(0)">Claim a school</a></li>
 					</ul>
 				</div>
-				<div class="col m3 s6">
+				<div class="col m3 s6 footer-item">
 					<div class="section-heading">
 						<strong>For teacher</strong>
 					</div>
@@ -164,7 +161,7 @@
 						<li><a class="light-blue-text text-accent-3" href="javascript:void(0);">Get Started</a></li>
 					</ul>
 				</div>
-				<div class="col m3 s6">
+				<div class="col m3 s6 footer-item">
 					<div class="section-heading">
 						<strong>About finded</strong>
 					</div>
@@ -175,7 +172,7 @@
 						<li><a class="grey-text text-darken-3" href="javascript:void(0);">Contact us</a></li>
 					</ul>
 				</div>
-				<div class="col m3 s6">
+				<div class="col m3 s6 footer-item">
 					<div class="section-heading">
 						<strong>Social</strong>
 					</div>

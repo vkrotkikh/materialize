@@ -9,3 +9,13 @@
 .list-output:not(.browser-default) {
 	padding: 0;
 }
+
+.list-steps {
+	display: block;
+
+	.step-next {
+		i {
+			transform: rotate(90deg);
+		}
+	}
+}

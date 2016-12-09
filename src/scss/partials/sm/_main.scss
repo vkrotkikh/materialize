@@ -23,6 +23,22 @@
 	}
 }
 
+.main-top {
+
+	&.-heading {
+		height: auto;
+
+		.item {
+			height: auto;
+			padding: 0 0 30px;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+	}
+}
+
 .content {
 	padding: 25px 20px;
 	border-radius: 15px;
@@ -92,7 +108,11 @@
 }
 
 .section {
-	padding: 0;
+	// padding: 0;
+
+	&.-p0 {
+		padding: 0;
+	}
 }
 
 .filter {
@@ -101,4 +121,21 @@
 	&-item {
 		padding: 5px 0;
 	}
+}
+
+.sign-description {
+	.panel-window {
+		width: 95%;
+	}
+}
+
+.information {
+	.info-item {
+		text-align: justify;
+	}
+}
+
+.claim-wrapper {
+	float: none;
+	text-align: center;
 }

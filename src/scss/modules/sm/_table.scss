@@ -1,16 +1,52 @@
 .table {
-	&-body {
-		overflow-y: auto;
+	border-radius: 15px;
+	background-color: #eee;
 
-		.table-row {
-			min-width: 500px;
+	&-head {
+		display: block;
+		float: left;
+		border-radius: 15px 0 0;
+		padding: 0;
+	}
+
+	&-body {
+		max-height: none;
+		overflow-x: auto;
+		overflow-y: visible;
+		white-space: nowrap;
+		padding: 0;
+		border-radius: 0 15px 0 0;
+	}
+
+	&-row {
+		display: inline-block;
+		max-width: 120px;
+		border: none;
+
+		.table-cell {
+			display: block;
+			border-bottom: 1px solid #ddd;
+			padding: 5px 10px;
+		}
+
+		.c2 {
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 
 	&-custom {
+		.table-head {
+			.c1, .c2, .c3, .c4, .c5 {
+				text-align: left;
+				font-size: 14px;
+				padding: 5px 15px;
+			}
+		}
+
 		.table-body {
-			.c2 {
-				text-align: center;
+			.c2, .c3, .c4, .c5 {
+				text-align: left;
 			}
 		}
 	}

@@ -18,6 +18,10 @@
 	}
 }
 
+.flex-xs-off {
+	display: block;
+}
+
 .stats {
 	flex-wrap: wrap;
 
@@ -38,7 +42,6 @@
 	padding: 15px;
 
 	&-top {
-		padding: 0 0 10px;
 
 		.right {
 			float: none !important;
@@ -68,11 +71,27 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+	.-location {
+		margin: 0 -15px;
+	}
 }
 
 .post {
 	.right {
 		float: none !important;
 		text-align: right;
+	}
+}
+
+.authorization-block {
+	width: 95%;
+	padding: 25px 15px;
+}
+
+.filter-item {
+	display: block;
+	.btn {
+		width: 100%;
 	}
 }

@@ -4,6 +4,12 @@
 			margin: 7px 10px;
 		}
 	}
+
+	&.-inline-form {
+		.btn.-ml150 {
+			margin-left: 0;
+		}
+	}
 }
 
 .form-group {
@@ -34,5 +40,11 @@
 	.btn {
 		width: 100%;
 		margin-top: 15px;
+	}
+}
+
+.input-group {
+	.btn {
+		flex-basis: 130px;
 	}
 }
