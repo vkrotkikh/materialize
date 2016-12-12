@@ -12818,6 +12818,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin-bottom: 80px;
 }
 
+.content.-mb20 {
+  margin-bottom: 20px;
+}
+
 .content.-mt {
   margin-top: 30px;
 }
@@ -15477,9 +15481,9 @@ span.badge.-custom:after {
   .content .-location {
     margin: 0 -15px;
   }
+  .post .left,
   .post .right {
     float: none !important;
-    text-align: right;
   }
   .authorization-block {
     width: 95%;
@@ -15598,6 +15602,7 @@ span.badge.-custom:after {
   }
   .nav-dropdown > li {
     position: static;
+    margin-right: 0;
   }
   .panel-window.-custom form {
     width: 100%;
