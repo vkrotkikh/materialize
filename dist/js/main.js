@@ -1,4 +1,12 @@
 (function($) {
+	$.fn.extend({
+		scrollTo : function(speed, easing) {
+			return this.each(function() {
+				var targetOffset = $(this).offset().top;
+				$('html, body').animate({scrollTop: targetOffset}, speed, easing);
+			});
+		}
+	});
 	$(document).ready(function() {
 		// Дефолтный дропдаун появляется под кнопкой, а не накладывает на кнопку.
 		$(".dropdown-button").dropdown({
@@ -37,6 +45,10 @@
 				$('#searchJobContent').addClass('hide');
 				$('#searchSchoolsContent').removeClass('hide');
 			}
+		});
+		$('.btn-down').click(function(e) {
+			e.preventDefault();
+			$('#description').scrollTo('slow', 'swing');
 		});
 	});
 

@@ -24,7 +24,6 @@
 }
 
 .main-top {
-
 	&.-heading {
 		height: auto;
 
@@ -88,6 +87,15 @@
 	}
 	.btn {
 		width: 100%;
+	}
+
+	&.-custom {
+		display: block;
+		padding: 0 15px;
+
+		.input-inline {
+			margin: 0 auto;
+		}
 	}
 }
 

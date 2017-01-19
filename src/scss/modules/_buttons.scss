@@ -172,3 +172,30 @@
 	text-align: left;
 	i {float: right;}
 }
+
+.btn-down {
+	width: 70px;
+	height: 70px;
+	background-color: map-get($pallete, primary);
+	border-radius: 20px;
+	padding: 0;
+	transform: rotate(-45deg);
+
+	i {
+		transform: rotate(45deg);
+		color: map-get($pallete, primary-dark);
+		font-size: 55px;
+		font-weight: bold;
+		margin: 5px 5px 0 0;
+	}
+
+	&:hover,
+	&:focus,
+	&:focus:active {
+		background-color: map-get($pallete, primary-dark);
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+		i {
+			color: #fff;
+		}
+	}
+}

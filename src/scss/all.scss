@@ -6,6 +6,8 @@
 
 @import 'bootstrap';
 
+@import 'sprite';
+
 /* Стили materialize ui */
 @import 'materialize/materialize';
 
@@ -23,7 +25,7 @@
 @import 'modules/buttons';
 // @import 'modules/carousel';
 @import 'modules/forms';
-// @import 'modules/icons';
+@import 'modules/icons';
 @import 'modules/list';
 @import 'modules/modal';
 @import 'modules/nav';

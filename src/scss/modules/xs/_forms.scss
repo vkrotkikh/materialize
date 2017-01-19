@@ -89,3 +89,27 @@
 		font-size: 12px;
 	}
 }
+
+.input-inline {
+	&.-custom {
+		width: 100%;
+
+		.form-control {
+			width: 100%;
+			box-sizing: border-box;
+			padding-right: 50px;
+			margin-right: -40px;
+		}
+	}
+}
+
+.form-upgrade {
+	.flex {
+		display: block;
+	}
+	.label-flex {
+		font-size: 14px;
+		text-align: left;
+		margin: 0 0 10px;
+	}
+}

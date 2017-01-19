@@ -10,6 +10,13 @@ $pallete: (
 	default: #535353
 );
 
+$pallete-ldng: (
+	primary: #00b1ef,
+	primary-dark: #007fbc,
+	secondary: #00ad64,
+	additional: #0095dd
+);
+
 $text-color:						#000;
 $link-color:						map-get($pallete, primary);
 

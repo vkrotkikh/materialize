@@ -19,6 +19,14 @@
 	&.-heading {
 		display: block;
 	}
+
+	&.-primary {
+		h1 {
+			.bordered {
+				display: block;
+			}
+		}
+	}
 }
 
 .flex-xs-off {
@@ -105,5 +113,41 @@
 	display: block;
 	.btn {
 		width: 100%;
+	}
+}
+
+.main-question,
+.main-description {
+	.flex {
+		display: block;
+	}
+}
+
+.descr-wrap {
+	padding: 0 0 20px;
+}
+
+.descr-img {
+	display: none;
+}
+
+.descr-content {
+	text-align: justify;
+	.-header {
+		text-align: center;
+	}
+}
+
+.main-center {
+	h2 {
+		margin: 0 0 20px;
+	}
+
+	.table-default {
+		margin: 0 0 20px;
+	}
+
+	.descr-content {
+		padding: 0;
 	}
 }

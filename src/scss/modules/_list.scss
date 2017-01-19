@@ -1,120 +1,149 @@
-$border-radius-list:            10px;
+$border-radius-list:	10px;
 
 .list-default {
-    border-radius: $border-radius-list;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+	border-radius: $border-radius-list;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .3);
 
-    & > .-head {
-        background-color: #d8d8d8;
-        color: #969696;
-        padding: 3px 10px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 12px;
-        border-radius: $border-radius-list $border-radius-list 0 0;
-    }
-    & > li {
-        min-height: 1px;
+	& > .-head {
+		background-color: #d8d8d8;
+		color: #969696;
+		padding: 3px 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+		border-radius: $border-radius-list $border-radius-list 0 0;
+	}
+	& > li {
+		min-height: 1px;
 
-        & > a {
-            display: block;
-            text-align: left;
-            padding: 3px 15px;
-            margin: 0;
-            font-size: 12px;
-            color: #000;
-            transition: background-color .2s;
+		& > a {
+			display: block;
+			text-align: left;
+			padding: 3px 15px;
+			margin: 0;
+			font-size: 12px;
+			color: #000;
+			transition: background-color .2s;
 
-            &.active {
-                background-color: rgba(0, 0, 0, .15);
-            }
+			&.active {
+				background-color: rgba(0, 0, 0, .15);
+			}
 
-            &:hover {
-                background-color: #d8d8d8;
-            }
-        }
+			&:hover {
+				background-color: #d8d8d8;
+			}
+		}
 
-        /*&:first-child {
-            border-radius: $border-radius-list $border-radius-list 0 0;
-        }*/
+		/*&:first-child {
+			border-radius: $border-radius-list $border-radius-list 0 0;
+		}*/
 
-        /*&:last-child {
-            border-radius: 0 0 $border-radius-list $border-radius-list;
-        }*/
-    }
+		/*&:last-child {
+			border-radius: 0 0 $border-radius-list $border-radius-list;
+		}*/
+	}
 
-    &.arrow-bottom {
-        @extend %triangle;
-        @extend %trgl-bot;
-    }
+	&.arrow-bottom {
+		@extend %triangle;
+		@extend %trgl-bot;
+	}
 
-    &.arrow-top {
-        @extend %triangle;
-        @extend %trgl-top;
-    }
+	&.arrow-top {
+		@extend %triangle;
+		@extend %trgl-top;
+	}
 }
 
 .list-info {
-    font-size: 12px;
-    span {
-        font-size: 14px;
-        color: #000;
-    }
+	font-size: 12px;
+	span {
+		font-size: 14px;
+		color: #000;
+	}
 }
 
 .list-output:not(.browser-default) {
-    overflow: hidden;
-    list-style: none;
-    padding: 0 50px;
-    margin: 0;
+	overflow: hidden;
+	list-style: none;
+	padding: 0 50px;
+	margin: 0;
 
-    &.-half-childs {
-        & > li {
-            width: 50%;
-            float: left;
-        }
-    }
+	&.-half-childs {
+		& > li {
+			width: 50%;
+			float: left;
+		}
+	}
 
-    & > li {
-        color: #838383;
-        padding: 0 0 5px;
+	& > li {
+		color: #838383;
+		padding: 0 0 5px;
 
-        span {
-            color: #000;
-            font-size: 16px;
-        }
-    }
+		span {
+			color: #000;
+			font-size: 16px;
+		}
+	}
 }
 
 .list-steps {
-    @extend .flex;
-    @extend .c;
-    margin: 25px 0;
-    color: map-get($pallete, primary);
+	@extend .flex;
+	@extend .c;
+	margin: 25px 0;
+	color: map-get($pallete, primary);
 
-    .item {
-        flex-basis: 220px;
-        text-align: center;
+	.item {
+		flex-basis: 220px;
+		text-align: center;
 
-        i {
-            font-size: 70px;
-        }
-        .icon-wrapper {
-            height: 80px;
-        }
-        .item-caption {
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-    }
+		i {
+			font-size: 70px;
+		}
+		.icon-wrapper {
+			height: 80px;
+		}
+		.item-caption {
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+	}
 
-    .step-next {
-        flex-basis: 70px;
-        text-align: center;
+	.step-next {
+		flex-basis: 70px;
+		text-align: center;
 
-        i {
-            font-size: 70px;
-            color: #ddd;
-        }
-    }
+		i {
+			font-size: 70px;
+			color: #ddd;
+		}
+	}
+}
+
+.list-inline {
+	li {
+		display: inline-block;
+		font-weight: 600;
+		font-size: 20px;
+		padding: 17px;
+		span {
+			vertical-align: middle;
+			margin-left: 5px;
+		}
+	}
+}
+
+.list-bold {
+	li {
+		font-weight: 600;
+		padding-bottom: 7px;
+
+		span {
+			vertical-align: middle;
+			margin-left: 12px;
+		}
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
 }
